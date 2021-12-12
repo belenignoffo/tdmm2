@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/nav_footer.css">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Cultura Geek</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="header__img-container">
+                <img src="img/logoculturageekblanco.png" alt="">
+            </div>
+            <nav>
+                <div class="nav-icons">
+                    <a href="index.html"><ion-icon name="home-sharp" style="color: #f0f0f0;"></ion-icon></a>
+                    <a href="https://www.facebook.com/culturageek.com.ar"><ion-icon name="logo-facebook" style="color: #f0f0f0;"></ion-icon></a>
+                    <a href="https://twitter.com/culturageek"><ion-icon name="logo-twitter" style="color: #f0f0f0;"></ion-icon></a>
+                    <a href="https://www.twitch.tv/culturageek"><ion-icon name="logo-twitch" style="color: #f0f0f0;"></ion-icon></a>
+                    <a href="https://www.youtube.com/user/CulturaGeekRadio"><ion-icon name="logo-youtube" style="color: #f0f0f0;"></ion-icon></a>
+                </div>
+                <div class="nav-sections">
+                    <ul>
+                        <li>
+                            <a href="entretenimiento.html">ENTRETENIMIENTO <i class="material-icons md-light md-18">arrow_drop_down</i></a>
+                            <ul>
+                                <li><a href="#">SOCIAL</a></li>
+                                <li><a href="#">SPORTS</a></li>
+                                <li><a href="#">TV & CINE</a></li>
+                                <li><a href="#">VIDEOJUEGOS</a></li>
+                                <li><a href="entretenimiento.html" style="border-top: thin solid #9b9b9b;">VER TODO</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">TECNOLOGÍA<i class="material-icons md-light md-18">arrow_drop_down</i></a>
+                            <ul>
+                                <li><a href="#">GADGETS & HARDWARE</a></li>
+                                <li><a href="#">SMARTPHONES</a></li>
+                                <li><a href="#">MOTOROLA</a></li>
+                                <li><a href="#" style="border-top: thin solid #9b9b9b;">VER TODO</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">GENERAL<i class="material-icons md-light md-18">arrow_drop_down</i></a>
+                            <ul>
+                                <li><a href="#">CIENCIA</a></li>
+                                <li><a href="#">ANTITECNO</a></li>
+                                <li><a href="#" style="border-top: thin solid #9b9b9b;">VER TODO</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">NOSOTROS<i class="material-icons md-light md-18">arrow_drop_down</i></a>
+                            <ul>
+                                <li><a href="#">TWITCH & YOUTUBE</a></li>
+                                <li><a href="#">SPOTIFY Y MÁS</a></li>
+                                <li><a href="#">TV & CINE</a></li>
+                                <li><a href="#">STAFF</a></li>
+                                <li><a href="#">CONTACTO</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-profile-searcher">
+                    <div class="profile">
+                        <ul>
+                            <li><i class="material-icons md-light md-20">person</i>
+                            <ul>
+                                <li><a href="login.html">INICIAR SESIÓN</a></li>
+                                <li><a href="signup.html">REGISTRARSE</a></li> 
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="searcher">
+                        <form action="#" class ="">
+                            <input type="search" class="search" placeholder="Buscar" required>
+                         </form>   
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main-content-container">
+            <div class="signup-container" id="signup-container">
+                <div class="signup-box">
+                    <div class="signup-content">
+                        <h4>Crear una cuenta</h4>
+                        <form action="" class="signup-form" id="signup-form">
+                            <div class="input-box">
+                                <label for="">Correo electrónico</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="">Nombre y apellido</label>
+                                <input type="text" id="insert-name" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="">Usuario</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="">Contraseña</label>
+                                <input type="password" required>
+                                <a href="#">¿Ya tenés una cuenta?</a>
+                            </div>
+                            <div class="box-buttons">
+                                <button class="orange-button" type="submit" id="register"><a href="#">Registrarse</a></button>
+                                <p class="text">También podes registrarte con</p>
+                                <div class="buttons-container">
+                                    <div class="facebook-button">
+                                        <img src="img/facebook.svg" alt="" style="width: 26%;">
+                                        <a href="#">Facebook</a>
+                                    </div>
+                                    <div class="google-button">
+                                        <img src="img/btn_google_light_normal_ios.svg" alt="">
+                                        <a href="#">Google</a>
+                                    </div>
+                                </div>
+                                <p class="terms">Al registrarte, aceptas las <a href="#">Condiciones de servicio</a> y la <a href="#">Política de Privacidad</a> de Cultura Geek</p>              
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="signup-msg-container">
+                <div class="signup-msg-box">
+                    <!-- <img src="img/message-background.png" alt=""> -->
+                    <h4 class="msg-title">¡Tu registro fue exitoso!</h4>
+                    <p class="msg-text">Ahora a poner manos a la obra. <br> Personalizá tu perfil y comenzá a vivir la experiencia Cultura Geek</p>
+                    <button class="orange-button style" type="submit"><a href="signup_customize.html">Comenzar</a></button>
+                </div>
+            </div>
+        </div> 
+        <!-- fin main container-->
+        <footer>
+            <div class="footer-content-container">
+                <div class="footer-col1">
+                    <img src="img/logoculturageekblanco.png" alt="">
+                    <p class="footer-col1-text">Cultura Geek es un multimedio argentino, creado por el periodista Augusto Finocchiaro Preci, que comenzó como un programa de radio y luego se expandió también a un sitio de noticias que agrupa todas las novedades de tecnología, videojuegos, cine y series.</p>
+                    <a href="#">Saber más...</a>
+                </div>
+                <div class="footer-col2">
+                    <h4 class="footer-col-title">Breaking news</h4>
+                    <a href="#" class="footer-col2-link">“Mi tío es Superman”: El día que Henry Cavill llevó a su sobrino al colegio</a>
+                    <a href="#" class="footer-col2-link">Bitcoin: breve historia de una criptomoneda que en 2020 tuvo una caída histórica, pero logró recuperarse</a>
+                    <a href="#" class="footer-col2-link">Windows 11: precio, fecha de lanzamiento y como conseguir gratis el próximo sistema operativo de Microsoft</a>
+                    <a href="#" class="footer-col2-link">Loki: ¿En qué se inspiraron para crear la serie? Michael Waldron, su escritor, nos lo cuenta en esta entrevista</a>
+                </div>
+                <div class="footer-col3">
+                    <h4 class="footer-col-title">Encontranos también en:</h4>
+                    <div class="footer-col3-rrss">
+                        <i class="fa fa-facebook" style="color: #f0f0f0; font-size: 17px; padding-left: 2px; padding-right: 2px;"></i>
+                        <a href="https://www.facebook.com/culturageek.com.ar">Facebook</a>
+                    </div>
+                    <div class="footer-col3-rrss">
+                        <ion-icon name="logo-twitter" style="color: #f0f0f0; font-size: 16px;"></ion-icon>
+                        <a href="https://twitter.com/culturageek">Twitter</a>
+                    </div>
+                    <div class="footer-col3-rrss">
+                        <ion-icon name="logo-twitch" class="change" style="color: #f0f0f0; font-size: 16px;"></ion-icon>
+                        <a href="https://www.twitch.tv/culturageek">Twitch</a>
+                    </div>
+                    <div class="footer-col3-rrss">
+                        <ion-icon name="logo-youtube" style="color: #f0f0f0; font-size: 16px;"></ion-icon>
+                        <a href="https://www.youtube.com/user/CulturaGeekRadio" class="link-yt">Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function(){
+            // $('#signup-form').submit(function(e){
+            //     let nombre = $('#insert-name').val();
+
+            //     $('#insert-name2').val(nombre);
+            //     e.preventDefault();
+            // });
+            
+            document.getElementById("register").addEventListener("click", function(){
+                document.querySelector(".signup-container").style.display = "none";
+                document.querySelector(".signup-msg-container").style.display = "flex";
+            });
+        });
+
+    </script>
+</body>
+</html>
