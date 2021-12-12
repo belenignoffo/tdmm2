@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-20 { font-size: 20px; }
+.material-icons.md-light { color: #f0f0f0; }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.4s;
+}
+
+/* ----- contenido ----- */
+
+.main-content-container{ /* contenedor del contenido de la home */
+    width: 75%;
+    background-color: #111111;
+    height: auto;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 80px;
+}
+.main-content-container hr{ /* estilo del la línea que subraya el título */
+    width: 100%;
+    height: 1px;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    border: none;
+    background: rgb(145,70,254);
+    background: -moz-linear-gradient(90deg, rgba(145,70,254,1) 0%, rgba(239,134,71,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(145,70,254,1) 0%, rgba(239,134,71,1) 100%);
+    background: linear-gradient(90deg, rgba(145,70,254,1) 0%, rgba(239,134,71,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9146fe",endColorstr="#ef8647",GradientType=1);
+}
+.section-title{ /* título de las secciones */
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+
+
+/* ----- primera sección: lo más importante ----- */
+.section-one{ /* --> contenedor de toda la primera sección */
+    width: 100%; /* = 960px */
+    height: auto;
+    margin-top: 60px;
+}
+.s1-notes-container{ /* --> contenedor de las dos hileras de notas */
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.s-img{ /* --> propiedades de las imágenes */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+.s1-xl-container{ /* --> contenedor de la nota grande */
+    width: 49%; /* 24 */ /* 49 */
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: transform 0.3s;
+}
+.s1-xl-container:hover, .s1-s-container:hover{
+    transform: translateX(3px);
+    cursor: pointer;
+}
+.s1-xl-container:hover > img, .s1-s-container:hover > img{
+    opacity: 1;
+}
+.s1-xl-text{
+    width: 90%;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    margin-left: 20px;
+    row-gap: 1.2rem; 
+}
+.s1-xl-editor{
+    width: 100%;
+    font-size: 10px;
+    font-weight: 400;
+    color: #DEDEDE;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.s1-xl-editor a{
+    color: #7845C3;
+}
+.s1-xl-editor a:hover{
+    color: #E17636;
+    font-weight: bolder;
+}
+.s1-xl-title{
+    width: 100%;
+    font-size: 22px;
+    color: #f0f0f0;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #5A5A5A;
+    transition: text-shadow 0.4s;
+}
+.s1-xl-title:hover, .s1-s-title:hover {
+    text-shadow: 3px 3px 3px #1B1B1B;
+}
+.s1-s-notes-container{ /* --> contenedor de las 4 notas chicas */
+    width: 49.5%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.s1-s-container{ /* --> contenedor/marco de la nota chica */
+    width: 48.5%;
+    height: 47.5%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: transform 0.3s;
+}
+.s1-s-title{ /* --> propiedades del título de las notas chicas*/
+    position: absolute;
+    width: 88%;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #f0f0f0;
+    font-weight: 600;
+    transition: text-shadow 0.4s;
+}
+
+
+
+/* ----- segunda sección: twitch ----- */
+.section-two{
+    width: 100%;
+    height: auto;
+}
+.twitch-container{
+    width: 100%;
+    height: 300px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.twitch-transmision-container{
+    width: 50%;
+    height: 100%;
+    background-color: #8E8E8E;
+}
+
+/*le decimos que los iframe ocupen todo el div*/
+
+.twitch-transmision-container > iframe{
+    width: 100%;
+    height: 100%;
+}
+/**/
+.twitch-section-container{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.twitch-col-container{
+    width: 48%;
+    height: 100%;
+    border: 1px solid rgba(57, 57, 57, 0.748);
+    transition: transform 0.3s;
+}
+.twitch-col-container:hover{
+    transform: translateX(3px);
+    cursor: pointer;
+}
+.col-twitch-img:hover > img {
+    opacity: 1;
+}
+.col-twitch-img{
+    width: 100%;
+    height: 100%;
+
+}
+.col-twitch-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+/* ----- tercera sección: social ----- */
+.section-three{
+    width: 100%;
+    height: 260px;
+}
+.s3-notes{
+    width: 100%;
+    height: auto;
+}
+.s3-card-container{
+    width: 96%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: border 0.2s;
+}
+.col-4:hover > .s3-card-container {
+    border: 1px groove #1111;
+    cursor: pointer;
+}
+.s3-card-container:hover > img{
+    opacity: 1;
+}
+.s3-card-title{
+    width: 90%;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f0f0f0;
+    position: absolute; 
+    transition: text-shadow 0.4s;
+    /* font-family: 'Lato', sans-serif; */
+}
+.s3-card-title:hover{
+    text-shadow: 3px 3px 3px #1B1B1B;
+}
+
+/* ----- cuarta sección: series ----- */
+.section-four{
+    width: 100%;
+    height: auto;
+}
+.s4-card-container{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.s4-card{
+    width: 24%; /*255px*/
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    transition: border 0.4s;
+}
+.s4-card:hover{
+    cursor: pointer;
+    border: 0.1px groove #111111;
+}
+.s4-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    object-position: center;
+    transition: opacity 0.4s;
+}
+.s4-card:hover > img{
+    opacity: 1;
+}
+.s4-button{
+    position: absolute;
+    background-color: #7845C3; 
+    font-size: 12px;
+    border: 0; 
+    outline: 0; 
+    padding: 8px; 
+    color: #f0f0f0; 
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px rgba(17, 17, 17, 0.592);
+    transition: background-color 0.3s;
+}
+.s4-button:hover{
+    background-color: #935fe2;
+    cursor: pointer;
+}
+
+/* ----- quinta sección: marvel ----- */
+.section-five{
+    width: 100%;
+    height: 410px;
+}
+.s5-card{
+    width: 96%;
+    height: 350px;
+    background-color: #dddddd;
+    display: flex;
+    flex-flow: column nowrap;
+    column-gap: 25px;
+    transition: border 0.2s;
+}
+.s5-card:hover{
+    border: 1px solid #111;
+    cursor: pointer;
+}
+.s5-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.4s;
+}
+.s5-card:hover > img{
+    opacity: 1;
+}
+.s5-card-text{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-top: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 25px;
+}
+.s5-card-title{
+    font-size: 16px;
+    font-weight: 800;
+    color: #1B1B1B;
+    transition: color 0.3s;
+}
+.s5-card-editor{
+    font-size: 11px;
+    font-weight: 400;
+    color: #8E8E8E;
+    letter-spacing: 0.8px;
+    padding-bottom: 30px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+.s5-card-editor a{
+    color: #7845C3;
+}
+.s5-card-editor a:hover{
+    color: #E17636;
+    font-weight: bolder;
+}
+
+/* ----- sexta sección: youtube ----- */
+.section-six{
+    width: 100%;
+    height: auto;
+}
+.s6-videos{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.s6-video-xl-container{
+    width: 32.5%;
+    height: 100%;
+    transition: border 0.2s;
+}
+.s6-video-xl-container:hover{
+    border: 1px solid #111;
+}
+.s6-video-xl{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+}
+.s6-video-xl:hover{
+    opacity: 1;
+}
+
+/* ------ septima sección: videojuegos ------ */
+.section-seven{
+    width: 100%;
+    height: 260px;
+}
+
+/* ----- octava sección: otros temas ------ */
+.section-eight{
+    width: 100%;
+    height: auto;
+}
+.s8-notes-container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.s8-xl-note{
+    width: 30.5%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    row-gap: 1rem;
+    transition: transform 0.3s;
+}
+.s8-xl-note:hover, .s8-s-note:hover{
+    transform: translateX(3px);
+    cursor: pointer;
+}
+.s8-xl-note:hover > img, .s8-s-note:hover > img {
+    opacity: 1;
+}
+.s8-s-notes-container{
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.s8-s-note{
+    width: 49%;
+    height: 48%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: transform 0.3s;
+}
