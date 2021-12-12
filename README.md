@@ -1,2 +1,2 @@
 # tdmm2
-Trabajos prácticos de Taller de Diseño Multimedal 2
+Trabajo Práctico 2: Rediseño de una página web
