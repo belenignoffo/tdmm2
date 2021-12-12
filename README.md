@@ -1,2 +1,2 @@
 # tdmm2
-Trabajo Práctico 2: Rediseño de una página web
+Trabajo Práctico 1: Landing page
