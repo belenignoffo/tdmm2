@@ -1,0 +1,133 @@
+.dataprovincia, .grafico-provincia, .slidesder, #galeriaespecies{
+    display: none;
+}
+
+.dataprovincia.mostrar, .grafico-provincia.mostrar, .barralateralba.mostrar, .slidesder.mostrar,
+#galeriaespecies.mostrar, .slidescasos{
+    display: flex;
+}
+.casosprueba{
+  display: none;
+}
+.filtro-casos .boton-disabled{
+  fill: grey;
+}
+.botonmapa{
+  opacity: 0;
+}
+.casospurueba{
+  display: none;
+}
+.botonmapa.opacity{
+  opacity: 1;
+  animation: name-of-animation 0.3s 1;
+}
+.botonpcia.pciaselected{
+  padding: 10px;
+  fill: #2d6673;
+}
+.tarjetaszoos.tarjetaselected,
+.tarjetascasos.tarjetaselected{
+  background-color: #2d6673;
+}
+.zoomin{
+    position: relative;
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.pciaselected{
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+              /* left: 0; */
+              right: 0;
+              top: 0;
+              
+    }
+    100% {
+      -webkit-transform: scale(5);
+              transform: scale(5);
+              /* left: 200px; */
+              right: 300px;
+              top: 330px;
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+              /* left: 0; */
+              right: 0;
+              top: 0;
+    }
+    100% {
+      -webkit-transform: scale(5);
+              transform: scale(5);
+              /* left: 200px; */
+              top: 330px;
+              right: 300px;
+    }
+  }
+  
+
+  .zoomout{
+    position: relative;
+    -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 1;
+    top: 330px;
+    right: 300px;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    right: 0;
+    top: 0;
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 1;
+    top: 330px;
+    right: 300px;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    right: 0;
+    top: 0;
+  }
+}
+.barralateralppal{
+  display: flex;
+}
+.barralateralba{
+  display: none;
+}
+.ocultar{
+  display: none;
+}
+.fill{
+  fill: blue;
+}
+@keyframes name-of-animation {
+  0%    { opacity: 0; }
+  50%   { opacity: 0.5; }
+  100%  { opacity: 1; }
+}

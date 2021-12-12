@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Ralewey', sans-serif;
+    overflow-x: hidden;
+}
+
+/* --- Primeras dos pantallas --- */
+.body_titulo{
+    background: rgb(27,52,59);
+    background: -moz-linear-gradient(167deg, rgba(27,52,59,1) 0%, rgba(7,14,15,1) 55%, rgba(1,1,1,1) 100%);
+    background: -webkit-linear-gradient(167deg, rgba(27,52,59,1) 0%, rgba(7,14,15,1) 55%, rgba(1,1,1,1) 100%);
+    background: linear-gradient(167deg, rgba(27,52,59,1) 0%, rgba(7,14,15,1) 55%, rgba(1,1,1,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b343b",endColorstr="#010101",GradientType=1);
+}
+.title span{
+    color: #B12222;
+}
+.arrow_bg{
+    background-color: rgba(20, 24, 28, 1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.arrow_bg:hover{
+    background-color: rgb(60, 72, 83);
+    color: #fff;
+}
+.input-answer{
+    width: 25%;  
+    background-color: rgb(52, 52, 52);
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.input-answer:focus{
+    /* outline: 2px solid rgb(60, 72, 83); */
+    border: none;
+    outline: none;
+}
+
+/* Pantalla principal del mapa */
+.mapa, .barra_lateral{
+    background-color: #0B0F13;
+}
+.mapaarg{
+    width: 20%;
+    padding-top: 30px;
+    position: fixed;
+    left: 55%;
+}
+.cls-1:hover{
+    fill: #2d6673;
+    /* cursor: pointer; */
+}
+.cls-1{
+    fill:#1d2430;
+    stroke:#0b0f13;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:2px;
+}
+.cls-2{
+    fill:#e2b71f;
+}
+.cls-3,.cls-6{
+    fill:#fff;
+}
+.cls-4{
+    fill: #b12222;
+    }
+.cls-5{
+    fill:#1d9b2a;
+}
+.cls-6{
+    fill-rule:evenodd;
+}
+.cls-7{
+    fill: #1d2430;
+}
+.cls-7:hover{
+    fill: #1d2430;
+}
+.bg_cards{
+    background-color: #14181c;
+}
+
+.notas_relevantes{
+    transition: background-color 0.3s;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 5px;
+}
+.notas_relevantes:hover{
+    background-color: #242c33;
+}
+.linknota{
+    transition: color 0.2s;
+}
+.linknota:hover{
+    color: #4593a5;
+    cursor: pointer;
+}
+
+/* Pantalla mapa ecoparques */
+/* Lista de años */
+.select {
+    position: relative;
+    width: 24%;
+}    
+
+.select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    border-bottom: 1px solid rgb(44, 44, 44);
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 5px 10px 15px;
+    outline: 0;
+    border-radius: 0px;
+    background: #14181c;
+    color: #dcdddd;
+}
+.select select::-ms-expand {
+    display: none;
+}
+.select select:hover,
+.select select:focus {
+    color: #dcdddd;
+    background: #14181c;
+}
+.select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.select_arrow {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #dcdddd transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #dcdddd;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #fff;
+}
+/*Barras del gráfico de Ecoparque*/
+.eco_barraSeleccionada{
+    fill: #1D9B2A;
+    opacity: 1;
+}
+.eco_barraNoSeleccionada{
+    fill: #1D9B2A;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+.eco_barraNoSeleccionada:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.eco_barraSeleccionada:hover{
+    cursor: pointer;
+}
+
+/*Pantalla mapa zoológicos*/
+/*Barras del gráfico de Zoológicos*/
+.zoo_barraSeleccionada{
+    fill: #E2B71F;
+    opacity: 1;
+}
+.zoo_barraNoSeleccionada{
+    fill: #E2B71F;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+.zoo_barraNoSeleccionada:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.zoo_barraSeleccionada:hover{
+    cursor: pointer;
+}
+
+/*Pantalla mapa Casos*/
+/*Barras del gráfico de Casos*/
+.casos_barraSeleccionada{
+    fill: #B12222;
+    opacity: 1;
+}
+.casos_barraNoSeleccionada{
+    fill: #B12222;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+.casos_barraNoSeleccionada:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.casos_barraSeleccionada:hover{
+    cursor: pointer;
+}
+.color-subtitulos-tarjetas{
+    color: #8a8c8e;
+    font-size: 10px;
+}
+
+/*Pantalla provincias*/
+/*Barras del gráfico de Provincias*/
+.pcia_barraSeleccionada{
+    fill: #4593A5;
+    opacity: 1;
+}
+.pcia_barraNoSeleccionada{
+    fill: #4593A5;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+.pcia_barraNoSeleccionada:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.pcia_barraSeleccionada:hover{
+    cursor: pointer;
+}
+
+/*Pantalla casos*/
+.fondocasos{
+  background-color: #390B0B;
+  /* position: -webkit-sticky; */
+}
+/* #caso-1{
+    display: none;
+} */
+#caso-1{
+    display: none;
+}
+.mostrar{
+    display: fixed;
+}
+/*Pantalla Ecoparques */
+.fondoecoparques{
+    background-color: #1A231B;
+}
+/* Estilos del scroll horizontal */
+.container-scroll{ /* Clase contenedora */
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.scroll-horizontal{ /* Clase en la que va el scroll - tiene que tener su width > 100%*/
+    width: 120%;
+}
+.scroll-horizontal img{ /* Tamaño de la imagen - es diferente del .scroll-horizontal para que no quede gigante */
+    min-width: 100%;
+}
+.container-scroll::-webkit-scrollbar { /* Tam de la barra */
+    height: 2em;
+  }
+.container-scroll::-webkit-scrollbar-track { /* Color del la barra más larga */
+    background-color: #1A231B;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+  }
+
+  .container-scroll::-webkit-scrollbar-thumb { /* Color de la barra que se crollea */
+    border-radius: 100vw;
+    background-color: #3CA45C;
+    border: 10px solid #1A231B;
+  }
+  .container-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #2f8047;
+    cursor: pointer;
+  }
+  .individual-scroll_1{
+    overflow-y: scroll; height: auto;
+  }
+  .individual-scroll_1::-webkit-scrollbar{
+      height: 2em; 
+      width: 0.8em;
+      background-color: #000;
+  }
+  .individual-scroll_1::-webkit-scrollbar-thumb{
+      background-color: rgb(128, 128, 128);
+      border: 5px solid #000;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+  }
+  .individual-scroll_1::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(169, 169, 169);
+  }
+  /* Zoológicos */
+.fondozoos{
+    background-color: #1F1F1F;
+}
+/* pantalla zoologicos*/
+
+.fondozoologicos {
+    background-color: #1F1F1F;
+}
+
+
+/* Estilos del scrollZoo horizontal */
+
+.container-scrollZoo {
+    /* Clase contenedora */
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.scrollZoo-horizontal {
+    /* Clase en la que va el scroll - tiene que tener su width > 100%*/
+    width: 120%;
+}
+
+.scrollZoo-horizontal img {
+    /* Tamaño de la imagen - es diferente del .scroll-horizontal para que no quede gigante */
+    min-width: 100%;
+}
+
+.container-scrollZoo::-webkit-scrollbar {
+    /* Tam de la barra */
+    height: 2em;
+}
+
+.container-scrollZoo::-webkit-scrollbar-track {
+    /* Color del la barra más larga */
+    background-color: #1F1F1F;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+.container-scrollZoo::-webkit-scrollbar-thumb {
+    /* Color de la barra que se crollea */
+    border-radius: 100vw;
+    background-color: #C2A716;
+    border: 10px solid #1F1F1F;
+}
+
+.container-scrollZoo::-webkit-scrollbar-thumb:hover {
+    background-color: #83700D;
+    cursor: pointer;
+}
+
+/* ZOOS DIVIDERS */
+.custom-shape-divider-bottom-1638809177 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1638809177 svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 106px;
+}
+
+.custom-shape-divider-bottom-1638809177 .shape-fill {
+    fill: #C2A716;
+}
+.custom-shape-divider-bottom-1638811086 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1638811086 svg {
+    position: relative;
+    display: block;
+    width: calc(224% + 1.3px);
+    height: 75px;
+}
+
+.custom-shape-divider-bottom-1638811086 .shape-fill {
+    fill: #83700D;
+}
+  /**/
+
+ /* Estilos del primer divider */
+ .custom-shape-divider-bottom-1638379671 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1638379671 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 78px;
+}
+.custom-shape-divider-bottom-1638379671 .shape-fill {
+    fill: #2E8248;
+}
+ /* Estilos del último divider */
+  .custom-shape-divider-bottom-1638634630 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1638634630 svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 87px;
+}
+
+.custom-shape-divider-bottom-1638634630 .shape-fill {
+    fill: #395813;
+}
+
+/*Buenos Aires*/
+.boton_vercasos{
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background-color: #4593a589; 
+    border-radius: 30px; 
+    width: 100%;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.boton_vercasos:hover,
+.boton_verespecies:hover{
+    background-color: #4593a5;
+}
+.boton_verespecies{
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-top: 2px; 
+    padding-bottom: 2px; 
+    background-color: #4593a589; 
+    border-radius: 30px; 
+    width: 80%;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+.mapabazoomeado{
+    position: relative;
+    top: 330px;
+    right: 300px;
+    transform: scale(5);
+  }
+  .mapabazoomeado #boton-23{
+    fill: #2d6673;
+  }
+
+  .hover-especies{
+      opacity: 0;
+      transition: opacity 0.2s;
+  }
+  .hover-especies:hover{
+      opacity: 1;
+  }
+
+  .custom-shape-divider-top-1638809086 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1638809086 svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 106px;
+}
+
+.custom-shape-divider-top-1638809086 .shape-fill {
+    fill: #C2A716;
+}
