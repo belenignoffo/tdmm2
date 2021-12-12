@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,500;1,500&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.firstSection, .footer{
+    background: rgb(167,169,174);
+    background: -moz-linear-gradient(90deg, rgba(167,169,174,1) 0%, rgba(222,223,229,1) 69%, rgba(167,169,174,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(167,169,174,1) 0%, rgba(222,223,229,1) 69%, rgba(167,169,174,1) 100%);
+    background: linear-gradient(90deg, rgba(167,169,174,1) 0%, rgba(222,223,229,1) 69%, rgba(167,169,174,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a7a9ae",endColorstr="#a7a9ae",GradientType=1);
+}
+.firstSectionTitle, .firstSectionText, .secondSectionAAside, .secondSection,
+.photoTitle, .photoText{
+    color: #202021;
+}
+.firstSectionButtons a{
+    text-decoration: none;
+}
+.firstSectionButton1, .firstSectionButton2{
+    color: #fff;
+    font-weight: lighter;
+}
+.navLogo, .formLogo{   
+    font-family: 'Livvic', sans-serif;
+    font-weight: bolder;
+}
+.secondSection, .sectionPhoto{
+    background: rgb(224,227,231);
+    background: -moz-linear-gradient(16deg, rgba(224,227,231,1) 0%, rgba(243,244,250,1) 32%, rgba(224,227,231,1) 100%);
+    background: -webkit-linear-gradient(16deg, rgba(224,227,231,1) 0%, rgba(243,244,250,1) 32%, rgba(224,227,231,1) 100%);
+    background: linear-gradient(16deg, rgba(224,227,231,1) 0%, rgba(243,244,250,1) 32%, rgba(224,227,231,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e3e7",endColorstr="#e0e3e7",GradientType=1);
+}
+.lastSectionButton a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+.footerNav a{
+    text-decoration: none;
+    color: #202021;
+}
+.footerNav a:hover{
+    color: #27978d;
+}
+.firstSectionButtons a:hover{
+    font-weight: bolder;
+}
+.lastSectionButton a:hover{
+    font-weight: bolder;
+}
+/*  */
+
+.main-container{
+    width: 100%;
+    height: 500px;
+    display: block;
+    background-color: aqua;
+}
+
+/*------- FIRST SECTION -------*/
+
+.firstSection{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 80px;
+}
+.navLogo{
+    width: 100%;
+    padding-top: 10px;
+    font-size: 28px;
+    color: #fff;
+}
+.firstSectionContainer{
+    width: 100%;
+    display: flex;
+}
+.firstSectionContent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.firstSectionAside{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.firstSectionTitle{
+    font-size: 45px;
+}
+.firstSectionText{
+    font-size: 28px;
+    font-weight:lighter;
+    padding-bottom: 10px;
+}
+.firstSectionImg{
+    width: 35%;
+    margin-top: 50px;
+}
+.firstSectionButtons{
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.firstSectionButton1{
+    background-color: #797b7e;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+}
+.firstSectionButton2{
+    background-color: #27978d;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+}
+
+/*------- SECOND SECTION -------*/
+.secondSection{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.secondSectionContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------- A -------*/
+.secondSectionA{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+}
+.secondSectionAImg{
+    width: 35%;
+    margin-top: 35px;
+    align-self: center;
+}
+.secondSectionAAside{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondSectionATitle{
+    font-size: 30px;
+}
+.secondSectionAText{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+/*------- B -------*/
+.secondSectionB{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+.secondSectionBTitle{
+    font-size: 26px;
+    width: 100%;
+}
+.sectionCards{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+.cards{
+    width: 345px;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 50px;
+}
+.cardImg{
+    width: 40%;
+}
+.cardImgB{
+    width: 26%;
+}
+.cardTitle{
+    font-size: 21px;
+    height: 50px;
+    font-weight: bolder;
+}
+.cardText{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/*------- FORM SECTION -------*/
+.sectionForm{
+    width: 100%;
+    display: flex;
+    background-image:url("../img/fondo-form.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.formContainer{
+    width: 90%;
+    height: 90%;
+    margin:auto;
+    display: flex;
+    flex-flow: column nowrap;
+    background: #202021;
+    color: #fff;
+    padding-bottom: 50px;
+    opacity: 0.95;
+}
+.formHeader{
+    width: 100%;
+    text-align: center;  
+}
+.formHeaderTitle{
+    font-size:24px;
+}
+.formHeaderText{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.inputContainer{
+    width:65%;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.inputBox{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.inputBox label{
+    font-style: italic;
+    font-style: lighter;
+}
+.inputBox input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid white;
+    padding: 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #27978d;  
+}
+.inputSubmit{
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+    background-color: #27978d;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    color: #fff;
+}
+
+/*------- FORM MESSAGE -------*/
+.formMessage{
+    width: 100%;
+    display: none;
+    height: 700px;
+}
+.messageContainer{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background: #202021;
+    color: #fff;
+    padding-bottom: 50px;
+    opacity: 0.95;
+}
+.form-close{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+.form-close img{
+    width: 2%;
+    cursor: pointer;
+}
+.messageText{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.messageText span{
+    font-family: 'Livvic', sans-serif;
+}
+.t{
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/*------- PHOTO SECTION -------*/
+.sectionPhoto{
+    width: 100%;
+    display: flex;
+}
+.photoContainer{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+}
+.photoImg{
+    width: 55%;
+}
+.photoImg img{
+    width: 100%;
+}
+.photoAside{
+    width: 40%;
+    margin-left: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.photoTitle{
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bolder;
+}
+.photoText{
+    width:90%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    margin: auto;
+}
+
+/*------- LAST SECTION -------*/
+.lastSection{
+    width: 100%;
+    height: 300px;
+    background-image:url("../img/bici-msj.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: column nowrap;
+    justify-content: center;
+}
+.lastSectionContainer{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;  
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+.lastSectionTitle{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.lastSectionText{
+    font-size: 19px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+.lastSectionButton{
+    width: 20%;
+    background-color: #27978d;
+    padding: 15px;
+}
+
+/*------- FOOTER -------*/
+.footer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.footerContainer{
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;;
+}
+.footerNav{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerLogo{
+    width: 35%;
+    height: 200px;
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bolder;
+}
+/*------- MEDIA QUERIES -------*/
+
+@media (max-width: 1000px){
+    .firstSectionAside{
+        width: 80%;
+        justify-content: space-between;
+    }
+    .firstSectionTitle{
+        font-size: 40px;
+    }
+    .firstSectionButtons{
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .firstSectionImg{
+        width: 60%;
+        align-self: center;
+    }
+    .secondSectionA{
+        flex-wrap: wrap-reverse;
+    }
+    .secondSectionAAside{
+        width: 80%;
+    }
+    .secondSectionAImg{
+        width: 65%;
+    }
+    .secondSectionBTitle{
+        width: 80%;
+    }
+    .cards{
+        margin-top: 30px;
+    }
+    .cardImg{
+        width: 35%;
+    }
+    .cardImgB{
+        width: 23%;
+    }
+    .cardTitle{
+        font-size: 20px;
+    }
+    .cardText{
+        font-size: 18px;
+    }
+    .formHeader{
+        width:85%;
+        margin: auto;   
+    }
+    .inputSubmit{
+        width: 33%;
+    }
+    .photoAside{
+        margin-left: 20px;
+    }
+    .photoTitle{
+        font-size: 24px;
+    }
+    .photoText{
+        font-size: 18px;
+    }
+    .lastSectionButton{
+        width: 25%;
+    }
+}
+@media(max-width: 830px){
+    .photoAside{
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .photoImg{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .lastSectionButton{
+        width: 35%;
+    }
+    .form-close img{
+        width: 4%;
+    }
+}
+@media (max-width: 700px){
+    .firstSectionTitle{
+        font-size: 35px;
+    }
+    .firstSectionText{
+        font-size: 25px;
+    }
+    .firstSectionImg{
+        width: 80%;
+    }
+    .firstSectionButtons{
+        width: 100%;
+    }
+    .secondSectionATitle{
+        width:100%;
+        font-size: 28px;
+        text-align: center;
+    }
+    .secondSectionAText{
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+    .formHeader{
+        width: 95%;
+        align-self: center;
+        margin-top: 30px;
+    }
+    .formHeaderText{
+        font-size: 18px;
+    }
+    .messageContainer{
+        height: 95%;
+        margin-top: 30px;
+    }
+    .t{
+        font-size: 20px;
+    }
+    .inputContainer{
+        width: 95%;
+    }
+    .sectionForm{
+        height: 750px;
+    }
+    .inputContainer{
+        width: 85%;
+    }
+    .inputBox{
+        width: 90%;
+    }
+    .inputSubmit{
+       width: 43%;
+    }
+    .photoText{
+        font-size: 18px;
+    }
+    .lastSectionContainer{
+        width: 85%;
+    }
+    .lastSectionTitle{
+        font-size: 20px;
+    }
+    .lastSectionText{
+        font-size: 16px;
+    }
+    .lastSectionButton{
+        width: 50%;
+    }
+    .footerA{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .footerNav{
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .footerLogo{
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+    }
+}
+@media (max-width: 550px){
+    .firstSectionTitle{
+        font-size: 30px;
+    }
+    .firstSectionText{
+        font-size: 24px;
+    }
+    .firstSectionImg{
+        width: 95%;
+        margin-top: 30px;
+    }
+    .firstSectionButtons{
+        height: 110px;
+        align-content: space-between;    
+        font-size: 16px;
+    }
+    .firstSectionButton1{
+        width: 100%;
+        padding: 15px;
+    }
+    .firstSectionButton2{
+        width: 100%;
+        padding: 15px;
+    }
+    .secondSectionAAside{
+        width: 85%;
+    }
+    .secondSectionAText{
+        width: 100%;
+        font-size: 20px;
+    }
+    .secondSectionAImg{
+        width: 90%;
+        margin-top: 15px;
+    }
+    .secondSectionBTitle{
+        font-size: 22px;
+    }
+    .cardTitle{
+        font-size: 18px;
+    }
+    .sectionForm{
+        height: 800px;
+    }
+    .formHeader{
+        width: 85%;
+    }
+    .inputSubmit{
+        width: 50%;
+    }
+    .photoTitle{
+        font-size: 22px;
+    }
+    .photoImg{
+      padding-top: 6px;
+      padding-bottom: 6px;  
+    }
+    .lastSectionButton{
+        width: 70%;
+    }
+    .form-close img{
+        width: 5%;
+    }
+}
+@media (max-width: 360px){
+    .formContainer{
+        padding-bottom: 50px;
+    }
+    .sectionForm{
+        height: 800px;
+    }
+    .inputContainer{
+        width: 90%;
+    }
+    .inputBox input{
+        width: 80%;
+    }
+    .inputSubmit{
+        width: 90%;
+    }
+    .formHeaderText{
+        font-size: 17px;
+    }
+    .inputText{
+        font-size: 16px;
+    }
+    .photoText{
+        font-size: 16px;
+    }
+    .lastSectionContainer{
+        width: 80%;
+    }
+    .footerA{
+        font-size: 16px;
+    }
+    .form-close{
+        height: 2%;
+    }
+    .form-close img{
+        width: 7%;
+    }
+    .t{
+        font-size: 16px;
+    }
+}

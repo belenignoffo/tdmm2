@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>TP01 - Landing Page</title>
+</head>
+<body>
+    <main class="main-container">
+        <section class="firstSection">
+            <div class="firstSectionContainer">
+                <div class="firstSectionContent">
+                    <div class="firstSectionAside">
+                        <div>
+                            <header class="navLogo">
+                                <span style="color: #27978d"><i>e</i></span><span>rider</span>
+                            </header>                
+                            <div class="firstSectionTitle">
+                                <h1>Mejora tus días con nuestra nueva e-bike</h1>
+                            </div>
+                            <div class="firstSectionText">
+                                <p>Tu bicicleta urbana eléctrica preferida, ahora smart.</p>
+                            </div>
+                            <div class="firstSectionButtons">
+                                <a href="#informacion" class="firstSectionButton1">SABER MÁS</a>
+                                <a href="#formulario" class="firstSectionButton2">RESERVAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/bici-header.png" class="firstSectionImg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="secondSectionContainer">
+                <div class="secondSectionA">
+                    <img src="img/bicis.png" class="secondSectionAImg" alt="">
+                    <div class="secondSectionAAside">
+                        <div class="secondSectionATitle">
+                            <h3>Wheel-<i><span style="color: #27978d">C</span></i>, una tecnología más sofisticada</h3>
+                        </div>
+                        <div class="secondSectionAText">
+                            <p>Movilidad eléctrica, sustentable e inteligente en Argentina.</p>
+                        </div>
+                    </div>                             
+                </div>
+                <div class="secondSectionB">
+                    <div class="secondSectionBTitle" id="informacion">
+                        <h3>¿Por qué te conviene Wheel-<span style="color:#27978d"><i>C</i></span>?</h3>
+                    </div>
+                    <div class="sectionCards">
+                        <div class="cards">
+                            <div class="cardImgB">
+                                <img src="img/bateria.svg" alt="">
+                            </div>
+                            <div class="cardTitle">
+                                <p>AUTONOMÍA</p>
+                            </div>
+                            <div class="cardText">
+                                <p>Las baterías de litio te permiten recorrer hasta 50km por carga.</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="cardImg">
+                                <img src="img/reloj.svg" alt="">
+                            </div>
+                            <div class="cardTitle">
+                                <p>VELOCIDAD</p>
+                            </div>
+                            <div class="cardText">
+                                <p>Podés alcanzar una velocidad desde 25 hasta 52km/h.</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="cardImg">
+                                <img src="img/reciclar.svg" alt="">
+                            </div>
+                            <div class="cardTitle">
+                                <p>EMISIONES</p>
+                            </div>
+                            <div class="cardText">
+                                <p>No emite monóxido de carbono ni contaminación sonora. ¡Es eco-friendly!</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="cardImg">
+                                <img src="img/telefono.svg" alt="">
+                            </div>
+                            <div class="cardTitle">
+                                <p>SMART</p>
+                            </div>
+                            <div class="cardText">
+                                <p>Cuenta con una app exclusiva que te permite disfrutar un mundo de funcionalidades.</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="cardImg">
+                                <img src="img/diamante.svg" alt="">
+                            </div>
+                            <div class="cardTitle">
+                                <p>DISEÑO EXCLUSIVO</p>
+                            </div>
+                            <div class="cardText">
+                                <p>Su cuadro hecho de fibra de carbono la convierte en ultraliviana.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sectionForm">
+            <div class="formContainer" id="formulario" autocomplete="off">
+                <div class="formHeader">
+                    <div class="formHeaderTitle">
+                        <p>RESERVA TU <span class="formLogo"><i><span style="color:#27978d">e</span></i>rider</span></p>
+                    </div>
+                    <div class="formHeaderText">
+                        <p>Suscribite a nuestra página, <b>congela el precio</b> y llevate el <b>primer service de regalo.</b></p>
+                    </div>
+                </div>
+                    <form action="" class="inputContainer">
+                        <div class="inputBox">
+                            <label>Nombre</label>
+                            <input type="text" id="ingresa-nombre" required>
+                        </div>
+                        <div class="inputBox">
+                            <label>Correo electrónico</label>
+                            <input type="email" id="ingresa-mail" required>
+                        </div>
+                        <div class="inputBox">
+                            <label>Provincia</label>
+                            <input type="text" id="ingresa-provincia" required>
+                        </div>
+                        <div class="inputBox">
+                            <label>Ciudad</label>
+                            <input type="text" id="ingresa-ciudad" required>
+                        </div>
+                            <input type="submit" class="inputSubmit" value="ENVIAR">
+                    </form>
+            </div>
+            <div class="formMessage">
+                <div class="messageContainer">
+                    <div class="form-close">
+                        <img id="close" src="img/cerrar.svg" alt="">
+                    </div>
+                    <div class="messageText">
+                        <p class="t">¡Gracias por suscribirte a <span><b><i><span style="color: #27978d;">e</span></i>rider</b></span>, <output id="ingresa-nombre2"></output>!</p>
+                        <p class="t">Un representante de la ciudad de <output id="ingresa-ciudad2"></output> se pondrá en contacto a la brevedad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sectionPhoto">
+            <div class="photoContainer">
+                <div class="photoImg">
+                    <img src="img/img-galeria.jpg" alt="">
+                </div>              
+                <div class="photoAside">
+                    <div>
+                        <p class="photoTitle">Una experiencia <span style="color:#27978d">diferente</span></p>
+                    </div>
+                    <div>
+                        <p class="photoText">Con la ayuda de la aplicación <b>Hyper Smart</b>, podés realizar viajes guiados, y verificar el estado de la batería y del rodado cuando lo desees.</p>        
+                    </div>
+                    <div>
+                        <p class="photoTitle">Y un diseño <span style="color:#27978d">único</span></p>
+                    </div>
+                    <div>
+                        <p class="photoText">Su diseño basado en <i>fibras de carbono</i> no sólo la convierte en la ebike más ligera del mercado, ¡También en la más ágil!</p>        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lastSection">
+            <div class="lastSectionContainer">
+                <div class="lastSectionTitle"><p>¡NO TE QUEDES SIN TU EBIKE!</p></div>
+                <div class="lastSectionText">Aprovechá esta oportunidad, suscribite y accedé a increíbles beneficios.</div>
+                <div class="lastSectionButton"> <a href="#formulario">QUIERO MI WHEEL-C</a> </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footerContainer">
+                <div class="footerNav">
+                    <a href="" class="footerA">Vehículos</a>
+                    <a href="" class="footerA">Quiénes somos</a>
+                    <a href="" class="footerA">Tienda online</a>
+                    <a href="" class="footerA">Contacto</a>
+                </div>
+                <div class="footerLogo">
+                    <p><i><span style="color:#27978d">e</span></i>rider</p>
+                </div>
+            </div>
+        </footer>
+        <!-- FIN DEL MAIN -->
+    </main>
+<!-- FIN DEL BODY -->
+<script src="js/index.js"></script>
+</body>
+</html>
