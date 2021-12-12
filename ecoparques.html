@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prueba.css">
+    <title>Trabajo práctico final</title>
+
+
+</head>
+<body class="grid grid-cols-12 h-screen text-gray-50">
+      <!-- Columna lateral izquierda -->
+    <div class="sm:col-span-6 lg:col-span-4 barra_lateral z-10 individual-scroll_1">
+        <div class="w-full flex flex-col flex-nowrap gap-y-4" style="z-index: 5;">
+            <!-- Primera tarjeta: título -->
+            <div class="px-10 pb-8 pt-12  flex flex-col flex-nowrap gap-y-4 bg_cards">
+                <p class="uppercase font-medium tracking-wide text-xs">En argentina</p>
+                <div class="flex flex-nowrap gap-x-4 items-center">
+                    <p class="sm:text-5xl lg:text-7xl font-black" style="color: #1D9B2A">25</p>
+                    <div class="flex flex-col flex-nowrap">
+                        <p class="sm:text-xl lg:text-3xl font-black uppercase" style="color: #1D9B2A">Ecoparques</p>
+                        <p class="sm:text-base lg:text-base font-normal">actualmente en el país</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda tarjeta: ¿Qué es un ecoparque? -->
+            <div class="px-10 py-8   flex flex-col flex-nowrap gap-y-5 bg_cards">
+                <h4 class="uppercase tracking-wide font-semibold text-base text-gray-400">¿Qué es un ecoparque?</span></h4>  
+                <p class="font-normal text-justify sm:text-sm lg:text-sm" style="width: 98%">
+                    Es un espacio para promover la educación ambiental a través de experiencias recreativas y educativas, fomentando el respeto al patrimonio natural y la rehabilitación de las especies.
+                </p>            
+            </div>
+            <!-- Tercera tarjeta: Ecoparques en BA  -->
+            <div class="px-10 py-8 flex flex-col flex-nowrap gap-y-10 bg_cards h-auto">
+                <h4 class="uppercase tracking-wide font-semibold text-base text-gray-400">Ecoparques en Buenos Aires</h4>
+                <!-- Eco 1 -->
+                <a href="eco_kooch.html">
+                    <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/zorro-eco-kooch.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Ecoparque Kooch</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >10 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+1 caso</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Eco 2 -->
+                <a href="eco_ba.html">
+                    <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800  justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/reptil-eco-ba.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Ecoparque de Buenos Aires</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/monkey_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+790 animales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >18 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/visitantes_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >20 mil visitantes anuales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+6 casos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Eco 3 -->
+                <a href="eco_baradero.html">
+                    <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/aguila-reserva-baradero.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva natural baradero</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eco 4 -->
+                </a>
+                <a href="eco_huellas.html">
+                    <div class="flex flex-nowrap mt-6 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/huron-huellasnaturaleza.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Huellas de la Naturaleza</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >10 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Cuarta tarjeta: Ecoparques ARG-->
+            <div class="px-10 py-8 flex flex-col flex-nowrap gap-y-10 bg_cards h-auto">
+                <h4 class="uppercase tracking-wide font-semibold text-base text-gray-400">Ecoparques en Argentina</h4>
+                <!-- Eco 1 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco1.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Ecoparque de Mendoza</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Mendoza</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.mendoza.gov.ar/ecoparque/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 2 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco2.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque Lihue Calel</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">La Pampa</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.argentina.gob.ar/parquesnacionales/lihuecalel" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 3 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco3.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Luro</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">La Pampa</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.google.com/search?q=parque+luro+la+pampa&rlz=1C1ALOY_esAR958AR958&oq=luro+la+pampa&aqs=chrome.1.69i57j0i22i30l4.3803j0j4&sourceid=chrome&ie=UTF-8" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 4 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco4.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva de Flora y Fauna La Florida</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">San Luis</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://eltrapichesanluis.com.ar/reserva-floro-faunistica/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 5-->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco5.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Faunística Ullum</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">San Juan</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.diariodecuyo.com.ar/sanjuan/En-el-Faunistico-los-animales-celebran-su-dia-en-paz-ambiental-20200428-0097.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 6 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco6.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Fitozoológica Dr. Carlos Pellegrini</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Tucumán</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://www.pellegrinituc.com.ar/imagenes/Reserva2/reserva3.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 7 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco7.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva de Horco Molle</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Tucumán</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://www.reservahorcomolle.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 8 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco8.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Estación de Fauna Autóctona</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Salta</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://ambiente.salta.gov.ar/noticia/3/visita-a-la-estacion-de-fauna-autoctona-y-la-reserva-finca-las-costas.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 9 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco9.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Natural Aldea Luna</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Juju</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.aldealuna.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 10 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco10.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Guaycolec</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Formosa</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://www.formosahermosa.gob.ar/guaycolec/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 11 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco11.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Centro de Conservación Aguará</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Corrientes</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://turismo.corrientes.gob.ar/noticia/el-centro-de-conservacion-aguara-amplia-sus-propuestas-de-visitas" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 12 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco12.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque Ecológico El Puma</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Misiones</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://ecologia.misiones.gob.ar/parque-ecologico-el-puma/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 13 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco13.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Jardín de Los pájaros</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Misiones</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://misionesonline.net/2021/07/11/jardin-de-los-pajaros-de-obera/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 14 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco14.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Centro de rehabilitación guiraoga</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Misiones</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.guiraoga.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 15 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco15.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Fundación Tekovemymba</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Entre Ríos</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.unoentrerios.com.ar/la-provincia/viven-300-ejemplares-el-santuario-animales-colon-n2657269.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 16 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco16.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Centro de Rehabilitación mundo aparte</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Santa Fe</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://mundoaparterosario.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 17 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco17.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Privada Wildermuth</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Santa Fe</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://fundacionfw.org.ar/reserva/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 18 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco18.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque de la Biodiversidad</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://cordoba.gob.ar/tag/parque-de-la-biodiversidad/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 19 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco19.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva faunística Pumakawa</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://pumakawa.org/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 20 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco20.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Causachi </p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.na-sa.com.ar/es/prensa/la-reserva-causachi-sigue-creciendo" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 21 -->
+                <div class="flex flex-nowrap mt-6 pb-6  justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco21.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque ecológico urbano</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.turismocordoba.com.ar/riocuarto/parque-ecologico-urbano.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin de la columna -->
+    </div>
+    <div class="sm:col-span-7 lg:col-span-8 mapa relative">
+        <div class="fixed flex flex-col flex-nowrap gap-y-10 right-12 cursor-pointer" style="bottom: 12%; z-index:12;" id="botones-mapagral">
+            <a href="pantalla_principal.html">
+                <div class="w-14 h-8" id="">
+                    <img src="img/boton-mapaarg.png" alt="" class="w-20">
+                </div>
+            </a>
+            <!-- Botón eco -->
+            <a href="ecoparques.html">
+                <div class="w-14 h-8">
+                    <img src="img/boton-eco.png" alt="">
+                </div>
+            </a>
+
+            <!-- Botón zoo -->
+            <a href="zoologicos.html">
+                <div class="w-14 h-8">
+                    <img src="img/boton-zoos-gris.png" alt="">
+                </div>
+            </a>
+            <!-- Botón casos -->
+            <a href="casos.html">
+                <div class="w-14 h-8">
+                    <img src="img/boton-casos-gris.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="fixed mapaarg">
+            <svg id="mapaargentina" class="mapaargentina" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 2201"><defs><style></style></defs>
+                <title>Argentina</title>
+                <a xlink:title="Tierra del Fuego">
+                    <path id="boton-1" class="cls-1 botonpcia" d="M248.1,2185.5l.6-2.8V2178l.5.5,1.2,2.3.4.8,1,1.2.4.7.2,1.3-.9.7Zm216.1-14.8.8.6.9-.6.3.5.7.1.7.4,1.5-.5.9.1.6.7.6.8.6.6h.6l.3-.8-.2-.9v-.7l.8-.3.3.2.7.9.5.1.4-.2.8-1h.5l.3.5.6,1.9.5.6.6-.1,1.5-1.3,5.5-1.6,1.7.6-.4.6,1,.3,1.1-.9,1-.7.7,1.3-1.1.9-.4.5-.4.7-.6,1.8-.4.6-.7.3-1,.1-.6.3-2.5,2.2-.6.1-.6-.4.3-.8.9-1.9.2-.5-.3-1.3-.6-.2-.7.6-.7.9-.7.7-.7.2-1.8-.1-.5-.2-.6.3-.2.3-.4,1.4-1.3.7-4.6.8-.3.9-.7.5-.8-.2-.6-.9.1-1,.3-1.2.6-2-.9.1-.4.2-.4.4-.7-.7-.6.1-1.1,1.1-2.7,1.8-.6.6-.9,1.2-.6.6-.8.4-.9.2h-1.7l.4-.9.3-.3v-.6h-.6l-.6.2-.5.4-.4.6.7.6-.7.6-2.4,1.2-.5.7-.8,1.7-.4.6-.9.3-2.6-.1-.6-.2-.3-.8.3-.6.5-.7.5-.9-4.5-3,.3-1.6,1.1-1,1.2-.9.5-.9.7-1,1.5.7,2.5,1.8,1-.2,3-1.3.9-.9-2.7-2.9-.5-1.3,1.3-.6.4.4,1.3,1.9.6.7,1.7.6.5-.2,1-.8.4-.2h.9l.4.5.2,1,.1,1.3.1.6.4.2.5-.2.1-.4-.1-1.1v-1.5l-.2-1.2.1-1.1.6-1.3.5.1.7.7Zm-215.5,5.8.3-69.1.1-22.8.2-45.1.1-22.3v-22.1l1.7,1.2.4.7,1,2.6.4.8,3.3,4.9,3.2,5.9.9,1.2,3.4,3.1,1.6,2.1,1.3,2.6,1,3.1,1.8,8.9.2,1.3-.3,1.3-.5-.8-.6-1.8-1.4-6-1.2-.7-1,.1-1.2.7-1.6,1.2-1.5,1.5-2.5,3.1-3,2.9-1.7,3.9-.5,2.9.7,3.1,2.1,2.4,2.9,2.5,2,.2,2.3.8,3.4.9,5.4-.5,3.9,2.5,1,2.6.7,1.7-.3,2.9.2.7.7,1.6.5,3.9.4,1.7,2.8,5.5.4,1.1,9.5,10.6,3.5,2.7,1.1,1.3.2,1.3-.5,1.3,1.3-.2,1.1-.2,1.5,1.1,3.6,1.9.4,1-1.3.4-.6,1.5.2,2,.6,1.2,13.7,12.5,7.9,5.9,5.7,2.8,3.3,2.2.9,1.6,1.8,1.1,7,3.1,3.3,3.3,2.4,5,5,5,1.3,2.2,1.8,1,.5,2.1,1.7.7,1.5.3,2.1.7,4.4,2.9,17.2,8.7.7.2,1.4.2.7.2,1.7,1.6.5.2,3.9.3,3.5,1,12-1.9,2.6.4h1.3l3.5-1.6,7.7,1.2.7.5-.4,1.3-1,1.2-.8.5-.4.8-1.5,4.6.2.5.3.9.2.5-1.7,1.6-.4.6.1.8.3,1v.9l-1.1.6-1.6,1.5-.4.6-1.3,5.3-.6.7-.8.5-.6.1-1.1-.3-.1-.7v-.9l-.3-1.1-1.3-.9-1.8.1-1.1.9.4,1.7-1.1,1.6-4.1-.4-1.7.5-.4.7-.2.9-.4.8-.7.6-1,.3-.8-.2-.7-.7-.5-1.1-.1-.5.1-1.2v-.7l-.5-1.1-.6-.1-1.9-.2-2.1.9-3.3-1.4-1.2,1-3.3-.8-1,.8.7,1.3,1.1,1.2-.9,1.5-1.2,1.3-3.4,1.1-2.8,1-4-.3-6,.2-2.8.9.2,1.5-.2,1.4-2.6.7-1.3.5-4.5-.1-4.5-1.7-1.5-.9-1-1.2-.9-1.4-.8-1-4.5-3.3-1.4-.5-5.7-.7-4.3-2-15.1-1.1-10.4-1.6-6.4.5-13.2-1.5L277,2182l-2.3-1.9-4.8-.5-2.7-1.7-1.5-.6-.6.8.2,2-.2.8-.7.8-9.6.9-1.3-.4-.9-.8-1.5-2.4-2.1-2.3-.3-.2Z" transform="translate(0 0)"/>
+                </a>
+                <a xlink:title="Santa Cruz">
+                    <path id="boton-2" class="cls-1 botonpcia" d="M301.8,1483.7l-1.6,5.2-.4,2-.1,2.2.1,2.4,2.4,11.5,1.7,5.7,1.1,2.7,4.8,9.4,4.3,4.2,4,1.4.5.6.7,1.4,2,1.4,2,.5,1.1.7.8,2.1,1.6,1.6,1.8,2.8.7,1.7.5.1.7.1.5.2.4,1.1.4.2.6.4,4.4,5.2,2.9,4.6,2,1.8,4.3,2.3,1.9-.1,1.6,1.1,2.1-.7,1,.5,1-.1,1.1-.3,1-.1.8.3,1.7,1,.8.2,2.7-.3.9.3.5.4,2.7.5,5.2,1.1,5.7-.5,2.9-1.1,1.3-.3,1.2.2,3,2.1,1.9.2,1.1,1.2.6,1.9,1.2,1,.9,1.1.4.5,2.6,2.2-.5,1.4.9,4,.6,2.4.6,2.3-.7,5-.4,7.5-2.8,9.1-2.7,8.2-1,.5-1.5.1-1.3-.3-2.6-.4-3-.1-1.5,1.4-1.6,2.1-1.4,1-1.3.5-3.1,1.6-3.2,2.3-1.1.3-3.9-.2-.8.2,2.5.9,2-.2,3.8-2.2,1.2-.4,2.8-.7,4.8-2.7,1.3-1.6,2.4-.5,2.3.3,1.4.1.8,1.1.9,3.8.7,3.3,1.3,1.4,1.8.5,1.5.5-1.3,1-.4.8,1.7,1-1.3.3-1.3.6-1.2.2-.5-1.4-2.6-.9-1.4.6-1,1.6-.3,1.4,1.1.7-.3,1.9-.5.8-.1.9-1,.7.2.7,1.4,1.1,1.7.5.3,1.2-1,1.5-1.4.3-.4-1-.9-.4-1,.6-1.2-.1-2.3.3-1.5.4-.9.6-1.2.9-.4,1.8-.6,1.1-.4.8-2,1-1.9.8-1.3,2.5-1.8.7-.8,1-1,1.6-.9,2.6.7,2.4-.6.3-1.7-.4-1.7-.1h-1.4l-.2.4-.9.7.3,1.1-.2,1.6-1.7,1-2.2.8h-1.5l-3.8.5-2.1,1.8-2.8,1.6-1.2,1.4-1.8,1.4-1.4,2-1,.7-.2,1.6-.3,1.5-1.1.5-1.3.6-3.6.6-2.9,2.5-3.5,2.2-1.1,1.4-.4,3.8-2,2.2-.4,1.9-.3,1.7-2.5,2.1-3.7,1.6-4.2,2.8-7.5,8.5-.9,2.5-.8,2.8-.3,1.7-1,.9-.8.9-.2,1.9,1,.5.3,1.3-.7.5-.4.4-.9.4-.3.6-.2.8-.4.8-.4,1.9-1.3,1.4-1.5.6.5.7.6.7.3.8-.4.9-.7.2-.7.7-.9.6.6.6v1l-1.4,1.4-2.9.4v.5l.9.4,1,.1,3.4-.1,1.4-1.5.8-2.7-.1-2,.7-1.1.3-2.2.9-1.2.5-.3.7.2.7,1.1v1.5l-.2,3-2.1,4.1-.1,1.4-1,5.2-1.2,5.6-.3,2.1v3.4l-.4,1.8-.2,3.2.3,1.2-1,7.4-1.6,5.2-.4,1.7-.8,1.7-.3,1-.3.4-1.7,3.4-3.1,3.3-4.3,3.7-4.8,3.4-4.6,2.1-4.5.8-3.5-.3-.7-.2-.5-.6-1.2-2.1-1.1-.6-1.2-1.9-.7-1.6-.4-2-.9-1.9-1.2-1.7-1.7-1.5-1.1-1.9-.3-1.7-1-2.7-1.3-1.9-3-5.9-.9-1-1.2-.8-1.2-.5-1-.1,3.2,2.2.6.9.3,1.2,1.4,2.7,1.7,3.2.9,3.4.1,1.9-.8.8-1.7,1.2-1.2.4-1.2.8-1.4.2-2-.5-3.1.3-3.6-.4-1.9,1.4-1.6.8H232l-1.9,1.3v.6h1l1.2-.1,2.7-.2,1.7-1.5,1.3-.7.7-.2h.7l1.4.3,1.6-.2,2.5.6,2.4.4,1.6-.8,1.9-1,.8-.1.8.3.4.4.4,1.6,1,.6.7.6v1.9l.4,1.6.8,1.5,1.4,1.6,1.1.7,1.3.2.8.4.6,1,1.4.4.6,1.1-.6,1.6-1.7.7-1.1,1.1-1,.7-8.8,4-6.1,3.1-1.6-.3-1.2,1.2-.1,1.1-1.6.5-.7.2-.8-.3-1,.6-.2,1.8-1,.7-2.3,3.3-1.5,2-.7,1.7-1,2.1-1.7,3-.8,2-.8,1.5-.2,3.5-2.2,6-.9,3.1-.4,1.8.1,1.3.7,2,.3,5v2.5l-.5,2-1.1.9-2.3,1.6-2.8,3.1-4.3,3.5-2.2,2.4-1,2.8,1.5-1.5,2.9-2.6,1.8-1.3,3-1.9,1.5-.9,1.5-.2.4,1.5.1,1.5.6,3.3,1.1,6.2.8,4,.2,2.4.8,1.6.4,3.4.8,3.5,5,14.4.4,1.8.1,1.6-.4,1.4-1,.9-.9-.1-1-.5h-1.4l-1.1.7-1.6,2.2-.9.4-1.4-.1-1.2-.3-5.7-3.2-3.7-.3-.9.1-.6.2-1.5.9-2.8.3-1.2.4-2.3,2.1-2.5.9-1.1.7,10.9-2.7,2.3-.3,2.4.4,5.2,2.2,2.2,1.1-.4,1.4-2.7,2.3v.5h1l.9-.4,4.2-2.3,2.1-1.9,1.3-1.2,1.5-.3,1.3.7,1.9,2.1,3.1,9.2,2.4,3.6,3.7,9,3.4,7.3,8.1,13,6.2,9.1,1.7,2.5.5,1.6-.4,1.1-1.4,1.6-.8,1.1-.6,1.2-.8.4-.4-1,.3-1-.6-1.6v-3l-.3-.9-1.2-.3-3.9-1-.8-.3-1.6-1-.9-.3-9.9-1.7-1.9-.8-7.5-4.5-10.2-3.3-13.7-.5-17.4-7.6-6-2.6H179l-56.5-.8-11.2-.2-26.6-.4-2.4-1.6.2-3.4.6-2.6-.5-2.3-1.1-1.9-1.5-1.4-3.1-3.9-3.5-3.2-2.2-1.5-4.7-1.6-1-.8-.7-1.6-.4-4.5-.4-1.3-1.1-1.3-1.2-.3H60.4l-1.4-.3-1-1.9,1.4-2.4,3.5-3.8.2-.6-.2-2.2.2-.8.7-1.2.3-.6.2-1.4v-4.5l.2-1.8.3-1.1,2.2-3.1.6-1.2v-1.1l-.8-1.2-3.8-2.6-1.6-1.8-1.1-2.8v-1.6l.4-1.1,1.4-2,.9-1.6.6-.8.8-.3,1.4-.3.9-1.8.5-3.7.5-6.8-.4-3.1-1-2-1.3-1.7-1.4-2.3-.5-1.3v-1.2l.4-1.1,1.8-3.9.1-1.3-1-.6-1.2-.3-1.9-1.4-6.1-1.5-2.2,1.1-3.4,4.1-2.3.1-1-.7-2.5-2.7-1.1-.7-1.2.3-6.2,3.7-1.8,1.5-3.6,4-2,1.7-2.3,1H23.5l-1.9-1.6-.5-2.6.1-3.1-.4-2.9-.5-1.2-2.1-2.9-.7-1.3-.2-1.3v-4.5l-.6-4.3-.1-1.5.2-3.2-.1-1.6-.5-2.5-.8-2.6-1.1-2.4-1.2-2-.9-.9-2.1-1.2-6.2-5.9-.6-2.1.5-2.4,2.6-4.7.1-1.1-.5-1.4-.6-1-2.7-2.4-.9-1.2.2-.9.7-1,.6-1,.2-1.4v-1.2l.2-1.1,2.6-2.8,1-1.9-.1-2.1-1.4-2.5-1.6-1.7-.8-1-.3-1.2.3-1.4.6-1.1.5-1.3-.1-1.5-.6-1.1-1.5-1.7-.7-1-.6-1.5.1-.8,1.5-1.7.7-1.3-.1-1-.3-1.1-.1-1.5.6-1.3.9-.8,1.9-1.2.9-1.1.2-.9-.4-2.5v-2l.6-.7,15.7-.3.2-1.4.5-.5,1.6-.5.1-.5-3.3-.6-1-1.5-.1-1.9.7-1.9,3.2-4.2.5-1,.1-1v-.9l.1-1.2.7-1.7,3.5-5.2,2-2,2.3-.9,4.9-.6,2.2-.8,1.9-1.5,3.6-3.9,2.6-3.3,1.4-2.2.5-2.3.2-2.9-.3-8.1-1.1-4.1-.5-3.9,1.9-4.4,2-1.6,2.1-1.2,3.1-1.1.9-.7,1.4-2,.5-1.1.3-.3.7-.2h.7l1.4.5.7-.2.4-1-.5-1.3-.7-1.3-.4-1,.1-1.3.6-2.8.1-1.5-1.2-9.1-.4-1.5-1.7-.6-.6-.3-.4-.6-.1-1.3-.2-.7-.9-1.1-.8-.4-1-.2-1.1-.5-1.6-1.6-1.3-2-.4-2.4,1-2.4,1.2-2.2,1.3-5.2.8-2.5,4.8-8.5.5-1.3.4-1.1.2-1.3.1-1.5.9-4v-1l-.9-.7-1-.4-.6-.6.4-1.8.8-1.1.9-.7,2-.8,1.3-.1,2.7.5,1.1-.3.8-.7,1.3-1.9,4.3-5.2,1-1.8.5-1.3-.1-.7-.3-.8-.3-1.2-.1-1.3.2-.8.5-.5h1l3.2,2.2,1.7.5,1.6-.9.9-1.9v-2l-.6-2-.9-1.5-1.4-1.1-3.2-1.9-1-1.4.2-1.4,3.3-2.1,1-1.2-.6-1-1.7-1.6-.5-1,.1-1.1.8-4.3.2-.6.6-.9.1-.6-.3-.6-.3-.5-.2-.6v-.7l.8-1,1.4-.4h2.6l1-.4.8-.7,1.3-2.1.9-.9,2.7-1.7,1.7-1.8.4-2.3-.8-5.3.1-1.3.4-1.1.2-1.1-.2-1.4-3.3-9.2-.5-2.5-.1-2.9.2-3.3-.2-2.1-1-1.4-3-2.1-2.4-2.4-.5-.2-.4-.2-.3-.3.1-.8.4-.4.7-.2,3.7-.5,1.2-.3,1.1-.7.8-.9,1-2.1.6-1,3.7-4.2H262.5l39.2.1Z" transform="translate(0 0)"/>                    
+                </a>
+                <a xlink:title="Chubut">
+                    <path id="boton-3" class="cls-1 botonpcia" d="M381.4,1418.6l.4.6.8-.1.4.4.8.5-.2.6-1-.5-1.1-.1-1-1-.5-.8,1.4.4ZM402,1416l.7.6H402l-1-.1-.6.2-.6-.7.6-.6h.6Zm26.4-210.4,2.5,5.6,1.6,2.3,1.9,1.8,3.9,2.7.6.1h1.7l.4.3.8.7,1.2.6,1.3.5,1,.2,2.5.1,1.1.3,1,.8,1.1.8,1.2-.2,1.2-.5,1.2-.3,1.4.1.6.2.5.4.7,1,.2.4-1.4.6-1,1-3.8,5.6-.3.7-.5,2.1.4.5,1.4.4,4.1-.3,2,1h1.7l1.8-.3,1.1-.4,1.1-.6.8-.3,9.4.7,1.2-.3.5-1.1.3-.2,1.4-1.4.3-.7.1-.4-.1-1.6-.2-.4-.1-.4.1-.2.5-.4.1-.4-.1-.8-.5-1.3-.1-.6-.4-.9-1.1-.4-2.2-.3-5.5.2-2.6-.3-2.2-1.3,1.7-.9,7.2-1,6.2-3.5,4-3,4.4-2,3-.9,2.1.5,1.8,1.8,1.2,2,1.5,4.1.2,1.2.3,1.1.8.9,1.6,1.5,1.1,2.4.4,2.8-.3,6.8.9,10.3-.7,2.7-1.2,2.9-.8,2.7.6,2.5-2.5,3.4-3.3,1.6-10.3,2.4H481l-1.1.1-2.2,1.2-1.9.3-1.5-1.1-1.2-1.4-1.7-2.6-.9-1.1-1-.5-.9-.7v-1.6l.4-1.6.3-.8,1-4.1.5-.6.6-.2-.3-.6-1.1-1-1-.5-.3-.3-.4-.6-1.8-1-.7-.8-.2-1.2-.6-1-1.1-.7-2.1-1-2.5-.7h-5.2l-3.7.6-1.2.4-1.2.6-1.3,1.2-1.7.3-.6.4-.4.4-2.2,3-.9.9-.9.4-2.5.3-2.5.7-1.2.9-.6,1-.4,1.2-.7,1.3-1.6,1.7-.3,1.1.3,1.6.8,1,2,.5,1.6,1.3,3.2,1,6.2,3.1,1.6,1.1,2,1.9,1,.7,1.6.4,1.1.6.6.2h.7l1.3-.4,1.3-.1.5.1.4.2.8.9.9.5.4.4,1,.7,1.3-.1,4-1.6.6-.1v.3l.7,1.8-.3.8-1,1.2-6,4-5.9,2.4-10,3-9,6.3-1.5,2.1-1,.9-1,.8-.9.3-.5,1.6v1.2l.3,1.2.2,1.5-.3,1.2-.8.7-1,.7-4.1,4.3-1.8,3.5-.9,1.2-2.7,2.4-.6.4-1.9,3.5-.1.7-.7,1.1-.2.6.1,4,.2,1.1,1.1,2.3-.3.9-.3,1.4v1.4l.4.6.7.5.4,1.2.3,1.3.3,1,.3,1-.3,2.6.2.9.7.3.9-.3.6.8-1.2.9.5,1.6v1.1l1,.7,1.8-.1-1.3,1.1-1,1.1-.3,1.2.2,2.1.6.3.4,1.3-.8.4-1.6.4-1,.4-.8.9-.5,2.3.1,1.7.1,1.1,1,1.5.4.3.4.5-.2.7.3,1.3.7.4-.2.5-.1.6.6.8h.8l.4.3.1,1.2.2.7-.6.3-.3.6-.1.6-1.2.1-.3.5-.2.7-.5.1-.3.4.3.3.1.3-.5.2.3.4-.2.2-.5-.1-.4-.4-.3.2-.1.4.3.4-.2.3-.3.2-.2.3-.4.2-.2.5.3.2.5.1.2.4-.5,1.2.4.4.6-.2.3-.1.7.2v.4l-.3.3v.4l.4.2v.4l-.5.1-.7-.2-.3.3-.2.8-.3.1-.2-.4.2-.7-.3-.6-.6-.1-.5.2-.2.4-.7-.2-.4.3v.3l.2.6.4.3v.5l-.4.2-.6-.2-.3.3-.3.5.2.6.5.4.4.1.3.3.5.1-.1.5-.5.4-.3-.1-.1-.6H412l-.3.3-.3.9-.3-.3-.4-.3-.1-.6-.4-.2-.2.1-.4-.4-.4.3-.6.2H408l-.2.4v.6l.2.7h-.7l-.2.3h-1l-2.2,1-1.7,2-1.1-.3-2.2,1.7-.9,1.1-.5,1-.7,1.1-.5,1.5.1,2-.1,1.1-.2,1-.2.6-.7.2-.5.4v1.5l.4.4-.3.2-.1.6.6,1.6.9.3.6-.1.2.3.4.1.4.8h.9l.7-.4.8.3,1,.8,1.2-.3,1,1.1.9.3.7,1.2-.6.1-.7.8-.6.4-.3.4-.4.4-.7-.3-.4.6-.5.5.3.8.6.7.2.9-.9-.2-.5-.4-.5.6.2.4.7,1.1-2,1.4-1.1-.4-1,.1-.3,1.3-2.2-1.9-.8-.8-1.7.2h-.9l-.7.9-.7-.3.1-1.3-.6-1-.8.1-.8-.1-.8.4-.1,1.3.2.9h-1.1l-1.4.6-1.4-.4-1-1.4-1.6-1.4-1.4.1-3.3-1.1-2.9.5-1.6-.2-1,1.6-2,1.7-1.1,1.3-.9-.7-.8-.3h-1.7l-.8.2-.3.6-1.1-.2-.5.8-3.2,1-1.4.8-1.4,1.4-.1,1.6,2.5.8,1.1.5-1,1.4-4.9-2-.8-.1v1.9l2.2.6,1.1,1.3-.1,1.6h-1.9l-5.4-.1-5.8,1.1-4.2.4-3,1.5-1.6,1.5-2.4,1.9-2.8,3.3-1.6,2.9-1.9,2.5-1.6,2.5-1.7,2.9-1.1,1.9-2.4,2.3-1.2,2.1-.7.8-1.2.9-.6,1.4-.6,1.9v2.2l.1,1.1,1,.9-.3.8-.3.3-.9.2v1l-.3.9.1.4.4.6-.2.7-.6.6-1-.3-1.6,1.3-.7.7-.7.5-.9,2.6-1.5,1.2-.5,1.4-1.1,1.3-.6,1.3.8,1.8-1.3.6-1,1.9-.2.5h-.1l-39.2-.1H98.1l1.9-2.1-.7-2.6-.8-2-1.2-1.6-1.8-1.1-2.1-.8-.8-.7-.3-1.2.3-1.1.4-1,.1-1.1-.7-1.3-1.3-1.3-.5-.7-.1-1.2.1-.5.8-1.3.1-.7-.3-.9v-.5l.1-1.2.1-.8.9-1.8,1-1.1.1-.5-.2-.5-.7-.8-.2-.2.8-1.7,1.8-1.1,2.1-.7,1.6-.3,3.9.3,1.8-.4,1.8-1.4.6-1.2-.2-1-1-2.1-.4-1.5.1-.7,5-2.1.9-.6.8-.8,1.2-1.9.8-.7,1.1-1.6-.3-2.3-1-2.4-1.3-1.8-1.6-1.6-2.7-1.9-1.9-2.6-.5-.8-.9-3.2-2-4.3-1.7-2-1.7-.2-1.9.3-2.1-.4-.8-.6-1.3-1.7-.7-.6-1.2-.3-1.1.1-1.2.4-1,.6-2,.3-2-1-2-1.3-2.1-.8-2.1.2-1-.3-.4-1.1.3-2.4v-1.1l-.7-3.9.6-1.5,1.4-.4,1.9.7,1.2.5,6.6,1.3,1.2-.2.9-.7.6-.8.7-.7,1.2-.2,1.2.3,3.3,1.4,2.1.1,4.6-2.1,2.1-.5,2,.7,3.9,2.8,2.2.7,1.9-.5,1.8-1.3,1.2-2,.3-2.7-.4-2.5V1388l.3-1.3,1-2.3.7-1,.6-.5,1-.1,1-.2.8-.7.5-1.5V1379l-.4-.6-.6-.6-.7-1-.3-1.2-.2-1-.3-1-.7-1-1.2-.8-1.3-.2-2.5-.1-7.6-1.5-10.3.1-2.6-.7H93.7l-2.2.7H89.4l-1.9-1.8-.2-1.3.9-.7,1.1-.6.7-.5.4-1.3-.4-1-.6-.9-.4-1.2.2-1.3,1-2,.1-1.2-.4-1.3-1.6-2.9-.7-2.6,1.2-1,2-.6,1.6-1.5,4.7-7.3.5-1.3v-1l-2.8-4.7-.7-.9-.4-.3-.9-.5-.3-.4-.2-.8.2-.5.3-.5.1-.6-.1-1.5-.3-.2-.7.4-1.1.4-.9-.4-.2-1.2.3-1.3.5-.9.8-.6,2.1-.8,1-.6.8-.9.3-.9-.4-3.9-.2-.9-.4-.5-2.2-1.6-.3-.3-.8-1.2-.6-.4-1.1-.1H88l-1.1-.2-.4-1,.1-.4,1-1.4v-1.5l-.5-1-.9-.7-1-.2-.5.1-.5.2-.5.2-.5-.3-.4-.6.2-.4.4-.3.3-.5-.2-1.9v-.5l.3-.6.8-.6.3-.5.2-.5.1-2.1.3-.5.6-.2,1.2-.1,2-1,1-.2,2.2.5.5-.8.1-1.3v-1.2l-.1-.6-.3-1.1v-.7l.1-.6.5-1.2.1-.6-.4-1.2-1-.8-4.5-1.9-7.5-.9-2.2-1-2.1-1.8-1.6-2.5-1-3,.3-2.4,1.2-4.5.3-2.3-.4-9.9-.3-1.1-.7-2.3v-.9l.4-1.7v-.5l-.1-.6-.5-1-.2-.5.3-2.5,1-1.8,1.5-1.3,2.5-1.3.2-.7-.4-.8-1.4-2.4-.1-.7.8-3.7-.5-1.3-2.6-2.5-.6-1.7.5-1.7,1.1-1.5,1.3-1.3.9-1.6.4-1.9.5-1.7,1.5-1.4,1.7.1.8,1.3.6,1.5,1.3.7.7-.4.4-.6.4-.7.4-.5.7-.4,3.5-.6,1.4-.7,1.2-1,.6-1.4-.1-3.5-.2-.5-1-1.2-.3-.5H424.8l3.2.7Z" transform="translate(0 0)"/>                    
+                </a>                
+                <a xlink:title="Río Negro">
+                    <path id="boton-4" class="cls-1 botonpcia" d="M511.8,1028.3l.1,35.4v55.1l10.3,1.3,3.2,1.1.7.5,4,3.7,2.1,2.9.5.6,2.5,1.9,3,3.1.7,1,1.9,4.2.4,1.7-.4.1-.6.8-1.3,1.1-.8.9-3.6.9-5.9,3.2-2.3.5-10.9-.4-2.2.7-1.1.1-4.8-.4-7.2.4-7.8-.1-2.3-.6-2.1-1.1-5-4.9-2.3-1-2,.1-.5-.3-.2-.7.2-.7.5-.9-.5-.5-1.2.3-1.3.6-1.1.3-2-.6-12.2-6.5-6.7-1.8-4.7-2.5-4.5-1-2.4-.2-3.5.3-1.6-.1-1.3-.5-.1-1,1-.6,1.2-.5.9.2-.2,1.2.8-.2.3-.3,3,.1.9-.1.5-.5-.4-1.4-1.5-.5-.9-.7,1.5-1.4-1.3-.9-4.7-1.2-2.8.4-1.8.8-.4.4.9.1,1.6-.4.9.3-.7,1,.2.6.6.4.6.7-5.1-.2-.9.4-.7.8-4,3.2-.5.6-.2.6.1,1.4-.2.7-.7,1.2-.6,1.4-.4,1.5-.2,1.6.1,2.7,1.4,11.3,2,7.9.1,2.1,1.2,3.7.4,2.1.6,2.1,2.7,3,.8,2.1-.1,1.9-.5,2.2-.6,2.1-.7,1.3-.4,1.9.5,2.4,1.4,3.8-.1,2.4-.9,2.9-2.1,4.8-.7,2.9.2,2.4.8,1.6H428l-3.2-.7H92.1l-.6-.9.1-.9.2-1.1v-1.2l-.9-4.8-1.1-2-1.2-1.6-.9-1.9-.1-2.5-.5-2.2-2.9-4.2v-2l.7-.9,1.8-1,.7-.7.5-1.2-.2-.7-.6-.7-.6-1.1-.4-1.1v-.8l.4-2,.1-1.3v-1l-.3-.9-.4-1.2-.6-2.5.1-2.1,1.3-4.4.2-1.4-.2-1-.6-2.3V1150l.4-.5.5-.4.3-1.1.1-2.4.4-2.3.1-1.5-.7-2.4v-.7l.4.1,6.3.4,3.4.8h3.8l1.8.1,9.7,3.9,3.1.3,1.3-.1,2.8-.8,1.5-.8,1.9-1.2.5-.4.3-.4.6-1.4,3.2-3.7.7-1,.6-1.2.2-1.5-.3-1.3-.7-1.3-.8-1-.9-.7-1-.5-.9-.7-.6-1-.1-.6v-.7l.1-.6.3-.6.3-.4.8-.7.4-.3.5-1.2.3-.3.8-.5,1.7-.4.6-.7.2-.4.3-1.5.3-.7.5-.6.4-.5.5-.4,2.6-1.2,1.4-.4,1.2-.1v-.2l.7-.4,1.3-1.1.8-.2h.8l1.6.3.7.3,1.7.2,1.8-.5,1.8-.9,1.4-1.2,2.1-2.3.8-.5,1.1-.2,1.1.4,1,.8.8,1.1,1.7,1.3,2.1-.1,3.9-1.2,4.3.1,1.3-.7.5-1.2.6-2.8.6-.8.4-.1,1,.1h.5l.6-.3.6-.3.6-.5.5-.5.6-1.4.1-1.7v-3.3l.3-1.5,1.8-5.1,1.1-1.9.4-1.1v-.7l-.1-2.1.1-.7.5-1.4.1-.7.3-3.9.4-1.3.7-1.6.1-.7v-1.1l.1-.5.2-.6.9-1.1,1.1-.9,12.1-7.2.8-.2,1.7-.2,4.5.6,1.2-.3,1.3-.8,3.5-3.6,2-1.6.9-.8,2.7-3.9.1-.8.2-.3,1.1-1.7.8-1.1,1-.8,1.7-.9,1.1-.4.3-.2,2.4-1.8.7-.3.6-.2h1.5l1.4-.2.3-.1,1.3-.8,2.3-1.1.6-.3.4-.5.5-.8,2-3.6.3-.4.5-.5,2.6-1.6.6-1,.8-3.3.5-.9,1.4-1.2.5-.6.6-1.1,2.2-.9.9-.6.7-.8.6-.9,1.5-2.8,1.3-1.7,1.5-1.5,1.6-.9,1.6-.4,1.7-.9,3.2-4,1.7-1,.8-.2,2.1-2,.6.1,1.1,1.4,1.4.8.7-.2.7-.5.8-.2.9.1,2.3.8H275l5.4-1.4-1.1-.3-.3-.7.1-.9-.1-1.2-.6-1.5-6.5-10.3-2.3-3-1.1-1-.3-1.4.1-59.6.1-10.6,20,2.7,2.1,1.2,1.5,1.3,1.5,1.9,1.2,2.1.6,2.1.1,2.8-.7,2.4-1.2,1.8-3.4,2.4-1.6,1.5-1.1,2.2-.3,3,.2,1.1.4,1.5.5,1.2.4.5,1.2.7.5.2,1.3-.5h.6l2,.8,1.4,1.6,2.7,5.8,1.4,1.9,1.6,1.6,1.9,1,3.8-.3,1.3-.7,3.8.6,1.3-.4,2.3-1.5,4.2-.8H321l1.1.6.5.8.2,1.1v1.3l.2.7,1.2,3.4,1.8,2.7.7.7.8,1.2.3.2.5.1,5,2.8,2.3.4,1.5,1.2,1.1.4,2.4.4,1.8,1.1.8.4.9.9.4.2,2.3.5,1.8.9,1.5,1.4,1.2,1.8.6,2,.4,2.9.6,1.1,1.3.4,1.3.2,5.9,1.5h2.2l6.7-1.1,12.7,1.6.6.2,1,.6,1.3.2,1.7.8,2.1.2.7.2.5.3.9.9.5.1h2l.8.2.6.4.5.5.4.3.9-.1,1.1-.4,1.1-.8.8-.7,1.1-.6,1.3-.1,2.6.5,4.4,1.8,1.9,1.3.9.4.5-.1,2.2-.8,2.6.1,7.4-1.4h7.2l1.4.9,3.5-.6,1.6.6,1-.5,14,2.7,3.5.1,16.3,6.1,3.6,2.5.8.4,2.4.4.8.6,4.3,5.4,1,.4,3.5.8,1.8,1.1.7.6.7.8,1.3,2.1.9,1.1,1.8.9,6.5,4.5,1.4,1.5,2,.8,4.4.5Z" transform="translate(0 0)"/>
+                </a>                
+                <a xlink:title="Neuquén">
+                    <path id="boton-5" class="cls-1 botonpcia" d="M268.4,915.1l-.1,10.6-.1,59.6.3,1.4,1.1,1,2.3,3,6.5,10.3.6,1.5.1,1.2-.1.9.3.7,1.1.3L275,1007h-1.7l-2.3-.8-.9-.1-.8.2-.7.5-.7.2-1.4-.8-1.1-1.4-.6-.1-2.1,2-.8.2-1.7,1-3.2,4-1.7.9-1.6.4-1.6.9-1.5,1.5-1.3,1.7-1.5,2.8-.6.9-.7.8-.9.6-2.2.9-.6,1.1-.5.6-1.4,1.2-.5.9-.8,3.3-.6,1-2.6,1.6-.5.5-.3.4-2,3.6-.5.8-.4.5-.6.3-2.3,1.1-1.3.8-.3.1-1.4.2h-1.5l-.6.2-.7.3-2.4,1.8-.3.2-1.1.4-1.7.9-1,.8-.8,1.1-1.1,1.7-.2.3-.1.8-2.7,3.9-.9.8-2,1.6-3.5,3.6-1.3.8-1.2.3-4.5-.6-1.7.2-.8.2-12.1,7.2-1.1.9-.9,1.1-.2.6-.1.5v1.1l-.1.7-.7,1.6-.4,1.3-.3,3.9-.1.7-.5,1.4-.1.7.1,2.1v.7l-.4,1.1-1.1,1.9-1.8,5.1-.3,1.5v3.3l-.1,1.7-.6,1.4-.5.5-.6.5-.6.3-.6.3h-.5l-1-.1-.4.1-.6.8-.6,2.8-.5,1.2-1.3.7-4.3-.1-3.9,1.2-2.1.1-1.7-1.3-.8-1.1-1-.8-1.1-.4-1.1.2-.8.5-2.1,2.3-1.4,1.2-1.8.9-1.8.5-1.7-.2-.7-.3-1.6-.3H140l-.8.2-1.3,1.1-.7.4v.2l-1.2.1-1.4.4-2.6,1.2-.5.4-.4.5-.5.6-.3.7-.3,1.5-.2.4-.6.7-1.7.4-.8.5-.3.3-.5,1.2-.4.3-.8.7-.3.4-.3.6-.1.6v.7l.1.6.6,1,.9.7,1,.5.9.7.8,1,.7,1.3.3,1.3-.2,1.5-.6,1.2-.7,1-3.2,3.7-.6,1.4-.3.4-.5.4-1.9,1.2-1.5.8-2.8.8-1.3.1-3.1-.3-9.7-3.9-1.8-.1H97.3l-3.4-.8-6.3-.4-.4-.1v-.7l.8-2.8v-1.3l-.4-1.6-.6-1.2-2-3-.5-1.5-1.7-7.1.3-.7,3.8-4.1,1-2.1.3-2.4-.2-.6-.5-.7v-.7l.1-.4.9-1.8,1.8-5.9.4-.8.6-.2,2.1.6.7.1.5-.6,2-4.8.3-1v-.7l-.1-.6-.2-.6-.4-.5-.6-.3-.3-.1-.7.3-.2.2-.3.6-.7-.1-.3-.4-1.1-1.6-1.5-1.6-.7-1-.4-1.1v-.5l.5-1.2-.2-.6v-.7l.4-2,.2-.6.1-.6-.2-.5-.4-.5v-.5l.7-.9,1.7-.1,2.3,1.1,1.9.3.6-2.5-.1-.7-.4-1.4-.1-.7.1-.5.7-.6.3-.4,1.8-4.2.4-1.4-.2-.9-.7-.8-1.7-1.6-.5-.7-.3-.9-.1-1.5-.2-1.4-1-2.7-.2-1.4.3-1.2.5-1.2.3-1.1-1.1-1.8-.2-1.4.2-1.5.5-1.1.8-1h.6l2.2,2.5.8.6.8.2,1.2-.3,1.1-.1.9.2.9-.1.8-.8.4-2.4-2.3-2.1,1.3-2.1.7-.8,1-1.8.6-.7.4-1-.8-2.1.1-1.2.8-1.1,1-.7,1-.9.4-1.6.5-5.3-.5-8.7-1-4.8.1-1.8.7-4.1.8-1.6,1.5-1.4,4.5-2.4,1.3-1.2.9-1.3.4-.2,3.8-.6.8-.5,2.9-2.2,1.5-.7h1.9l2.2.3,1.1-.3.8-.7.7-1.5.2-.4,1.6-.7.2-.2.1-.7-.5-.8-.2-.5.2-1.1.5-1,1.2-1.8.6-1,.1-1.3-.7-2.3-1.6-1.6-1.8-1.3-1.7-1.5-1.2-2.2L129.8,960l-.2-1.9.1-1.9.5-2.2v-.3l-.7-2.7-.1-1.2.7-1,.1-.4v-.7l-.1-.3-1.4-1.9-.4-1-.3-1.4-.4-1.3-1.4-2.4-.3-2.7-2-3.8-2.5-8.4-.4-2.8.1-1.3.3-.9.6-.8.7-.7,1.3-.8.2-.4v-.7l-.6-1.1-.1-.7.3-1.3.8-2.4.1-1.2-.2-1.5-.7-1.1-1.6-2.1-1.3-3.1-.5-1.7-.1-1.5.4-1.1,2-2.5.6-1.3v-1.2l-.1-1.2v-1.3l.4-1.4.8-.8,1.8-1.1-1.9-1.6-.7-1-.4-3-.4-.7-1.6-1-1-.9.4-.1.9.3h1l.9-.6.4-.9-.2-.9-1.4-1v-.4l.4-1,.1-1-.4-.7-.3-.4-1-.4-.2-.7V870l1-1.6L123,865l.3-1.2-.1-2.3.1-1,.8-.7,1,.1,1,.7.9.5.7-.6.1-1-.7-4.3.1-2.3.3-2.9,1-2.2,1.6-.4,1,.3,1,.2.9-.2.9-.6.6-1,.3-2.4.4-.8.9-.3,1.1.2,2,1,.7.6.4.2,4.4-1.2.5-.7v-1.4l-.2-.7-.8-1.4-.2-.7.2-.6.8-1.6.1-.5-.2-1,.2-.6.4-.4.5-.2.9-.2.7-.5,1.8-2.5.8-.4.2-.2.2-.4v-.8l.6-1.6.4-.4.6-.3,1.2.3,2.3,1.3,1.4-.1,1-.7.8-.9.2-.5.3.4,1.9,1.5.8.8.2.3.3,1,.2,1.1v1.8l-.1.8-.3.7-.6.6-.2.4-.1.6.1,1,.2,1.2.6,1.6.5.9.4.5.6.3.4.1.5-.3.6-.8.2-.1.7-.1.8.3.6.5.4.8,1.1,4.3.2,1,1.4,3.9,1.1,2.2.9,1.1.5.3,3.7,1.2.3.1.7.9,1.1,1.1.7,1.4.5.5.9.5,1.7,1.5.6.9.4,1.2.7,2.5.3.5.5.5,1.9,1.7,1.5.7.9.6.7.3.8,1,.1,2.6.4.9-.3.6v1.2l-.1.7-.3.7-.9,1-.2.7.3.8,3.6,4.8,1.8,1.6,4,2.5,2.1.8,2.5.5,2.6.2,8.8-1.7,2.1.2,3.3,1.5,2,.4,2.4,1,1,.5,1.3,1.9,1.1,4.8,1,2,1.7,1.2,2.5.8,2.6.3,6.4-.6,1,.5,1.9,2.2,1,.8H249l.6.1,1.1.6.5.2h3.3l1,.4.7.8,1.5,3.3,1,1.1.8.5,8.9,1.2Z" transform="translate(0 0)"/>
+                </a>                
+                <a xlink:title="Mendoza">
+                    <path id="boton-6" class="cls-1 botonpcia" d="M311.3,591.4l.1,2.5,1.4,5.5,1.2.8.5.5.4.7.1.5-.1.9.2.4.6,1,.2.5.2,1.6.7,1.8.1.8.1.9,1,4.8.3.8.4.7.6.7.6.4.3.5.2,1,.2,1,.5.7.2.6-.8,1.9-.3,1.6-.2.5.6,2.5v1.4l-.7.7-.3.7.4,1.6,1,2.6v.7l-.2,1.1-.1.6.2.7.4,1.2.4,5.4-.3,4.8.4,1.6.3.5v2.2l1.2,2.8.2,1.1-.2,2.6V661l.5,1.4,4.8,8.2,1,1.1.4.5.6,2.2.2.5.7,2.7,1.2,2,1.2,4.1.2,1.1.4.8.9.7,1.8,1.2.8.7.8.9.6,1.1.5,2.7.6.9.8.5.7.7.4.9.4,1.8.8,1.6.1.9-.3,1.8-.2,3.2-.2,1.3-.7.9h-.4l-.6-.4H341l-.2.2-.2.9-.7,1.1-.1.8.5,1.6.1,4.7.6,1.1-.7,1.3.5.7.8.7.4,1.2.3,5.2,1.2,3.9.2,1.3.4,1,2.3,2.6,6,11.9,1.3,4.4.1,1.2-.5,3.2.2.8.7,2.3.1,1.1.2.8,1,1.8.2,1v1l-1,3.6.6.7.3.5.1.5v.8l-.6,1.4.6,3.9v1l-.6,3.8-.2,5.5-.2,1.2-1.5,3.5-.6,6.2-2,9.8-.4,4.4-.7,3v1l.3,2,.3.1-22.2-.1-3.7.1H268.5l-1,.4-.8.9-.4,4.1-.1,2.6.1.9.3.8,1.4,7.5.4,34.7v45.5l-8.9-1.2-.8-.5-1-1.1-1.5-3.3-.7-.8-1-.4h-3.3l-.5-.2-1.1-.6-.6-.1h-2.1l-1-.8-1.9-2.2-1-.5-6.4.6-2.6-.3-2.5-.8-1.7-1.2-1-2-1.1-4.8-1.3-1.9-1-.5-2.4-1-2-.4-3.3-1.5-2.1-.2-8.8,1.7-2.6-.2-2.5-.5-2.1-.8-4-2.5-1.8-1.6-3.6-4.8-.3-.8.2-.7.9-1,.3-.7.1-.7v-1.2l.3-.6-.4-.9-.1-2.6-.8-1-.7-.3-.9-.6-1.5-.7-1.9-1.7-.5-.5-.3-.5-.7-2.5-.4-1.2-.6-.9-1.7-1.5-.9-.5-.5-.5-.7-1.4-1.1-1.1-.7-.9-.3-.1-3.7-1.2-.5-.3-.9-1.1-1.1-2.2-1.4-3.9-.2-1-1.1-4.3-.4-.8-.6-.5-.8-.3-.7.1-.2.1-.6.8-.5.3-.4-.1-.6-.3-.4-.5-.5-.9-.6-1.6-.2-1.2-.1-1,.1-.6.2-.4.6-.6.3-.7.1-.8v-1.8l-.2-1.1-.3-1-.2-.3-.8-.8-1.9-1.5-.3-.4.4-.8.6-2,.4-.6.8-1,.4-.7-.2-1-1.5-3.8v-.7l.4-1.2.3-.4.7-.7.1-.5-.4-.4-1,.1-.5-.2.1-2.2,3.1-3.3-.2-2-.7-1.3-2.3-6.3-.1-1,.6-2.2v-1.3l-.3-2.4.5-2.6-.5-.9-.7-.8-.7-1.1-1.2-4-.1-1,.5-.5,1-.3.6-.5-.5-1.6-1.8-1.1-2.3-.3-2-.7-.9-2.3,1.8-3.1,7.8-2.6.9-4.3-.2-4.4,1-4.4,3.8-9.5-.2-.7-.6-.5-.7-.9-.4-1.1.3-.3.8-.2,1-.6,1.1-1.9.5-4.7.7-2,.9-1.1,2.1-1.8.9-1.2,1.1-3,.7-1.3,2.3-2,.5-1.2-.1-1.3-.2-1.8v-1.8l.3-1.4.9-.9,2.5-.4h1.1l1,.2,1.8.7.3-.2.2-.8,3.5-1.5.2-.6-.4-1.5-1.3-2.3-.3-.8-.2-1.1v-.5l.2-.5.2-.9.4-4.6v-2.9l-.5-1.6-.9-.2-.8.3-.5-.2.1-1.7.5-2.3v-1.1l-.8-4.7v-1.3l.4-.7,1.7-1.4.6-.6V678l-1.3-2-.5-1,.1-1.2,1.1-3.4-.1-.6-.2-1.1.1-.6.4-.3,1-.4.3-.2.2-.7.2-2.8.2-1,.5-.9,1.3-1.7.4-.9-.1-1.2-.9-2.1-.4-3.3-1.1-1.4-1.7-1-1.8-.7-1.7.3-2.2,3.1-1.3.3-1.6-3.6-.5-.8-1.7-1.5-.7-.8-.5-1.1v-1.2l.9-3.4-.2-1.2-.5-1-.3-1,.4-1.2.8-.6,1.6-.4.7-.5.4-1,.5-2.5.3-1.1.9-1.6v-.8l-.7-.5-1.1-.5-.9-.5-1.7-1.7-2.6-3.2-.8-1.8-1.2-6.5-.1-1.3.2-1.1.1-.5.3-.5h1.1l.5-.2-1-1.6-.1-1,.1-1.1-.2-1.3-.5-1.2-.8-.7-2-1.1-.9-1.8.2-4.4-.7-.9.6-.3,7.6-1.2h2.1l1.2.5,2.2.5,9.8-2.4,5.8-.3.4-.2.6-.3.6-.5.4-.6.1-.7.1-.7-.2-3.4.2-.7.3-.6.4-.4,1-.6,3.1-1,1.1-.5.5-.4,1.3-1,1-.6.3-.1,1.3-.2,2.7.1,2.5.5.8-.2.8-.3.6-.7.6-1.7.3-.5.3-.3.6-.2.6-.1.7-.4.8-1.4.6-.3h.4l.8.1.7.2,1.1,1,2.1,2.5.5,1,.7,1,.9,1,.7.4,1.7.1,2.4-.5h.7l.4.3,1,14.8.3.4.5.2,9.8-.1,2.6-1.4,8.8-6.1,1.7-1.3.7-1.2.4-.5.7-.4,6-.4,1.1-.3,1.8-.8,1.9-1.6.5-.3,5.6-1.5,1.7.1,1.8,1.1,1.3,1.4.5.8.5,2,.6.6,1.9.9.7.6.7.6,1.1,1.8.4.2,4.6.8.9-.3.3-.1.5.1.8-.4.4.1,1.4-.2,3-.7h3.3l.7-.1.6-.2.5-.5,1.3.3,3.7,2.6Z" transform="translate(0 0)"/>
+                </a>     
+                <a xlink:title="San Juan">
+                    <path id="boton-7" class="cls-1 botonpcia" d="M344.5,568.6l-12.8.7-1.9-.4-.8-.4-.6-.6-1.1-.4-1.1-.3h-1.1l-1.7.5-4.2.3-1.1-.1-.7-.1-1.6-.5-2.1-.5-1.1.7-.5.5-.4.7-.1.4-.1.7.1.7.2,1.4.1.6-.1,1.1.3.9.1,1-.9,2.9-.2,1.2.1,1.4.1.9v3.6l.1,1.9-.1,4-3.7-2.6-1.3-.3-.5.5-.6.2-.7.1h-3.3l-3,.7-1.4.2-.4-.1-.8.4-.5-.1-.3.1-.9.3-4.6-.8-.4-.2-1.1-1.8-.7-.6-.7-.6-1.9-.9-.6-.6-.5-2-.5-.8-1.3-1.4-1.8-1.1-1.7-.1-5.6,1.5-.5.3-1.9,1.6-1.8.8-1.1.3-6,.4-.7.4-.4.5-.7,1.2-1.7,1.3-8.8,6.1-2.6,1.4-9.8.1-.5-.2-.3-.4-1-14.8-.4-.3h-.7l-2.4.5-1.7-.1-.7-.4-.9-1-.7-1-.5-1-2.1-2.5-1.1-1-.7-.2-.8-.1h-.4l-.6.3-.8,1.4-.7.4-.6.1-.6.2-.3.3-.3.5-.6,1.7-.6.7-.8.3-.8.2-2.5-.5-2.7-.1-1.3.2-.3.1-1,.6-1.3,1-.5.4-1.1.5-3.1,1-1,.6-.4.4-.3.6-.2.7.2,3.4-.1.7-.1.7-.4.6-.6.5-.6.3-.4.2-5.8.3-9.8,2.4-2.2-.5-1.2-.5h-2.1l-7.6,1.2-.6.3-.7-.9-1.1-.5-.9-.2-.6-.4-.4-1.5v-.5l.1-1.1v-.5l-.2-.7-.6-1.3-.1-.7.1-.5.3-1,.1-.5-.2-.4-.8-.7-.2-.5v-1.2l-.1-.4-.3-.6-.9-.9-.2-.5.1-.7.7-.6,1.1.2,2.1.8,1.2-.1.5-.5.4-2.2.5-.8.5-.7.3-.8-.1-1.1-.6-1-1-1.1-1-1-.9-.5-2.2-.3-1.8.1-1.7-.5-1.8-1.9-.6-1-.4-1.4-.3-1.4.1-2.5-.5-1-1.5-1.7-2.7-5.4-.4-1.5-.1-1.1.5-2.5.2-2.2-.1-2.2.2-1.1.9-1.8.1-1.1-.2-1.3-.4-1.1-.1-1.1,1.1-2.3.2-1v-2.3l.1-1.2.3-.9,2.8-4.4.6-.5,1,.5.3,1.3.3,1.3.6.7.7-.2.8-.7.6-1,.5-1.7.4-1.1,1.2-1.8.9-.5,2.2.3.6-.1-.1-.8-.6-.8-1.5-1.3-.8-.9-.5-.9-.2-1.1,1-8,.7-2.1.3-.4.9-1.2.3-.7-.1-.6-.1-.6v-.7l.2-1.2.3-.9.9-1.8.8-2,.9-4.4,1-1.7.9-.6.8-.4.6-.6.4-1.1-.2-1.2-1.3-2.2v-1l1.3-.6,4.2,2,1.7.5,1.8-.5,1.5-.8,1.3-1.1,1.3-1.5.5-1,.1-1.1.1-2.2.2-1,.4-1,.5-.5.9-.4.5-.4.6-2.2-.7-2-1.5-1.5-1.9-.7-2,.2-.8-.1-.3-1,.2-.8,1.7-2.7.7-2.1.3-2.1.3-7.8-.6-5-.5-.8-1.3-1.1-.5-1.1.1-1.3.2-1.8v-1.7l-1.2-5.5-.2-.6-.3-.7-.4-.5-.5-3-.3-.8-.5-.8-.3-.8-.1-.9.2-2.8.4-1.2,1.1-.6.5-.2.5-.3.5-.5.3-.5-.1-.4-.6-.8-.1-.3.3-.3.5-.3.7-.7,1.4-.8.5-.6.3-.6.1-.5.2-.3.8-.3,2.5-.5,1.1-.5.9-1.2.4-1.3v-1.5l-.3-2.9-.2-1.1v-1.2l.2-1.1.4-1.1.5-.9.6-.7.3-.5v-1l.1-.5,1.4-2.6.2-1.1-.2-1.2-.7-2.4-.3-1.3.2-2,.6-1.8.9-1.7,1.1-1.5.4-.3.7-.3.2-.7.1-6,.9-3.2,3.4.9.4.2,1,.6.8.4h1.3l1.3-.5.9-.2.7.6.8,1.4.5.6.6.3.9.3,2.5-.2.8.4,7.4,6.2,1.4,1.6.7,2,.7,1.3.6,1.8.4,2.2.5,1.6,3.4,3,.8,1,.6,1,.5,1.9.8,2.1.4.6.5.6,1.3.9.5.6.3.4.4.7.3.7v.5l-.1.6-.5.9-.5.4-1.2.4-.5.4-.5.5-1.3,2.3-.2,1.8-.1,2.6.3,2.2.7.9.9.8.4,1.1.5.9.3.4.1.7-.3.5-.6.3-.5.2-.3.5-.2.8-.3,3.4.3,1.6v.5l-.3.9-.7,1-.7,1.1-.3,1-.3,2.9.1,1.6.1.7.4.6,1.8.8,1.2-.1,2.8-.9,1,.1,1.4.6.6.1h.7l.9-.2,2.6-1.1,1.4-.3,1.3-.2,1,.3,2.9,1.9.9.3,1.3.1h.7l1.2-.2.7-.1,1.5.2,6.2,2.1,1.5.1.4.2.3.3,1.2,1.9.8.8,2,1.4,2.9,1.9.6.6.4.6.7,1.9.7.4,2.2.7,1.1.8,2.5,2.5.2.9.4,1.1.6.6,1.8,1.1.7.7,1.3,2.1.7.7,1.3,1.1.7.4,2.5,1,.7.7,1.3,2.1.5.6,7,5.5.4.5,1.5,2.5.7,1.4.5,2.4.3.9.6.7,3.3,2.1.6.7,1.3,2.5.3.5.7.7,2,1.8,1.1.7.5.4.8.8,2.3,3.8.4.5,1.3,2,.7.7,2.1,1,.7.5.5.7,2,4.9.6.9.6,1,.8,1.5,1,1.4.1.8-1.9,6.1.2,1.7,2.8,2.5-2.2,16,.5,1.4,1.7,3.5.4,1.2v3.2l.1.6.6,1,4.1,4.1.5.3,1,.4,2.9.3.4.2.2.3.2.8v1.3l.6,2.4v1.7l.4.8.5.4.4.2.7-.1.4.2.5.5,1.3,2.4,1.3,3.6Z" transform="translate(0 0)"/>
+                </a>
+                <a xlink:title="La Rioja">
+                    <path id="boton-8" class="cls-1 botonpcia" d="M411,467.1l-4.2,12-.7,1.7-1.1,1.7-.2.6-.7,2.4-1.3,4-.3,1.7-.1.9-4.1,12.3-1,2.9-.6,1.9-3.3,10-.7,3.6.1,10.2.1,20.5.2,15.6-5,.9h-2.4l-.8-.1-.8-.3-.7-.5-.8-.4-2.4-.4h-1.9l-2.5.6-1.1.5-2,1.1-2.5,1-2.6.3-2.4-.3-.7.1-1.6.4-1-.1-1.4-.7-.7-.3H359l-2.7.3-.4-.1-1-.7-.5-.2h-.8l-1,.5-.8.2-.9-.1-.5-.3-1.4-.8-1.1-.4-3.4-.7-1.3-3.6-1.3-2.4-.5-.5-.4-.2-.7.1-.4-.2-.5-.4-.4-.8v-1.7l-.6-2.4v-1.3l-.2-.8-.2-.3-.4-.2-2.9-.3-1-.4-.5-.3-4.1-4.1-.6-1-.1-.6V544l-.4-1.2-1.7-3.5-.5-1.4,2.2-16-2.8-2.5-.2-1.7,1.9-6.1-.1-.8-1-1.4-.8-1.5-.6-1-.6-.9-2-4.9-.5-.7-.7-.5-2.1-1-.7-.7-1.3-2-.4-.5-2.3-3.8-.8-.8-.5-.4-1.1-.7-2-1.8-.7-.7-.3-.5-1.3-2.5-.6-.7-3.3-2.1-.6-.7-.3-.9-.5-2.4-.7-1.4-1.5-2.5-.4-.5-7-5.5-.5-.6-1.3-2.1-.7-.7-2.5-1-.7-.4-1.3-1.1-.7-.7-1.3-2.1-.7-.7-1.8-1.1-.6-.6-.4-1.1-.2-.9-2.5-2.5-1.1-.8-2.2-.7-.7-.4-.7-1.9-.4-.6-.6-.6-2.9-1.9-2-1.4-.8-.8-1.2-1.9-.3-.3-.4-.2-1.5-.1-6.2-2.1-1.5-.2-.7.1-1.2.2h-.7l-1.3-.1-.9-.3-2.9-1.9-1-.3-1.3.2-1.4.3-2.6,1.1-.9.2h-.7l-.6-.1-1.4-.6-1-.1-2.8.9-1.2.1-1.8-.8-.4-.6-.1-.7-.1-1.6.3-2.9.3-1,.7-1.1.7-1,.3-.9v-.5l-.3-1.6.3-3.4.2-.8.3-.5.5-.2.6-.3.3-.5-.1-.7-.3-.4-.5-.9-.4-1.1-.9-.8-.7-.9-.3-2.2.1-2.6.2-1.8,1.3-2.3.5-.5.5-.4,1.2-.4.5-.4.5-.9.1-.6v-.5l-.3-.7-.4-.7-.3-.4-.5-.6-1.3-.9-.5-.6-.4-.6-.8-2.1-.5-1.9-.6-1-.8-1-3.4-3-.5-1.6-.4-2.2-.6-1.8-.7-1.3-.7-2-1.4-1.6-7.4-6.2-.8-.4-2.5.2-.9-.3-.6-.3-.5-.6-.8-1.4-.7-.6-.9.2-1.3.5h-1.3l-.8-.4-1-.6-.4-.2-3.4-.9.1-.2,2.3-2.3,2.7-2.2,2.1-2.9.5-1,.5-2.9.7-.6,1,.4,1.1.7.7.3.5-.6,1.1-2.3,1.1-1.8,1.8-4.4,1-.9v-.4l-.1-.4v-.5l.5-.8.6-.6.8-.4,3-.8,1.3-1,.8-1.5,2-8.6.7.1,13.5,1.1,3.4-.9,1-.5.4-.2,3.6-.4,1.3-.4h.5l.7.2,1.1.7,1.2.3h.9l.7-.3.7-.6.4-.4.6-.4,1.1-.4,2.3.3.9.3.3.8v.7l-.1.7-.8,2.7-.1,1v.7l.2.5.6,1.3.1.5v.7l-.7,2.9-.1.7v.6l.2.6.8.6.7.1h1.6l.8.1.8.3.9.7.8.9.5.9.5.6.5.5.4.2.7.2,1.6-.2,1.3.2,2.2.7.7.4.4.3.7.9.5.7.7.5.8.2.6-.1,1.1-.4.9-.6.8-.3,1.6-.1.8-.4.4-.2h.6l.6.1.3.2.1.7-.1,1.4.2.9.1,2.2.6,1.9.1.3,2.3,3.4.8.8.3.5.2.5.1.9.2.6.5.6.8-.1,1.2-1.1.8-.4,3.2-.8,22.2,1.1,3.7-.1,3.7-.7.7-.2.9-.7.8-1,.6-1.2.5-.4.6-.2,1.1-.7h1.6l9.9,3.6,9.8,4.2,1.7,2.2,1.6,1.4.8,1.2.3.6.5,1.9.6,4.6.5,1,1.7,2.5,1.7,1.6,1.2.9,1,.5.7.5.2.8-.2.6-.9,1.6-.7.9-.4.7-.1.5.2.6.7,1.1.4.4,1,.7,8.4,4,2.2,1.5L381,406l1.1.5.4.4,8.9,8.9,1.6,2.8.3.9.1.6v4.5l.6,3.5.6,2.1,3.1,7.7,3.1,6.7,1.8,5.3Z" transform="translate(0 0)"/>
+                </a>                
+                <a xlink:title="Catamarca">
+                    <path id="boton-9" class="cls-1 botonpcia" d="M378.3,246.1l-.4,1.2-.8,1-.8.8-.3.8-.1,1.1v.9l-.2,1.2-.5,1.5-1.1,2.4-.8,2.7-.2.9.1.6.2.8.8,1.1.8.6,1.1.2,1,.2,1.3.4,1.1.5.7.5,1.8,1.8,3.2,2.6,2.2,1.1.4.4.4.4.2.6.1.9v1.2l-.8,3.2-.1.8.1,3.2-.1.6-.2.9-.5,1.4-1.4,2.2-3.5,3.6-1.7,1.8-1.2,1.6-.9,1.6-.4,1.4-.5.7-1,1.1-1.1.9-1.6,1.8-.8,2.1-1.3,1.9-.2.6.2.3.4.3,1,.4,1.1.3,1.7.2.6.2,3.5,2.2,1.5.1.6.2.3.7-.5,1.3,1.7,8.4.7,1.3.3,2.5.2.5.5.8.6.6.5.3.7.4.3.3.2.6.7,2.2.2,1.2.2.7.5.9,1,.6,1.3-.4.6-.3.4-.3h.8l2.3,1.2.5.5.2.3.5,1.7.5,3,.7,2.2.5.7,4.2,5.3.7.2.3-.5,1.1-2.6,1.4-1.9.2-.3,1.7-1.3,1.6-1.6,4.1-2.7.8.1.8.4.7.5,1,1,1,.7,1.1.5.7.3h.6l1-.2,1.4-.6,4.5,20.7.3,8.5-.3,3.3-.6,1.4-.6.9-1.2,1.3-.7,1-.6,1.4-.3.3-.9.4-.2.6v2l.2.6.6.1L425,383l1,1,.3.6.2.9.9,11.2-.2,4.7,2.1,16.8,2.2,5.3,3.3,5.8.5,1.1.6,1.5,1.1,1.5-3.4,1.3-.6,1.8,1.6,13.4-.1,1.1-.5.9-5.5,6.2-4.3,4.5-2.5,1.4L411,467.1l-8.4-17.2-1.8-5.3-3.1-6.7-3.1-7.7-.6-2.1-.6-3.5v-4.5l-.1-.6-.3-.9-1.6-2.8-8.9-8.9-.4-.4L381,406l-6.1-6.3-2.2-1.5-8.4-4-1-.7-.4-.4-.7-1.1-.2-.6.1-.5.4-.7.7-.9.9-1.6.2-.6-.2-.8-.7-.5-1-.5-1.2-.9-1.7-1.6-1.7-2.5-.5-1-.6-4.6-.5-1.9-.3-.6-.8-1.2-1.6-1.4-1.7-2.2-9.8-4.2-9.9-3.6h-1.6l-1.1.7-.6.2-.5.4-.6,1.2-.8,1-.9.7-.7.2-3.7.7-3.7.1-22.2-1.1-3.2.8-.8.4-1.2,1.1-.8.1-.5-.6-.2-.6-.1-.9-.2-.5-.3-.5-.8-.8-2.3-3.4-.1-.3-.6-1.9-.1-2.2-.2-.9.1-1.4-.1-.7-.3-.2-.6-.1h-.6l-.4.2-.8.4-1.6.1-.8.3-.9.6-1.1.4-.6.1-.8-.2-.7-.5-.5-.7-.7-.9-.4-.3-.7-.4-2.2-.7-1.3-.2-1.6.2-.7-.2-.4-.2-.5-.5-.5-.6-.5-.9-.8-.9-.9-.7-.8-.3-.8-.1h-1.6l-.7-.1-.8-.6-.2-.6v-.6l.1-.7.7-2.9v-.7l-.1-.5-.6-1.3-.2-.5v-.7l.1-1,.8-2.7.1-.7v-.7l-.3-.8-.9-.3-2.3-.3-1.1.4-.6.4-.4.4-.7.6-.7.3h-.9l-1.2-.3-1.1-.7-.7-.2H248l-1.3.4-3.6.4-.4.2-1,.5-3.4.9-13.5-1.1-.7-.1.5-2.1.3-.7.5-.4,1.3-.7.3-.4-.2-.8-.4-.7-.3-.8.1-.9.3-.6,1.1-1.1.5-.6,1.3-2.7.4-1.5.2-1.4-.2-.7v-.8l.1-.7.4-.7.8-.6,1.8-1,.8-.6.5-.8,2.4-5.7.2-.9-.1-2.2.1-1,.5-1.3,2.1-3.5.7-.9.6-.4,1.9-.5,2.3.1,1.8,1.2,1.6,1.3,2,.8,1.2-.1.6-.8.3-1.1.6-1.2.8-1,1.1-.8,1.2-.4,2.6-.1,1-.3,2.3-1h.5l1.5.1.3-.1.1-.4-.1-1.4.1-.7.3-1.1.8-2,.2-1-.1-1.6-.8-1.6-9.5-13.5-1.7-2.2-1.3-2.2-.8-2.4-.4-2.8v-4.4l.4-2.3.6-1.9,1.4-1.9,6.3-5.1.6-1.9-.4-2.8-3.5-14.4-.6-4.5-.4-1.5-.8-1.3-.9-1-.9-1.3-.1-1.6v-1.4l-.4-1.2.7-.8-.6-1.2-1.8-2.3-.3-1-.1-1,.2-2.1,4.5-14,1-1.3.5.1,34,6.7,60.4-.8,1.7.1.4.1.4.4.3.4.4,1,.2.6.5,4.2.3,1,.7,1.1.9,1.1.6.9.2.8v1l-1.2,4.4-.1.5.1.9-.2.8-.7.8-2.5,1.8-.5.2-.8.2-2.1-.1-2,.3h-3.3l-.7.3-1,1-.8.7-.7.4-.4.4-.3.7-.1.5-.1,1.4.1,2.3.6,2.6,1.1,2,4.1,6.1,4,5.1.7,2.5.5.6,1.2,1.4,1.9,4.6,1,1.3,3.2,3.7L360,253l.5.3.9.3.7-.2.5-.4.5-.6,2.2-5.7.6-1.1.6-.5,1.4-.8.9-1.9.5-.5.5-.4.8-.3.8-.1.9.1.9.2.6.5,1.1,1.6,1.3,1.4Z" transform="translate(0 0)"/>
+                </a>             
+                <a xlink:title="Salta">
+                    <path id="boton-10" class="cls-1 botonpcia" d="M564.3,38.1l.1,59V128l.2,15.5-37.9,49.6L511.3,213l-26.3-.4-1.8-.6-9.7-3.2-1.9-.2-1,1.3-10.7,23.6-.3.9v2.5l-.1.5-.4,1.1-1.8,3.5-.1.3-.3,1.9-10.6.3-.8-.1-2.7-.7-1.5.3-2.6.9-.5.3-1,1-.9.6-.8.3-.6.1h-1.1l-1-.3-1.7-.8-.8-.7-1-.3-1.3.3-9.5-3.9-.8-.4-.4-.7-.3-.8-.4-1.4-.7-1.4-.5-.6h-.5l-.7.1-1.4.7-2.5,1.4-.7.2H409l-4.9-1.1h-.7l-1.2.1-2.5-.7-1.3-.7-.6-.1-.3.2-.4.5-.2,1.3v2.3l-.1,1-.4,1.2-.3,1.2v.8l.1,1.8v.7l-.3.7-.4.6-.7.3h-1.7l-14.8-2.6-2.1-1.2-1.3-1.4-1.1-1.6-.6-.5-.9-.2-.9-.1-.8.1-.8.3-.5.4-.5.5-.9,1.9-1.4.8-.6.5-.6,1.1-2.2,5.7-.5.6-.5.4-.7.2-.9-.3-.5-.3-1.5-1.6-3.2-3.7-1-1.3-1.9-4.6-1.2-1.4-.5-.6-.7-2.5-4-5.1-4.1-6.1-1.1-2-.6-2.6-.1-2.3.1-1.4.1-.5.3-.7.4-.4.7-.4.8-.7,1-1,.7-.3h3.3l2-.3,2.1.1.8-.2.5-.2,2.5-1.8.7-.8.2-.8-.1-.9.1-.5,1.2-4.4v-1l-.2-.8-.6-.9-.9-1.1-.7-1.1-.3-1-.5-4.2-.2-.6-.4-1-.3-.4-.4-.4-.4-.1-1.7-.1-60.4.8-34-6.7-.5-.1.2-.3.9-.5.8-.1.8.2,1.1.1,1.1-.3,1-.4.6-.7v-1.2l-1.1-1.4-1.6-1.4-1.1-1.7.1-2.1.2-.5-.2-.4-.7-1-.5-.4-.2-.3v-.5l.1-.3-.3-.8-.3-.4-.6-.2h-1l-.4-.3-1.2-.7-.4-.5-.2-.4-1.2-2.9v-1l.3-1.2,2.6-5.2.5-1.9.1-.8.2-.8.5-.6.6-.1,1,1.3.6.4.3-1.1.3-1.7,2.1-4.3.8-.5.9.1.9.3.9-.1.6-.6,1.9-3,.5-1.5.2-.4.9-.7,11.8-4.9,18.7-8.5,6.3-2.8,4.9-1.9,2.5-1.4,1.1-1.6,4.5-14.7,1.2,1.4.7.5,1.3.4.6.6,1,1.2.5.5,1,.3,1,.1.6.1.7.4.4.4,1.4,1.7,2.2,2.3.3,1.1.2.5.6.3,1.2.2.3.1.3.5.2.9.3.5,1.7,1.7.9,1.3.3.4.8.6,4,1.8.5.3,1.7,1.9,1.8,2.6,1.1,1,1.6.9,2,.9,1.8.4,3.2-.1,1.7-.9,2.6-3.6.3-.2.9-.2.3-.4.4-.7.2-1.7.3-1,.4-.8.3-.5.2-.8.2-1.5-.1-2.2.6-5.7.2-4.8-.2-3.2-.4-1.4-1.6-3.8-.1-.8-1.1-3.1-.2-.5V95l.1-1.4,1.3-5.6.5-.7.4-.4.4-.1h.5l.6.2,2.3,1.1h1.4l1.5,1.1.8.4,1.4-.1.6.2,7.1,4.3,1.5,1.4.3.4.3.6v.9l-.3,2v1l.2,2.6-.5,1.2v.4l.6,1.2-.2.6-.7.8-.7,1.3-.2.8-.2,3.8.2.6.2.3.5.1.1.2.1.8.6,1-.1.4-.4,1,.1.7,1,1.4.4.6.4.7.6.3.5.1.5-.3.6-.6h1l.4.2.6.5,1.8,1.8.6.6.3.2,2.4,1.2,1,.8.2,2-.2,2.3.4,1.1,1.7,2.9,5,6.8,1,1.9.5.9.9.6,1.6.9.5.2.8-.2.8-.5h.8l.9.5,1.1,1.2.6.5,1.2.3,1.2.1.9.2,2.3,1.1,2,.5,1.2-.3.6-.2,1.2-.6,2.1-1.5h.5l.2.3.3.8.2.5,4.3,3.5,1.6,1,4.8,1.8.7.1.6-.1.4-.3,2.3-5.4.8-1.2.6-.9.6.2,9.6,8.5h.4l.4-.2.5-.6.4-.8.4-1.3.6-1.1.7-.8,2.7-2.5,2.5-.6.6-.5.7-1.3.5-.4.9-.3,1-.1,1.1-.3,1,.1.6-.1.5-.2.9-.7,1.3-1.4,3-4.2,1.7-3.2.8-2.4.2-.8-1.2-35.1-.1-.9-.2-.7-.8-.2-.9-.1-6.3-.1-1,.2-.4.6-1,1.1-.2.4-.5,2.4-.3.6-1.1.9-1.3-.9-.5-.5-.2-.5-1.1-1.3-.9-1.2L454.1,95l-.7-.7-1.6-.8-2-.5-.3-.2-.4-.3-1-1h-.8l-1,.3-2.2.3-.4.1-.5.4-1.3,1.2-.5.3-1.1.2-1.4-.4-.6-.1h-.6l-.5-.4-.2-.5-.1-1.9-.2-.8-1.8-3.4-.6-1.7-.8-1.6-.6-.5-1.6-.8-1.5-.4-.4-.4-.2-.4-.2-.6.2-1.5.9-3.3.7-4.8-.1-1.4-.2-.8-.6-.9-.7-.8-.5-.4-.4-.2-1.4-.2-4.2-.1-.7-.1-.5-.2-1-.9-.8-.8-.3-.7-1-3.6-.2-.5-.5-1-.6-5.1-.3-.9v-.5l-.1-1.4.1-.8.2-.9.8-1.5-.1-.5L415.9,45l-.4-.3-.8.2-.7-.1-.2-.4.4-2.5-.1-1.2.3-1,1.1-2.1.3-.8.2-.9,1.4-3.3,1.6-2.4.2-.9V26.2l.1-1.6.5-2.1.3-.9.5-1,.7-1,.2-.6.1-1.2,8.5-.1,9.4,2.2,3.5,2,2,.5.5-.1.9-.4h.4l.4.1,1.1.2.9.7,1.1.5,1,.3.5.3,1.4,1.7.4.6.4,1.1v.9l-.3.7-.6.8-.5,1.3.6.9,1.1.8.6.6.1.5-.4,1.1v.5l.3.4.9.6.2.4.3,1.2.7,1,2.8,2.8-.1.8-.8,1-.2.6-.1.5-.2,1.1v.6l.1.8.3.3.5.2.5.4,1.3,2.9.5.4,1.1.5.7,1.2.2,1.5-.4,1.3.6.8.2,2.5.9.5-.1-.7,1.2-4.2.5-1.1V49.9l2.1-8.1.8-1.3L472,38l1.2-1.8,3.7-9.7.4-.4,1-.6.4-.6,1.5-4,.8-3,.4-.9.3-.2.7-.3.4-.4.2-.4.2-1.1.6-1.7.8-.3,1.3-.2,4.7.3,1,.4,2,1.9.6.2,2.3-2,.8-.5,2-.3,31.5.1,7.4-.4,2.2.5.7.1.1.5.4,2.1v.5l-.2.5.4.6v1.7l.3,1,.7.7,2.4,1.2,2.2,1.5.5.7.3.5.2.8.9.3.4.2.4.4.2.4H550l.3.7-.2.6-.3.5-.1.4.4.5.6.4.6.2h.6l1.2.3.8.7,1.3,1.6.6.3,2,.7.4.3.4.9.8.8,3.5,2.4,1,.4Z" transform="translate(0 0)"/>
+                </a>         
+                <a xlink:title="Jujuy">
+                    <path id="boton-11" class="cls-1 botonpcia" d="M421.6,17.8l-.1,1.2-.2.6-.7,1-.5,1-.3.9-.5,2.1-.1,1.6v3.1l-.2.9-1.6,2.4L416,35.9l-.2.9-.3.8-1.1,2.1-.3,1,.1,1.2-.4,2.5.2.4.7.1.8-.2.4.3,1.8,1.6.1.5-.8,1.5-.2.9-.1.8.1,1.4v.5l.3.9.6,5.1.5,1,.2.5,1,3.6.3.7.8.8,1,.9.5.2.7.1,4.2.1,1.4.2.4.2.5.4.7.8.6.9.2.8.1,1.4-.7,4.8-.9,3.3-.2,1.5.2.6.2.4.4.4,1.5.4,1.6.8.6.5.8,1.6.6,1.7,1.8,3.4.2.8.1,1.9.2.5.5.4h.6l.6.1,1.4.4,1.1-.2.5-.3,1.3-1.2.5-.4.4-.1,2.2-.3,1-.3h.8l1,1,.4.3.3.2,2,.5,1.6.8.7.7,1.2,1.1.9,1.2,1.1,1.3.2.5.5.5,1.3.9,1.1-.9.3-.6.5-2.4.2-.4,1-1.1.4-.6,1-.2,6.3.1.9.1.8.2.2.7.1.9,1.2,35.1-.2.8-.8,2.4-1.7,3.2-3,4.2-1.3,1.4-.9.7-.5.2-.6.1-1-.1-1.1.3-1,.1-.9.3-.5.4-.7,1.3-.6.5-2.5.6-2.7,2.5-.7.8-.6,1.1-.4,1.3-.4.8-.5.6-.4.2h-.4l-9.6-8.5-.6-.2-.6.9-.8,1.2-2.3,5.4-.4.3-.6.1-.7-.1-4.8-1.8-1.6-1-4.3-3.5-.2-.5-.3-.8-.2-.3h-.5l-2.1,1.5-1.2.6-.6.2-1.2.3-2-.5-2.3-1.1-.9-.2-1.2-.1-1.2-.3-.6-.5L408,145l-.9-.5h-.8l-.8.5-.8.2-.5-.2-1.6-.9-.9-.6-.5-.9-1-1.9-5-6.8-1.7-2.9-.4-1.1.2-2.3-.2-2-1-.8-2.4-1.2-.3-.2-.6-.6L387,121l-.6-.5-.4-.2h-1l-.6.6-.5.3-.5-.1-.6-.3-.4-.7-.4-.6-1-1.4-.1-.7.4-1,.1-.4-.6-1-.1-.8-.1-.2-.5-.1-.2-.3-.2-.6.2-3.8.2-.8.7-1.3.7-.8.2-.6-.6-1.2v-.4l.5-1.2-.2-2.6v-1l.3-2v-.9l-.3-.6-.3-.4L379.6,94l-7.1-4.3-.6-.2-1.4.1-.8-.4-1.5-1.1h-1.4L364.5,87l-.6-.2h-.5l-.4.1-.4.4-.5.7-1.3,5.6-.1,1.4v1.6l.2.5,1.1,3.1.1.8,1.6,3.8.4,1.4.2,3.2-.2,4.8-.6,5.7.1,2.2-.2,1.5-.2.8-.3.5-.4.8-.3,1-.2,1.7-.4.7-.3.4-.9.2-.3.2-2.6,3.6-1.7.9-3.2.1-1.8-.4-2-.9-1.6-.9-1.1-1-1.8-2.6-1.7-1.9-.5-.3-4-1.8-.8-.6-.3-.4-.9-1.3-1.7-1.7-.3-.5-.2-.9-.3-.5-.3-.1-1.2-.2-.6-.3-.2-.5-.3-1.1-2.2-2.3-1.4-1.7-.4-.4-.7-.4-.6-.1-1-.1-1-.3-.5-.5-1-1.2-.6-.6-1.3-.4-.7-.5-1.2-1.4,3.7-12.1L325.6,83,330,68.5l.3-1.7-9.1-9.7,2.6-4.4,1.5-1.7,3.8-3,.5-.9.1-1.2-.4-5h.9l1.1.1.7-.2.7-.5.5-.7,1-1.1,1.3-.7,5.6-1.8.6-.4.1-.5-.4-1.6.2-.4.6-.8.4-1.3.6-4,.3-1.3.7-1,1.1-1,.7-.3h.6l.5.2,1,.1.8.3.3-.1.3-.7.1-.3,5.9-1.6,6.6-1.9,1.2-1,.6-1,.3-.4.5-.3.6-.1.3.1.3-.7.3-.8.4-5L369,1.3l.9-.3,4.2,1.4,2.2,1.1,1.6,1.7.5,2.6.3.3,4.6.8,1.1.6,6.4,7.6,1.5,1.1,1.5.5,7-.8.4-.2.4-.5h.5l3.5.5,2.6.3Z" transform="translate(0 0)"/>
+                </a>
+                <a xlink:title="Tucumán">
+                    <path id="boton-12" class="cls-1 botonpcia" d="M456.9,244.2l.1,4-.1,1.6-1.8,5.9-.1,1.2.8,5.7.4,4.1v2.1l-.1,1-.2.3-3.2-.5-.6.2-.4.6-1.4,5.2-.2.6-.3.3-.9.2-1.1.1-.4.2-.3.7-.6,2.6-1.8,6.9-.7,1.6-.6.2-.3.4-.5.5-.4,1-.7,3.3-.6,2.4-1.5,3.9-.9,1.2-.3.4-1.1,3.2-.3.6-.3.3-1.2.2-.5.3-.7.7-2.4,2.9-.7.6-3.1,3.6.2.2.8.6.8.2.9.2,1,.4,1,.8.1.3-.2.4-.6,1.1-.5.6-.5.4-.4.2-.6.1-1.1-.1-.6.3-.6,1.6.1,1.3,2,5,1.4,2.9.1.8h-.9l-.4.2-.3.5-1.5,4.5-.4,1-.6.4-.6.3-.5.1h-.6l-.8-.2h-.7l-.5.2-.7.5-1.4.6-1,.2h-.6l-.7-.3-1.1-.5-1-.7-1-1-.7-.5-.8-.4-.8-.1-4.1,2.7-1.6,1.6-1.7,1.3-.2.3-1.4,1.9-1.1,2.6-.3.5-.7-.2-4.2-5.3-.5-.7-.7-2.2-.5-3-.5-1.7-.2-.3-.5-.5-2.3-1.2h-.8l-.4.3-.6.3-1.3.4-1-.6-.5-.9-.2-.7-.2-1.2-.7-2.2-.2-.6-.3-.3-.7-.4-.5-.3-.6-.6-.5-.8-.2-.5-.3-2.5-.7-1.3-1.7-8.4.5-1.3-.3-.7-.6-.2-1.5-.1-3.5-2.2-.6-.2-1.7-.2-1.1-.3-1-.4-.4-.3-.2-.3.2-.6,1.3-1.9.8-2.1,1.6-1.8,1.1-.9,1-1.1.5-.7.4-1.4.9-1.6,1.2-1.6,1.7-1.8,3.5-3.6,1.4-2.2.5-1.4.2-.9.1-.6-.1-3.2.1-.8.8-3.2v-1.2l-.1-.9-.2-.6-.4-.4-.4-.4-2.2-1.1-3.2-2.6-1.8-1.8-.7-.5-1.1-.5-1.3-.4-1-.2-1.1-.2-.8-.6-.8-1.1-.2-.8-.1-.6.2-.9.8-2.7,1.1-2.4.5-1.5.2-1.2V251l.1-1.1.3-.8.8-.8.8-1,.4-1.2,14.8,2.6h1.7l.7-.3.4-.6.3-.7v-.7l-.1-1.8v-.8l.3-1.2.4-1.2.1-1v-2.3l.2-1.3.4-.5.3-.2.6.1,1.3.7,2.5.7,1.2-.1h.7l4.9,1.1h.6l.7-.2,2.5-1.4,1.4-.7.7-.1h.5l.5.6.7,1.4.4,1.4.3.8.4.7.8.4,9.5,3.9,1.3-.3,1,.3.8.7,1.7.8,1,.3h1.1l.6-.1.8-.3.9-.6,1-1,.5-.3,2.6-.9,1.5-.3,2.7.7.8.1,10.6-.3Z" transform="translate(0 0)"/>
+                </a> 
+                <a xlink:title="Formosa">
+                    <path id="boton-13" class="cls-1 botonpcia" d="M764.1,281.5,763,281l-.2-.6.1-.7-.3-.5h-.7l-.9.2h-.6l-.6-.2-1-.6-.5-.5-.4-1.5-.4-.4-2.6-2.1-.5-.7-.3-.7-.3-.9-.2-.5-.4-.5-.4-.3-3.8-2.3-1-1.2-.7-1.1-.5-.5-.5-.1h-1.4l-.8-.6-1.2-1.5-.6-.9-.6-.5-2-.9-.7-.4-.5-.4-1.3-1.4-.6-.9-.4-.7-1.2-1.5-1-1-1.5-.9-2.2-.9-1.7-.7-1.7-.6-.4-.3-1.5-1.3-.3-.6-.4-.7-.3-.1-.5-.1-.7.2-.4.3-.7.9-.4.3-.5.3-.9.2-1,.5-.8.2-.7.1-.4-.2-1.3-.5h-.3l-.6.2h-.6l-.4-.3-.5-.5-.8-1.3-.3-.6v-.5l.2-.5-.3-.4-.6-.9-.4-.9-.1-1.5-.1-1-.3-.3-.5-.3-1.2-.6-1.1-.2h-1.4l-1.1-.5h-.7l-1,.1-.7-.1-1.2-.7-1.1-.5h-.5l-.8.3-.6-.2-.3-.2-.2-.4-.1-.4.1-.8.1-1.5-.4-3.5H697l-.3-.1-.3-.2-3.3-4.9-2.1-1.9-.9-.6-1-.3-.5-.5-.1-.5.1-1.1-.2-.5-.6-.6-1.7-1-1.4-.6-.5-.6-.5-.9-.6-.6-.5-.2-1.6-.3-.5-.3-.2-.3-.4-1.4-.3-.2-.5-.2-1.2-.2-.4-.2-.7-.5-.5-.2-.7-.2-.6-.2-.6-.4-.5.1-.6.5-.7-.3-.3-.6-.1-.4-.2-1-.3-.6-.9-1.3-.5-.8-.1-.9-.6-1.1.1-.5.4-.3.1-.5-.2-.7-.4-.4v-.3l-.9-.4-1.3-.1-.5-.4-.2-.5-.1-.8-.3-.7-1.7-.9-.3-.2-.2-.4.1-.2.3-.4-.1-.6-.6-1-.3-.8-.5-.4-1.2-.6-.7-.5-.9-.9-.5-.7-.7-1.2-.7-.8-.4-.7-.7-1.5-.7-1.2-.5-.3-.7-.3h-.9l-.5.1-.6-.1-1-.7-.8-.4-1.9-.6-.7-.5-.6-.6-.5-.5-1.5-.9-.3-.1-3.1-2-1.4-.5-.4-.3-1.6-1.7-1.3-1.1-.9-.4-.6-.3-7-6-.4-.2H629l-.6.5-.8-.5-.9-1-.4-.7-.1-.7.1-.7.4-.6-.2-.5-2-3-.3-.6v-1.5l-.2-.2-.8-.2-.3-.3-1.4-2.1-.5-.5-.7-.4-1.9-.7h-.8l-2.6-.1-1.4-.3-1.7-.7h-.4l-1.2.1-1.1-.2-.3-.3-2.4-2.2-.6-.9-2-1.8-.5-.6-.3-.8-.2-.8-.4-.4-.5-.1-.9.3-.8-.2-.7-.2-.7.4-.2-.2-.3-.4-1.9-3.4-.4-1-.3-.4-.5-.4-1.1-.7-1.6-1.5-.7-.2h-.8l-1.1-.1-1.9-.6-1-.1-.8-.3-1.9-1.6-2.2-1.3-.7-.8-.1-.5-.5-.7-.6-.5-.7-.4-.7-.2-3.7-.5L564.4,128V97.1l-.1-59,1.8.2.5.2.4.2.2.5v.6l.1.4.9.2,1.1,1.3.4.9-.3.9-.7,1v.7l.7.5,1.2.6,1.1.2.3.6-.4,1.2V49l1,.6-.7,1.3.3.3.6.2.4.4.2.6.3.6,1.4,1.5.5,1.3,1.3,1.1.2.1.2.6.5.6,1,1.2.8,1.1.9,2,.6.8.1.5-.3,1.3.2.5.7,1,1.8,2,5.5,3.4.4.4,1.2,1.7.6.5,1.1.7.5.5.6.6.3.5.1.7.1,1,.2.9.5.5.8.3.7.5.8.9.4.2.7.2h2.3l.8.4,2.5,2.7.4.2.6.1h.9l-.5,1.1v.6l.8.5.5,1.3.4.3h1.1l.9.2.8.3.8.6.6.5.5.4.7.2h1.1l3.3,1.5.4.7.3.8.5.8,1,.3.5.2,1,1,.4.3h1.7l.7.5.6.8.8.7.8.3.7.4.1,1.2-.1,1.2-.5.9.5.5.8,1.4,1.3.8.9,1,.6,1.2v.7l.3.3.8,1.2.4.5,1.6,1,1.9-.5,1.9.9,1.7,1.4,1.4.8,1,.2,4.4-.1.5.1,1,.9.5.1,2.3-.1.6.1.5.2.9.4.5.1v.4l.8,1.7.3.1,1.8.1.9.4,1.7,1.2,3.1.6h2.2l.5.4,1,.9.5.3.5.1,1.6-.1,3.9.6,3.8-.2,1.2-.2,2.3-.9,1.1-.1.9.3,18,11.9,1.9,2,.9,1.2.4.4.5.1,1.2.2.9.5.9.2.4.3.5.6.6.4,1.1.7,1.1.5.3.3.5,1.3,1.2.5,1.9,1.7.5.6,1,1.9.9,1.1,1.6.6.7.8.4.1.8.1.4.3.2.4.5.4,2.1.7,1.4,1,1.2.4,1.9,1.3,1,.3.9.1h.3l.5.3,1,1,.5.4,1.6.4,9.6,7.3,1,.3h2.6l.7.2,1.1.7.1.5.2.2,11.1,2.2,1.1.6.6.6,1.2,1.7,3.3,3.6.4,1,.3.3.6.2.6-.1.6-.4.6-.4,1.4-1.5.9-.6h.9l4.5,3.1.5.8h.6l3.5,1.8h.5l1.1-.1.5.1.3.4.2.7.3.5.7.3h4l1,.3.7.7,2.2,2.6.8.5,1.5.8.6.7,1.6,3.6,1,1.4,1.6,1.1,1.5,3.9v.7l3.1,2.4.7.8.3.7.1.9-.7,4.8-.2,1-.6.6-.7.2-.5.4-.3,1.3-.3.3-.8.1-1.5-.2-.1.2-.2,1.3-.2.4-.5.3-1.6.1-1,.4-.7.6-1,1.6.3.5.4.3,1,.4-.5.7-.9.9-.9.7-1,.3-.7.5.2,1.1.7,1.8-.5.8-1,.8-1.1.5-1,.4-.2.4.2.4,1.1.4.1.6-.3.7-.3.4-1.8,1.4-.4.9,2.3.7v.7l-.6.9-5.8,4.4-1.7.9-3.2,1.2-.5.6-.5,1.8-.5,1.2-.4.6-.2-.4-.3-.3-.9-.4.2,1,.5.5.8.4.8.5v.8l-.9.7-1.1.4-.8.2-.4.4v.9l.3,1.8-.2.9-.2.8-1.7,3-.4.9.2.7,1.2,1.2-.1.5-.7.6-.2.4-.1,1-.3.9-.2.8.2,1,.3.3,1.1.8.3.4.5.8.3.3-.4.4-1,.8v.6l.5,1,.2.5-.3.3-.6.1-1.6-.3-.4-.1-.2.6-.3,1.1-.1,4.3-.2.3-1,.1-.8.2.1.6.4.6.1.5-.6.7-.9-.1-.9-.3-.8.3-.6,1.2.6.8.9.7.3.9-.7.6-1.1.1Z" transform="translate(0 0)"/>
+                </a>
+                <a xlink:title="Chaco">
+                    <path id="boton-14" class="cls-1 botonpcia" d="M764.1,281.5l-1.2.1-.5.5-.4.7-1.1.5-2.2.6-.8.5-.4.7.1.8.7.7-.4.8-.8,1.1-.5.7-.3.9v.9l-.2.3-.4-.1-.4-.2-.2-.8-.2-.2-.5.2-.6.8-.2,1-.1,1,.1.9-.2.5-2.5.5-1.2.7-.7,1.1-.3,1.6.3.8.7.6,1.3,1,.6,1,.1,1.2-.2,2.8-.6.1-1.4.4-.6.4-1.8,1.5-3.7,2.3-.2.4-.3.4-5.2,3.5-.4.2-.1,2V318l.2,1,.3.9,1.4,2.5.8,1.8.6,2.1.4,2.1v2.1l-.2,1-1,2.9-.2,1-.1,1,.2,2.2v1.1l-1.2,4.7H679.5l-35.3.2-48.3-.2V240.1l-.6-22.4-1.6-4.6-82.4-.1,15.4-19.9,37.9-49.6-.2-15.5,10.8,4.3,3.7.5.7.2.7.4.6.5.5.7.1.5.7.8,2.2,1.3,1.9,1.6.8.3,1,.1,1.9.6,1.1.1h.8l.7.2,1.6,1.5,1.1.7.5.4.3.4.4,1,1.9,3.4.3.4.2.2.7-.4.7.2.8.2.9-.3.5.1.4.4.2.8.3.8.5.6,2,1.8.6.9,2.4,2.2.3.3,1.1.2,1.2-.1h.4l1.7.7,1.4.3,2.6.1h.8l1.9.7.7.4.5.5,1.4,2.1.3.3.8.2.2.2v1.5l.3.6,2,3,.2.5-.4.6-.1.7.1.7.4.7.9,1,.8.5.6-.5h.3l.4.2,7,6,.6.3.9.4,1.3,1.1,1.6,1.7.4.3,1.4.5,3.1,2,.3.1,1.5.9.5.5.6.6.7.5,1.9.6.8.4,1,.7.6.1.5-.1h.9l.7.3.5.3.7,1.2.7,1.5.4.7.7.8.7,1.2.5.7.9.9.7.5,1.2.6.5.4.3.8.6,1,.1.6-.3.4-.1.2.2.4.3.2,1.7.9.3.7.1.8.2.5.5.4,1.3.1.9.4v.3l.4.4.2.7-.1.5-.4.3-.1.5.6,1.1.1.9.5.8.9,1.3.3.6.2,1,.1.4.3.6.7.3.6-.5.5-.1.6.4.6.2.7.2.5.2.7.5.4.2,1.2.2.5.2.3.2.4,1.4.2.3.5.3,1.6.3.5.2.6.6.5.9.5.6,1.4.6,1.7,1,.6.6.2.5-.1,1.1.1.5.5.5,1,.3.9.6,2.1,1.9,3.3,4.9.3.2.3.1h.9l.4,3.5-.1,1.5-.1.8.1.4.2.4.3.2.6.2.8-.3h.5l1.1.5,1.2.7.7.1,1-.1h.7l1.1.5h1.4l1.1.2,1.2.6.5.3.3.3.1,1,.1,1.5.4.9.6.9.3.4-.2.5v.5l.3.6.8,1.3.5.5.4.3h.6l.6-.2h.3l1.3.5.4.2.7-.1.8-.2,1-.5.9-.2.5-.3.4-.3.7-.9.4-.3.7-.2.5.1.3.1.4.7.3.6,1.5,1.3.4.3,1.7.6,1.7.7,2.2.9,1.5.9,1,1,1.2,1.5.4.7.6.9,1.3,1.4.5.4.7.4,2,.9.6.5.6.9,1.2,1.5.8.6h1.4l.5.1.5.5.7,1.1,1,1.2,3.8,2.3.4.3.4.5.2.5.3.9.3.7.5.7,2.6,2.1.4.4.4,1.5.5.5,1,.6.6.2h.6l.9-.2h.7l.3.5-.1.7.2.6,1.1.5Z" transform="translate(0 0)"/>
+                </a>  
+                <a xlink:title="Corrientes">
+                    <path id="boton-15" class="cls-1 botonpcia" d="M883.6,306.6l-1.4,1.1-.3.5-.7,1.9-.3,1.4v1.3l.1.6,7.2,14.9.8,2.1.3,1.9.7,6.8.3.7.4.7,1.6,1.6.5.7.4.9.3.7.1,1.1.1.5.3.7.4.6.7.8,1.5,1.5,4,2.8.2.2-.5.6-.5.3-2.1,2-3.2,1.2-1.2.9.3,1.4.6.5,2,.9.6.2.7.3.5.7.7,1.4-.7,2.7-.3.8-.5.6-.6.5-.4-.2-.2-1.1-.8-1.1-1.9-.5-2-.2-1.5-.4-2.3,1-.9.8.3,1.2.2.4-.1,2.7v.4l-.6.6-.5.1-1.6.2-1.4.7-1.6.4-.5.8-.1,1.1.2,1-.1,2.2-1,1.4-3.1,2.2-4.1,5.5-1.7,1.1-2.3.5-1.1.4-.4.9-.3,4.9-1.1,2-3.4,2.1-1,2.2-.1,2.3-.1,1.2-.7,1-.8.5-3.4.9-1.8.9-1.8,1.3-1.6,1.6-1.4,2.1-.3.7-.3.8v.9l.3.7-.5,1.1-.8,2.5-.6.9-.9.8-.6.5-1.8.9-.8.7-.5.9-.1.6v.6l-.1.6-.8.4-.4.6-.2.8-.1.5-.2.5-4,3.5-.3.8-.4.5-2,1.6-.7.8-.7,2-1.4,1.6-.3.6-.4.6-3.6,3.9-1,.9-1,.3-2.2.1-2.1.3-2.2.8-1.4,1.3-.9,1.9-.5,6.8-.3.9-4.3,3.4-4.8,6-2.1,1.5-1,.4-2.1.4H800l-.4.6.2,1.2.8,2.5-.4,2.3-1.1,1.8-9.9,9.1-1.3,1.7-.7,2.1.2,2.3,1.2,2.3.7,1.1,1.1,2.4.4,1.3.5,2.1-.4-.2-2.7-2.1-5.8-6.1-.5-.8-2-4-.4-1.3-.4-2.6-.2-.8-.6-1.1-2.3-1.8-2.9-2.9-1.1-1.4-.7-1.5-.6-1.6-.5-.6-1.5-1.3-9.8-2.7-2.3.1-1-.1-.9-.4-1.2-.9-.5-.3-.7-.2-.7-.1-1.4.1-6.4,2.6-.9.5-.9.3-4.2.9h-.5l-1.5-.2L733,471l-1.6-.2-.8.3-1.2.6-2.7,1.8-2,1.8-.3.6-1.1.8-3.8,2.2-4.7-1.8-2.6-.4-3.4.8h-.4l-1.3-.5h-.7l-3.2,1.2-.6.1-4.1.2-.4-2.5.1-1,1-3,.2-1,.1-2.2.2-1.1.3-1,1.5-2.8.2-1,.1-1.1-.2-2.1-1.5-4.8-1.8-3-.4-1.8.4-1.6,1.6-3.1.3-.8,1.8-7.9.1-11.7.3-1.9,1.8-6.8.7-1.6,1.1-1.4,1.3-1,1.5-.8,4.9-1.9,1.4-1.1,1.3-1.3,1.5-1.2,2.3-1.3.7-.5.8-1.5.3-2-.1-3.8h.2l.4-1.1,1.1-2,.4-1,.1-1.4.5-2v-.5l-.1-1v-1l.3-1,1.9-3.7.3-1,.3-1.1V379l-.2-4.4,1.2-7.4-.1-.9-1-2.5-.1-1.1.4-3.2v-1.1l-.4-2v-1.1l.1-.9.4-1.1.4-.9.6-.6.9-.5,1-.1h2l1.6-.4,1.5-1,1.3-1.4.9-1.5.6-2.5,1.2-4.7v-1.1l-.2-2.2.1-1,.2-1,1-2.9.2-1v-2.1l-.4-2.1-.6-2.1-.8-1.8-1.4-2.5-.3-.9-.2-1v-1.1l.1-2,.4-.2,5.2-3.5.3-.4.2-.4,3.7-2.3,1.8-1.5.6-.4,1.4-.4.6-.1.2-.2,4.4-1.9,13.7-1.2,5.5.7h.7l3-.6h1.6l3.9.9,1.6.6,2.9.7,2.1.7,5.2,1.1.5.2,8.2,4.2,1.1.3,1.3.2,5-.8h1.3l1.3.4.5.3,1.1,1.2.5.2,2.8.8.5.3,1.4,1.1.4.3.6.2h1.1l.5.1,1.9.1,1.7-.4,4.9-2.8,1.9-.7,1.8-.2,1.7.7,3.1,3.1,1.9,1.2,1.8-.4,2.6-2,3.5-1,3.3.5,2,2.5,1,1.5,1.3,1.5,1.5,1.3,1.6.6,1.6-.3.9-1.4.7-1.8.9-1.4,1-1.1.6-1.1.2-1.3-.2-1.5.3-1.2,1.1-.7,1.5-.4,1.1-.5,1.8-2.1,1-.7,1.2-.8,1.3.1,1.3.3,3.3,1.3,1.1.2Z" transform="translate(0 0)"/>
+                </a>  
+                <a xlink:title="Misiones">
+                    <path id="boton-16" class="cls-1 botonpcia" d="M900.8,352.6l-.2-.2-4-2.8-1.5-1.5-.7-.8-.4-.6-.3-.7-.1-.5-.1-1.1-.3-.7-.4-.9-.5-.7-1.6-1.6-.4-.7-.3-.7-.7-6.8-.3-1.9-.8-2.1L881,313.4l-.1-.6v-1.3l.3-1.4.7-1.9.3-.5,1.4-1.1,1.5-.2h1.1l1,.4.8,1,.8,2.1.4.6.6.4,1.3.3,3.1,1.7,1.8-1.5,1.8-2.1,1.4-1.1,1.3-.2,1-.6.8-1,.5-1.3.1-.8-.2-.8.7-1.1.1-.6-.1-.6-.2-.7-1.2-2.3v-.9l1.3-.3.9-.4.2-1,.3-1.2.5-.9,1-.1,1.4.1,1.2-.1.6-.9.1-2.6.3-1.1.6-1.1.8-.9.9-.6,1-.3,2.4-.3,2.4-1.4h1.2l1.1.5.9.5.8.2,2,.1,1.1-.2.8-.7.2-1.2-.7-2.2.4-.9,3.2-3.3,1-.4,2.5-.2.8-.4.7-.9.5-.8.4-1,.6-2.6.6-1.1.8-.8,1.2-.3h2.2l.4.2.5.5.5-.3.7-.9.4-1.3.2-1.3.1-1.3-.2-1.1-.3-.8v-.7l.5-1.1.7-.9,1.4-1.1,1.6-1.8.4-.8.2-.9.5-3.4.2-.6.8-1.8v-2.5l-.1-1.1.1-.4.4-.7.6-.8.3-.7-.2-.7-.9-1.1-.2-.8,1-3.6.1-1.3-.6-1.8-.2-1.6-.2-.6v-.6l.3-.6.4-.2,1.2-.1.4-.1.5-.8-.1-1.1-.4-2.5.3-.9.5-.9.5-1,.1-1.2-.3-.7-1.2-1.4-.2-.7-.1-1.1-1-2.9.1-1.5.4-.5,1.8.1.7-.5-.1-1.2-.8-1.7.1-1,2-.3.7.3.3.6.1.8.3.6,1-.3,1.1.5.9.6.6.9.2,1.2v.5l.1.6.3.3.5-.2.3-.5-.3-1.1v-.6l.3-.5,1-.5.4-.4.1-.6v-1.1l.3-.5.5-.2h.4l.9.4.5-.1.9-1.1.5-.4,1.2-.2.7.3.5.6.6,1.2.3.5.3-.3.3-.9h.8l.9.3,1-.1-.2-1-1-1.7.4-.2.5.1.9.3.7-.1.5-.3,1.3-1.5.6-.4.5.4-.3,1-.4.9-.3.9.2,1.1.3.5.4.5.5.4h.5l.2-.3-.2-1.8.3-.5.5.3.9.8.6-.1.6-.3.7.1,1,.6.6.8.3,1,.1,1.1.5,1.4.9-.1,2-1.2.6.6.5,1.2.5,2-.1.5-.3.9.1.7.3.6,1,.9.4.6.4,1,.2,1-.2,3.3.6,2.9-.1.6-.2,1,.1.7.4.6,1.6,1.6,1.4,1.5.6,1.7.3,1.8.7,2,2.4,3.4.9,1.8.3,2.2-.6,1.9-2.1,3-.4,1.6.5,5.3v1.7l-.7.6-.4.4-.1.4.1.5.4,1-.1.8-.6,1.9-.1,1,.3,2.2-.1,1-.3,1-.4.3-.9.3-.1.6.2.7.4.3.7.4v.5l-.3.8v.6l1,.2.6,2.1.5,3.3-.1,1.8-.6,2-2.2,4.7-.2.3-.3.2-.8.1-.3.2-.2.8.1,1.6-.1.7-.2.4-.8.5-.2.3.1.4.4.5v.5l-.5.9-.6.4-.4-.3-.4-1-.6-.8-.7-.3-.4.4-.4,1.7-.5.6-.8-.1-.7-.6-.6-.5-.7.4-.1.7.3.8v.6l-1,.2-.4-.1-.4-.3h-.4l-.3.3-.4,1.1-3.6,4.1-1.9.2-1.5-.5.1-1.3-.4-.4-.6-.4-.6,1-1.5,3.9-.5.7-.2.5.2,1.2-.2.5-.3.1-.6.1-.5.2-.4,1-.3.6-.6.7h-1l-.8-.5-.6-.8-.7-.7.1,1.8-.1.6-.3.6-.5.4h-.4l-.1-.5-.2-1.3-.5-.6-.8-.2-2,.1-.8.2-.2.6.8,1.2v.8l-1,.6-3.3,1h-.5l-.5-.3-.2-.3-.5-1-.1-.2-.7-.2h-.3l-.4.4-.4.5-.2.6-.3,1-.5,1.1-.7.6h-.6l-.2-1.1-.2-.2h-.3l-.4.3-.1.7-.1,1.2-.2.2-.4.3-.5.1-1.1-.1h-.5l-2.1.7-.3-.1-.4-.5-.3-.2.4-.9-.3-.6-.7.2-.7.5-.4.5-.3,1.2-.2,1.4-.4,1.2-1,.5h-1.2l-.4.2.1,2.1-.3,2.5-.3,1.2-.3.6-1,.4-2.6,2.3-1.2.2-.9-.3-.9-.4-1-.3-.8.4.5.9,1.5,1.5.8,1.1-.2.6h-.8l-1.1-.6-.5.2H927l-.5.2-.1.4-.4,1.5-1-.2-1.1-1-.8-.3-1,.4-.8.9-.6,1-1.8,1.4-.5.2-.5-.1-1-.4-.7.1-.8.7-.1,1.1-.3.9-1,.4h-.5l-.4.2-.2.3-.1.5.1,1.2-.5.9-2.2,2.6-.3.5-1.2.3-.5.1-.4-.2-.2-.3-.3-.2-.7.3-.2.3-.5,1.3-1.2,1-.2.4-.1.4-.2.4-.5.1-.6-.2-.1-.5v-.5l-.2-.3-1.1-.3-.6.8-.3.8Z" transform="translate(0 0)"/>               
+                </a>        
+                <a xlink:title="Entre Ríos">
+                    <path id="boton-17" class="cls-1 botonpcia" d="M791.3,502.4l.3,1.5.3,2.5.1,2.4-.1.6-.3,1.4-.2.9-.7.3-1.1-.2-2.1.6-1,.6-.4,1,.3.7,2.2,3.1.4,2.8-1,2-1.2,1.9-.7,2.6.4,2.6v1.5l-.5.7-1.1,2.2-.3.4-.9.7-.3.3-.5,1.2-.2,2.7-.5,1.1-.8.7-1.9,1.2-.9.8-.7,1.8,1.3,1.5,1.8,1.4,1.4,1.7.3,2.6-.4,2.6-3,9.1-.6.9-1.2.4-2.3.5-1.1.5-.8.6-1.4,1.6-.3,1.2.6,1.2,1.6,1.8.4,1.8.2,2.5-.1,2.7-.5,2.3-1.1,1.8-.3,1.2.5,1.3,3.5,4.6.5,1.7-.3,1.8-3.1,4.6-1.3,2.7-.5.6-1,2.7-.1,2.6.5,7.4.9,4,.7,6.1.5,1.2,1.3,2.2.3.9-.2,1.2-.7,2.3-.2,1.3.5,2.7.2,1.5-.5.6-1.9,1.7-.5.2-1.2.2h-.7l-7.1-1.2-1.8.8-.5.8-.1.6.9.4v.4l-.3,1.3-.1,1.3-.5,2.6-.1,1.2.8,2.6.3,1.3-.5.6-.9.5-1,1.1-1.4,2.1-1,2.2-.7,2.6-.5,2.7-.2,2.4.3,2.7-.1.6-.5,1.2-.4,4.5v1.3l.4,2.4.9,2,2.7,3.9.4,1,.3,1.2.2,2.7.6,3.3-.1.7-.3.7v.3l-2.6.6-4.6,1.9h-2.4l-2-1-5.1-4.8-1-.4-2.4-.5-1-.6-2.7-2.4-3.6-2.2-.9-.7-1-.6-1.3-.2-5.2.1-.5-.2-.4-.8-1-1h-.3l-.8.4-.5-.2-.8-.7-.2-.6v-1.5l-.1-.8-.4-.9-.3-.1-.5.1-.7.2-.2.1-.5.6H712l-2.5-1.3-1.9-2.2-2.1-1.5-2.8.9-1.3.4-1.9-.4-6.6-3.6-.7-.7-1.9-3-.9-.9-.8-.6-2.4-1.2-1.2-.3-.8-.3-8.6-6-6.4-7-2.4-1.3-1.5-.9-1.2-1-.2-.4-.6-1.1-.9-1-.5-.5-1.1-.5-.9-.4-3.2-2.2-2.8-3.7-.3-.5-1.2-4-.3-.5-.9-.8-.8-1.4-2.7-5.6-.7-2.2-.4-2.3-.4-5.4-.4-1.2-.5-1-1.8-2.9-.4-.9-.1-1.1.2-1.2,1.5-3.7.3-1.3.1-1.2-.2-3.6v-1.2l.3-1.2,1-3.5.2-1.2v-1.3l-.4-3.5.1-1.1.4-1.1,1.7-2.9.2-1.1-.2-1.3-.6-1.1-1.4-2-.6-1.4-.2-1.4.1-1.5.5-1.4,1.4-1.9.4-.8.1-.6.3-1.9.5-1.7.2-.9-.1-.8.2-.2-.2-.5v-.5l.1-.6.2-.4.4-.3.4-.2,1.3-.4,1-.1,1.1.1h3.4l1.1-.2,1.1-.3.9-.5,1-.6,1.7-1.4,1.4-1.7,2.5-3.8,1.4-1.5.6-1,.4-.5.7-.7.7-.3.2-.2.5-1,.3-.3.8-.4.7-.3.6-.5,1-1.7,2-2.6.3-.8.2-.1,1.6-4.9.5-.8,2-1.8.6-.8,3-5.6,3-4.3,2-3.8,2.3-3.1,1.1-1.9,2.7-3.5,2.9-5.6.4-1.1.2-3.3.2-1.1,1-2.8.2-1.1V489l.3-2.2v-1l-.1-.9-1.4-2.7-.4-1-.4-2.7,4.1-.2.6-.1,3.2-1.2h.7l1.3.5h.4l3.4-.8,2.6.4,4.7,1.8,3.8-2.2,1.1-.8.3-.6,2-1.8,2.7-1.8,1.2-.6.8-.3,1.6.2,2.8.9,1.5.2h.5l4.2-.9.9-.3.9-.5,6.4-2.6,1.4-.1.7.1.7.2.5.3,1.2.9.9.4,1,.1,2.3-.1,9.8,2.7,1.5,1.3.5.6.6,1.6.7,1.5,1.1,1.4,2.9,2.9,2.3,1.8.6,1.1.2.8.4,2.6.4,1.3,2,4,.5.8,5.8,6.1,2.7,2.1.4.2Z" transform="translate(0 0)"/>
+                </a>
+                <a xlink:title="Santa Fe">
+                    <path id="boton-18" class="cls-1 botonpcia" d="M698.5,479.5l.4,2.7.4,1,1.4,2.7.1.9v1l-.3,2.2v3.3l-.2,1.1-1,2.8-.2,1.1-.2,3.3-.4,1.1-2.9,5.6-2.7,3.5-1.1,1.9-2.3,3.1-2,3.8-3,4.3-3,5.6-.6.8-2,1.8-.5.8-1.6,4.9-.2.1-.3.8-2,2.6-1,1.7-.6.5-.7.3-.8.4-.3.3-.5,1-.2.2-.7.3-.7.7-.4.5-.6,1-1.4,1.5-2.5,3.8-1.4,1.7-1.7,1.4-1,.6-.9.5-1.1.3-1.1.2h-3.4l-1.1-.1-1,.1-1.3.4-.4.2-.4.3-.2.4-.1.6v.5l.2.5-.2.2.1.8-.2.9-.5,1.7-.3,1.9-.1.6-.4.8-1.4,1.9-.5,1.4-.1,1.5.2,1.4.6,1.4,1.4,2,.6,1.1.2,1.3-.2,1.1-1.7,2.9-.4,1.1-.1,1.1.4,3.5V592l-.2,1.2-1,3.5-.3,1.2v1.2l.2,3.6-.1,1.2-.3,1.3-1.5,3.7-.2,1.2.1,1.1.4.9,1.8,2.9.5,1,.4,1.2.4,5.4.4,2.3.7,2.2,2.7,5.6.8,1.4.9.8.3.5,1.2,4,.3.5,2.8,3.7,3.2,2.2.9.4,1.1.5.5.5.9,1,.6,1.1.2.4,1.2,1,1.5.9.9,1.3.1.8-.2.9-.4.8-.6.6-.4.2-1,.3-.5.3-.3.6-.2.8-.1,1,.1,1.3-.3.8-.6.6-2.1,1.6-.4.7-.3,2.8-.3,1.5-.2.6-1.8,3.9-.5.6-1.2.7-2.1.5-1.2-.1-.9-.3-.7-.5-1.4-1.5-2-1.4-.6-.2-4.8-.1-.6-.2-1.6-.9-.4-.2-.8-.1h-.9l-.7.1-1.2.3-.7.4-.8.9-.5,1.4.5,1.9-1.8,2.6-9,10.3-11.9,13.4-16.5,18.6h-2.6l-26.4.2-28.3.1,20.2-33,15.3-25.1,11.3-18.3,1.4-1.8,1.1.1.6-.1.6-.2.7-.5.8-.6,1.8-1.9.7-1.4.2-.4.1-1.1.1-1.5v-3.6l.2-1.2.7-1.5.3-.9.1-.5-.2-.9-.3-.9-.4-.6-1.3-1.1-.4-.6-.9-2-1.4-2.7-.4-.4-.6-.2-1.5-.3-.7-.4v-.5l.7-.9.5-.9.1-.8.1-1.2-.3-.7-.6-.3-.6-.8-.1-.3-.1-2-.3-1.8-.4-1.4-.9-1.2-.6-.6-3.6-2.7-1.1-2-.4-.9-1.4-5-.2-.6-.2-.2-1-.7-1.5-.7-.4-.3-1.6-1.9-1-.9-1.4-1.5.2-4.8.2-1.5.3-1,.4-.9.6-1.7v-.9l-.6-1-.6-1-.3-.9-.4-3.5v-.8l.3-2.7v-1.1l-.2-.6-.8-1.3V561l.1-.6.6-.8,2.1-1.8,2.1-2.1.9-1.9,12.8-48,.4-3.4-2.3-3.4-11.1-12.5-.3-1-.1-1.4L577,469l4.4-28.4,2.4-15.1,4.3-27.8,4.8-32,3-20.3,48.3.2,35.3-.2h58.9l-.6,2.5-.9,1.5-1.3,1.4-1.5,1-1.6.4h-2l-1,.1-.9.5-.6.6-.4.9-.4,1.1-.1.9v1.1l.4,2v1.1l-.4,3.2.1,1.1,1,2.5.1.9-1.2,7.4.2,4.4v1.1l-.3,1.1-.3,1-1.9,3.7-.3,1v1l.1,1v.5l-.5,2-.1,1.4-.4,1-1.1,2-.4,1.1h-.2l.1,3.8-.3,2-.8,1.5-.7.5-2.3,1.3-1.5,1.2-1.3,1.3-1.4,1.1-4.9,1.9-1.5.8-1.3,1-1.1,1.4-.7,1.6-1.8,6.8-.3,1.9-.1,11.7-1.8,7.9-.3.8-1.6,3.1-.4,1.6.4,1.8,1.8,3,1.5,4.8.2,2.1-.1,1.1-.2,1-1.5,2.8-.3,1-.2,1.1-.1,2.2-.2,1-1,3-.1,1,.4,2.5Z" transform="translate(0 0)"/>
+                </a>       
+                <a xlink:title="Santiago del Estero">
+                    <path id="boton-19" class="cls-1 botonpcia" d="M511.3,213l82.4.1,1.6,4.6.6,22.4V344.4l-3,20.3-4.8,32-4.3,27.8-2.4,15.1L577,468l-7.8-20.3-2.3-1.6-8.2-.3-17,.2-28.6-.1-1-.1-.5-.5v-1.4l-.2-.6-.3-.2-.5-.2-1.8-.3-.4-.1-.2-.4v-.3l.2-1.5v-.7l-.3-.5-.8-.2-1.8.4H505l-3.6-1.2-.7-.1-5.9,1h-1l-3-.2-.8-.4-.6-.4-.8-.7-.5-.2-3.2-.7-.3-.2-.4-.4-.6-1-3.8-2.1-.7-.6-.3-.5.1-.7.1-1.4v-.6l-.2-.3-.5-.2-9.8-2.6h-2l-5.5,1.4-9.4,2.4L437,433.4l-1.1-1.5-.6-1.5-.5-1.1-3.3-5.8-2.2-5.3-2.1-16.8.2-4.7-.9-11.2-.2-.9-.3-.6-1-1-2.1-1.2-.6-.1-.2-.6v-2l.2-.6.9-.4.3-.3.6-1.4.7-1,1.2-1.3.6-.9.6-1.4.3-3.3-.3-8.5-4.5-20.7.7-.5.5-.2h.7l.8.2h.6l.5-.1.6-.3.6-.4.4-1,1.5-4.5.3-.5.4-.2h.9l-.1-.8-1.4-2.9-2-5-.1-1.3.6-1.6.6-.3,1.1.1.6-.1.4-.2.5-.4.5-.6.6-1.1.2-.4-.1-.3-1-.8-1-.4-.9-.2-.8-.2-.8-.6-.2-.2,3.1-3.6.7-.6,2.4-2.9.7-.7.5-.3,1.2-.2.3-.3.3-.6,1.1-3.2.3-.4.9-1.2,1.5-3.9.6-2.4.7-3.3.4-1,.5-.5.3-.4.6-.2.7-1.6,1.8-6.9.6-2.6.3-.7.4-.2,1.1-.1.9-.2.3-.3.2-.6,1.4-5.2.4-.6.6-.2,3.2.5.2-.3.1-1v-2.1l-.4-4.1-.8-5.7.1-1.2,1.8-5.9.1-1.6-.1-4,.3-1.9.1-.3,1.8-3.5.4-1.1.1-.5v-2.5l.3-.9,10.7-23.6,1-1.3,1.9.2,9.7,3.2,1.8.6,26.3.4Z" transform="translate(0 0)"/>               
+                </a>   
+                <a xlink:title="Cordoba">
+                    <path id="boton-20" class="cls-1 botonpcia" d="M577,468l-2.3,15.1.1,1.4.3,1L586.2,498l2.3,3.4-.4,3.4-12.8,48-.9,1.9-2.1,2.1-2.1,1.8-.6.8-.1.6v.4l.8,1.3.2.6v1.1l-.3,2.7v.8l.4,3.5.3.9.6,1,.6,1v.9l-.6,1.7-.4.9-.3,1-.2,1.5-.2,4.8,1.4,1.5,1,.9,1.6,1.9.4.3,1.5.7,1,.7.2.2.2.6,1.4,5,.4.9,1.1,2,3.6,2.7.6.6.9,1.2.4,1.4.3,1.8.1,2,.1.3.6.8.6.3.3.7-.1,1.2-.1.8-.5.9-.7.9v.5l.7.4,1.5.3.6.2.4.4,1.4,2.7.9,2,.4.6,1.3,1.1.4.6.3.9.2.9-.1.5-.3.9-.7,1.5-.2,1.2v3.6l-.1,1.5-.1,1.1-.2.4-.7,1.4-1.8,1.9-.8.6-.7.5-.6.2-.6.1-1.1-.1-1.4,1.8-11.3,18.3-15.3,25.1-20.2,33-24.3-.1-1.7,2-.4,10.1-.1,25.8-28.7-.1H456.8l-30,.1V693.1l-2.3-45.5.4-1,1.5-2.9.3-.4.6-.3,1.3-.2.6-.4.3-.5v-.7l-.6-1.3.1-1,.2-.6,1.3-2.6.2-.7.1-.6-.3-1-.2-.8.2-.8,1.9-3.7.3-1,.1-2.2.2-.9.7-1.3.2-.8-.1-1.5.3-.7.7-.7.4-.5.3-.8.3-2.4,1.2-2.7.3-1.6.1-2v-.9l-.4-1.2-.5-2.3-1.1-2.2-.4-1.1v-1.4l.3-1.6v-3.4l-.1-.8-.2-.5-.5-.4-.6-.1-1.3.2-5,1.5-5.3.6-.7-.1-.5-.5-.1-1,.1-2.5-.3-.9-.8-1.2-.5-1-.3-1.3-.1-1.3v-1.4l-.3-.9-.5-.8-1.4-1.4-1.3-1.6-14-8.6-2.6-1.3-1.5-.5h-4.4l-.2-15.6-.1-20.5-.1-10.2.7-3.6,3.3-10,.6-1.9,1-2.9,4.1-12.3.1-.9.3-1.7,1.3-4,.7-2.4.2-.6,1.1-1.7.7-1.7,4.2-12,10.7-3.1,2.5-1.4,4.3-4.5,5.5-6.2.5-.9.1-1.1L433,436.5l.6-1.8,3.4-1.3,14.6-3.8,9.4-2.4,5.5-1.4h2l9.8,2.6.5.2.2.3v.6l-.1,1.4-.1.7.3.5.7.6,3.8,2.1.6,1,.4.4.3.2,3.2.7.5.2.8.7.6.4.8.4,3,.2h1l5.9-1,.7.1,3.6,1.2h.5l1.8-.4.8.2.3.5v.7l-.2,1.5v.3l.2.4.4.1,1.8.3.5.2.3.2.2.6v1.4l.5.5,1,.1,28.6.1,17-.2,8.2.3,2.3,1.6Z" transform="translate(0 0)"/>
+                </a>
+                <a xlink:title="San Luis">
+                    <path id="boton-21" class="cls-1 botonpcia" d="M344.5,568.6l3.4.7,1.1.4,1.4.8.5.3.9.1.8-.2,1-.5h.8l.5.2,1,.7.4.1,2.7-.3h.8l.7.3,1.4.7,1,.1,1.6-.4.7-.1,2.4.3,2.6-.3,2.5-1,2-1.1,1.1-.5,2.5-.6h1.9l2.4.4.8.4.7.5.8.3.8.1h2.4l5-.9h4.4l1.5.5,2.6,1.3,14,8.6,1.3,1.6,1.4,1.4.5.8.3.9v1.4l.1,1.3.3,1.3.5,1,.8,1.2.3.9-.1,2.5.1,1,.5.5.7.1,5.3-.6,5-1.5,1.3-.2.6.1.5.4.2.5.1.8v3.4l-.3,1.6v1.4l.4,1.1,1.1,2.2.5,2.3.4,1.2v.9l-.1,2-.3,1.6-1.2,2.7-.3,2.4-.3.8-.4.5-.7.7-.3.7.1,1.5-.2.8L433,624l-.2.9-.1,2.2-.3,1-1.9,3.7-.2.8.2.8.3,1-.1.6-.2.7-1.3,2.6-.2.6-.1,1,.6,1.3v.7l-.3.5-.6.4-1.3.2-.6.3-.3.4-1.5,2.9-.4,1,2.3,45.5v63.2l-.1,51.8v9.5l-.4.2h-1.9l-44.7-.1H350.1l-.3-.1-.3-2v-1l.7-3,.4-4.4,2-9.8.6-6.2,1.5-3.5.2-1.2.2-5.5.6-3.8v-1l-.6-3.9.6-1.4v-.8l-.1-.5-.3-.5-.6-.7,1-3.6v-1l-.2-1-1-1.8-.2-.8-.1-1.1-.7-2.3-.2-.8.5-3.2-.1-1.2-1.3-4.4-6-11.9-2.3-2.6-.4-1-.2-1.3-1.2-3.9-.3-5.2-.4-1.2-.8-.7-.5-.7.7-1.3-.6-1.1-.1-4.7-.5-1.6.1-.8.7-1.1.2-.9.2-.2h.3l.6.4h.4l.7-.9.2-1.3.2-3.2.3-1.8-.1-.9-.8-1.6-.4-1.8-.4-.9-.7-.7-.8-.5-.6-.9-.5-2.7-.6-1.1-.8-.9-.8-.7-1.8-1.2-.9-.7-.4-.8-.2-1.1-1.2-4.1-1.2-2-.7-2.7-.2-.5-.6-2.2-.4-.5-1-1.1-4.8-8.2-.5-1.4v-1.2l.2-2.6-.2-1.1-1.2-2.8v-2.2l-.3-.5-.4-1.6.3-4.8-.4-5.4-.4-1.2-.2-.7.1-.6.2-1.1v-.7l-1-2.6-.4-1.6.3-.7.7-.7v-1.4L320,625l.2-.5.3-1.6.8-1.9-.2-.6-.5-.7-.2-1-.2-1-.3-.5-.6-.4-.6-.7-.4-.7-.3-.8-1-4.8-.1-.9-.1-.8-.7-1.8-.2-1.6-.2-.5-.6-1-.2-.4.1-.9-.1-.5-.4-.7-.5-.5-1.2-.8-1.4-5.5-.1-2.5.1-4-.1-1.9v-3.6l-.1-.9-.1-1.4.2-1.2.9-2.9-.1-1-.3-.9.1-1.1-.1-.6-.2-1.4-.1-.7.1-.7.1-.4.4-.7.5-.5,1.1-.7,2.1.5,1.6.5.7.1,1.1.1,4.2-.3,1.7-.5h1.1l1.1.3,1.1.4.6.6.8.4,1.9.4,12.8-.7Z" transform="translate(0 0)"/>       
+                </a> 
+                <a xlink:title="La Pampa">
+                    <path id="boton-22" class="cls-1 botonpcia" d="M512.1,756.3l-.1,16.6v13.9l-.2,30v54l.1,27.2v98l-.1,32.3-4.4-.5-2-.8-1.4-1.5-6.5-4.5-1.8-.9-.9-1.1-1.3-2.1-.7-.8-.7-.6-1.8-1.1-3.5-.8-1-.4-4.3-5.4-.8-.6-2.4-.4-.8-.4-3.6-2.5-16.3-6.1-3.5-.1-14-2.7-1,.5-1.6-.6-3.5.6-1.4-.9h-7.2L418,996l-2.6-.1-2.2.8-.5.1-.9-.4-1.9-1.3-4.4-1.8-2.6-.5-1.3.1-1.1.6-.8.7-1.1.8-1.1.4-.9.1-.4-.3-.5-.5-.6-.4-.8-.2h-2l-.5-.1-.9-.9-.5-.3-.7-.2-2.1-.2-1.7-.8-1.3-.2-1-.6-.6-.2L370.3,989l-6.7,1.1h-2.2l-5.9-1.5-1.3-.2-1.3-.4-.6-1.1-.4-2.9-.6-2-1.2-1.8-1.5-1.4-1.8-.9-2.3-.5-.4-.2-.9-.9-.8-.4-1.8-1.1-2.4-.4-1.1-.4-1.5-1.2-2.3-.4-5-2.8-.5-.1-.3-.2-.8-1.2-.7-.7-1.8-2.7-1.2-3.4-.2-.7v-1.3l-.2-1.1-.5-.8-1.1-.6h-1.1l-4.2.8-2.3,1.5-1.3.4-3.8-.6-1.3.7-3.8.3-1.9-1-1.6-1.6-1.4-1.9-2.7-5.8-1.4-1.6-2-.8h-.6l-1.3.5-.5-.2-1.2-.7-.4-.5-.5-1.2-.4-1.5-.2-1.1.3-3,1.1-2.2,1.6-1.5,3.4-2.4,1.2-1.8.7-2.4-.1-2.8-.6-2.1-1.2-2.1-1.5-1.9-1.5-1.3-2.1-1.2-20-2.7V869.6l-.4-34.7-1.4-7.5-.3-.8-.1-.9.1-2.6.4-4.1.8-.9,1-.4h55.7l3.7-.1,22.2.1h29.6l44.7.1h1.9l.4-.2v-9.5l.1-51.8,30-.1h26.6l28.7.1Z" transform="translate(0 0)"/>
+                </a>
+                <a xlink:title="Buenos Aires">
+                    <path id="boton-23" class="cls-1 botonpcia" d="M579.5,1103.9l-1.5,1.8-.9,2.1-1.2,1.4h-1.4l-1.2-.5.3-2-.5-1.1-1.4.8h-1.4l-.8-.8.9-1.2,1-1.8.3-2.7,1-3.2h.9l1.3.2h1.8l1.3,1.4.9,1.9,1,1.8-.4,1.9Zm1.1-10.2-.3,1-.5-1.4-.5-1.7-1.2-1.6-2.3-3.5-1.1-2.5.7-3.3,1-.1,1.5.5,1.4.6,1.3,1.9-.2,2.8-.1,3.6.3,3.7Zm4.8-76.7.3.1.2-.4.1-.7.2-.3.4.5.8,1.4.9,3.2.1.9-.4,1h-1l-1.1-.4-.7-.6-.9-.8-3.1-1.2-1.2-.7-.9-.9-2-3-.6-1.2v-1l.9-.2,1.9.9,5,1.2,1,1.7Zm-4.2-8.8,1.6,1.2.2.8-.4.7-.8.4-.9.1-1-.5-2.8-2.2-.8.8-.9-.2-.6-.8.6-1.2,4,.3,1.8.6ZM767.5,708.6l.1,1.1-.1,1.3-.2.2-.5-1.5-.7-.5-.8,1.3-.4-.5-.5-1,.9-1v-1l-.3-1.3-.5-1.4.3-.7.3.5.3,1.2.5.8.4.8,1,.7.2,1Zm-8.2-12.8v.2l1,.4,1.2.5.4.4.4.9.2,1.2-.1,2.6-.3,2v.7l.5,1.4.2.7-1.7,1.8-.2.4-.3.9-.2.4-.8.9-.9.7-1,.3-.9-.4-.5-.1-1.8-.1-.3.3-.5.7-.6.2,3,1.7,2.2,1.9.6,1.1-.9,2-.6.5-.6.7-.7,1.1v.8l.4.8,1.3,1.3.2.5-.1,1.2.1.6-3.3,2.8-1.1,5.2,1,3.5,4.9,3.9,1.9-3.6,1.3-1.3,1.8-.3,1.1-1.1.3-.9,4,2.7,2.3,2.1,1.8.9,1.8.2,1.2.3,1.5.9,1.7.4,1.5.5,1.8,2.2,1.3.6,2.8-.3.6.1.9,1.1,2.3,1.5,2.4,2.2,3.6,1.5,4.2,3.3,4.1,1.6,1.7,1.9,2,1.6,4.9,4.8,1.8,2.4,2.2,2.5,1,1.2,2.4,3.8,3.4,6.5.3,1.5-.9,2.7-1.7,2.3-2.2,2.9-5,7.8-1.5,2-.6,2.2-.3,1.6-.5,2.6-.6,1.9.5,2.3.5,2.5v1.7l.3,1.3,1,.8L816,822l.1,1.3.2.6.9.4,1,1.1.2.2.3,1.4.7,1.3,7,6.9,5.1,3.2,2.3.5,1.1.6.5.8-.9.9.3.4,1-.9,1-.7,2.2-.9,1.1-.2,3.3.2-.5-1.4.1-1,.7-.2,1.1.9.3.7.6,2.5.3.6.9,1.1-.1,7.8,1.2,3.4.2,1.5.2,8.5.2,7.2-.2,2.7-.9,2.1-5.2,6.9-4.9,7.8-6.6,11.7L829,906l-5.5,7.8-1.8,2-5.4,4.9-2,3.4-.6.5-.8.5-4,5.1-1.5,2.3-1.2,2.6-.9,2.6-.5,2.6-.1,2.8v.4l.5.7.1.5v.4l-.3.8.1,1.9-.1.7-1.2,2.4-1.7,2-4.7,3.3-5.2,3-3.6,2.7-7.8,4.7-1.7.3-.7.4-2.6,2.2-1.9,1.1-6,2.5-1.8,1.1-1,.4-4.4.8-3.7,1.2-3.7,2.3-8.1,1.9-10.6,3.6-2.8,2-1.6.3-1.7.8L700,993.3l-8.3,3.5-1.1.2-3.5-.2-22.8,4.4-8,1.3-7.8,1-10.3,2.1h-5.7l-1.2-.4h-.7l-.6.1-.4.2-.7.6-4.6,1.2-9.8-1.3-4.5.1-3.2,1.1-.5.4-.8.3-7.9-1.1-.6-.6-.9-.3-.5-.6-.3-.1h-.5l-.9.4-2,.5-2.5-.1-9.4-2.8-1.8-1-1.5-1.3-1-1.9-.8-2.3-.7-1.2-.7-.5-8.1-.6-.8-.5-1.2-.4-1,.7-.6,1.1.5.6-.3,1.3.9,2.5-.3,1.1.7-.7h.7l.5.5.3.8-.2,2.4.2.5.5.4.7-.1,1.7-.3-.1.3-.3.8-.3,1,.2.9-1.3.7-.5.6-.6,2.3-.6,1.4-.3.6-.4.5v.4l.6,1,.3.6-.1,1.1-.2,1-.1,1,.4,1.2.9,1.1,2.2,1.7,1,1.2h-.8l-.6-.2-1.3-.7-.7.9.4.6,1.1.5,1.2.3,3.9.1,1.3.3,3.9,2,2.1,1.6,1.2,1.7v.8l-.2.7-.4.7-.4.5-.7.3-.4-.1-.7-.6-1-.6-2.8-2.5-1-1.4-.4-1-.3-.3-.3-.2-.7.2-.9-.2-2.8.2.2,1.2.3.6.4.4.6.1.7-.1.6.1.2.6.4,1.3,1,1.4,2.1,1.9.9.6,2.4.6,1.3.1.3.3.1.7.1.8-.2.7-.6.6-.2.6-.2,4.5-.3.7-.3.8-1.2,8.9-.2,5.8-.2,1.1-.3-.1-1.8,1.1-.1.3-3.8-.6-1.1-.7-2.2-1.8-.2.7.2.7,1.1,1.3-1.3.6-.3.5.1.9.1,1.6-.2,1.1-.7,2.3-.3,2.3-1,2.7-.4.5-.2.7,1.4,3.8-.1,1.4-.7,2.7-.2,1.1-.5,1.3-1.1.7-1.2.4-1,.5-.9.9-.9,1.2-.7,1.3-.3,1.3.3,1,1.4,2.8.8,3.9.5.6v.3l.8,1.6.5.3,1.5.6,1.7,1.1.6.2.2.4-.1,1.5.2.4.7.5.6,1.1.7.6.9-.8.7,2.9v1.7l-.8.8-2.4-.5-.3-.2-.7-1.2-.6-.4v.6l.1.5.2.5.3.4.3.7-.1.6-.4.3.5,1,.3.3,3.9-2.4,1.6-.6,1.6-.1-.6.8-1.8,1.3-.4.9-.1.9-.4,2-.1,1.1-.3.9-1.4,3-1.4,3.6-1.3,1.8-7.5,3.9-6,3.8-3.4,1.5-.9.6-.9.9-1,.5-1.1.2h-1.3l-1.2-.2-.4-1.7-1.9-4.2-.7-1-3-3.1-2.5-1.9-.5-.6-2.1-2.9-4-3.7-.7-.5-3.2-1.1-10.3-1.3v-55.1l-.1-35.4.1-32.3V898l-.1-27.2v-54l.2-30V772.9l.1-16.6.1-25.8.4-10.1,1.7-2,24.3.1,28.3-.1,26.4-.2h2.6l16.5-18.6,11.9-13.4,9-10.3,1.8-2.6-.5-1.9.5-1.4.8-.9.7-.4,1.2-.3.7-.1h.9l.8.1.4.2,1.6.9.6.2,4.8.1.6.2,2,1.4,1.4,1.5.7.5.9.3,1.2.1,2.1-.5,1.2-.7.5-.6,1.8-3.9.2-.6.3-1.5.3-2.8.4-.7,2.1-1.6.6-.6.3-.8-.1-1.3.1-1,.2-.8.3-.6.5-.3,1-.3.4-.2.6-.6.4-.8.2-.9-.1-.8-.9-1.3,2.4,1.3,6.4,7,8.6,6,.8.3,1.2.3,2.4,1.2.8.6.9.9,1.9,3,.7.7,6.6,3.6,1.9.4,1.3-.4,2.8-.9,2.1,1.5,1.9,2.2,2.5,1.3h4.3l.5-.6.2-.1.7-.2.5-.1.3.1.4.9.1.8v1.5l.2.6.8.7.5.2.8-.4h.3l1,1,.4.8.5.2,5.2-.1,1.3.2,1,.6.9.7,3.6,2.2,2.7,2.4,1,.6,2.4.5,1,.4,5.1,4.8,2,1h2.4l4.6-1.9,2.6-.6Z" transform="translate(0 0)"/>
+                </a>               
+                <!-- ECOPARQUE: Ullun-->
+                <g id="ullunecoparque"><path class="cls-5 pinecos" d="M236,565.4h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M234,551.4c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- ECOPARQUE: Mendoza -->
+                <g id="ecoparquemendoza"><path class="cls-5 pinecos" d="M215.9,624.8h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M213.9,610.8c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: La Florida -->
+                <g id="lafloridareservasanjuan"><path class="cls-5 pinecos" d="M378.5,638.3h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M376.5,624.3c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0V627h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: R. Natural -->
+                <g id="reservanaturaljujuy"><path class="cls-5 pinecos" d="M409.1,142.3h0a1.39,1.39,0,0,1-1.9,0l-9.5-10.7a16.86,16.86,0,0,1-2.3-3.2,14.86,14.86,0,0,1,.4-14.3,14.25,14.25,0,0,1,11.3-7.3h2.3a13.9,13.9,0,0,1,11.3,7.3,15.13,15.13,0,0,1,.4,14.3,14.53,14.53,0,0,1-2.3,3.2Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M407.2,128.9c-2.5.9-5.7,1.2-7.5,0a16.3,16.3,0,0,0,5.1-2.6,12.9,12.9,0,0,1-3.4-.1,16.82,16.82,0,0,0,4.2-3.2,5.72,5.72,0,0,1-2.8.4,20.84,20.84,0,0,0,3.6-3.1,19.22,19.22,0,0,1-2.4,0,11.23,11.23,0,0,0,3.2-2.7c-.8.1-1.5.3-2.2.4a15,15,0,0,0,3.3-4.2,12.71,12.71,0,0,0,3.4,4.2,6.34,6.34,0,0,1-2.2-.4,9.07,9.07,0,0,0,3.2,2.7,9.64,9.64,0,0,1-2.4,0,18,18,0,0,0,3.6,3.1,7.82,7.82,0,0,1-2.8-.4,16.82,16.82,0,0,0,4.2,3.2,7.2,7.2,0,0,1-3.6.1,18.9,18.9,0,0,0,5.1,2.6c-1.9,1-5,.8-7.5,0v2.6h-1.9v-2.6Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Fauna Autóctona-->
+                <g id="estacionfaunaautoctonasalta"><path class="cls-5 pinecos" d="M399.1,165.7h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M397.1,151.7c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!--RESERVA Horcomolle-->
+                <g id="horcomolle2reservaexp"><path class="cls-5 pinecos" d="M427.2,272.6h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M425.2,258.6c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Carlos Pellegrini-->
+                <g id="reservacarloslepellegrini"><path class="cls-5 pinecos" d="M413.8,290.8h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M411.8,276.8c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Guaycolec-->
+                <g id="guaycolecreservaformosa"><path class="cls-5 pinecos" d="M772.9,235.5h0a1.39,1.39,0,0,1-1.9,0l-9.5-10.7a16.86,16.86,0,0,1-2.3-3.2,14.86,14.86,0,0,1,.4-14.3,14.25,14.25,0,0,1,11.3-7.3h2.3a13.9,13.9,0,0,1,11.3,7.3,15.13,15.13,0,0,1,.4,14.3,14.53,14.53,0,0,1-2.3,3.2Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M771,222.1c-2.5.9-5.7,1.2-7.5,0a16.3,16.3,0,0,0,5.1-2.6,12.9,12.9,0,0,1-3.4-.1,16.82,16.82,0,0,0,4.2-3.2,5.72,5.72,0,0,1-2.8.4,20.84,20.84,0,0,0,3.6-3.1,19.22,19.22,0,0,1-2.4,0,11.23,11.23,0,0,0,3.2-2.7c-.8.1-1.5.3-2.2.4a15,15,0,0,0,3.3-4.2,12.71,12.71,0,0,0,3.4,4.2,6.34,6.34,0,0,1-2.2-.4,9.07,9.07,0,0,0,3.2,2.7,9.64,9.64,0,0,1-2.4,0,18,18,0,0,0,3.6,3.1,7.82,7.82,0,0,1-2.8-.4,16.82,16.82,0,0,0,4.2,3.2,7.2,7.2,0,0,1-3.6.1,18.9,18.9,0,0,0,5.1,2.6c-1.9,1-5,.8-7.5,0v2.6h-1.9v-2.6Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Aguacaré-->
+                <g id="aguarácentrodeconservacion"><path class="cls-5 pinecos" d="M752.9,314.7h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M750.9,300.7c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Parque Natural -->
+                <g id="biodiversidadparquecordoba"><path class="cls-5 pinecos" d="M486.4,527.5h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M484.4,513.5c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Parauqe Rio Cuarto -->
+                <g id="riocuartoparquecordoba"><path class="cls-5 pinecos" d="M471.4,627h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M469.4,613c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4A9.68,9.68,0,0,0,475,604a10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: El Eden -->
+                <g id="eledenreservacordoba"><path class="cls-5 pinecos" d="M457.8,581.4h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M455.8,567.4c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Causachi -->
+                <g id="causachireservacordoba"><path class="cls-5 pinecos" d="M448.8,589.1h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M446.8,575.1c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Centro de Rehab -->
+                <g id="mundoaparterehab"><path class="cls-5 pinecos" d="M649.7,639.7h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7H650a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M647.7,625.7c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Wildermuth-->
+                <g id="wildermuthreserva"><path class="cls-5 pinecos" d="M581.7,585.4h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7H582a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M579.7,571.4c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Centro de Rehab Guiraorga-->
+                <g id="guiraorgacentrorehab"><path class="cls-5 pinecos" d="M956.4,213.3h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M954.4,199.3c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0V202h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Jardin de los Pajaros-->
+                <g id="jardindelospajaros"><path class="cls-5 pinecos" d="M931,315.5h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4A15.47,15.47,0,0,1,917,286a14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M929,301.5c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- ECO: Los pumas-->
+                <g id="lospumasparqueeco"><path class="cls-5 pinecos" d="M895.4,315.4h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M893.4,301.4c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4A12.91,12.91,0,0,0,898,290a6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- ECO: Centro de rescate-->
+                <g id="coloncentroderescate"><path class="cls-5 pinecos" d="M767.7,585h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7H768a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M765.7,571c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2V571Z" transform="translate(0 0)"/></g>
+                <!-- CABA -->
+                <path id="CABA" class="cls-1" d="M765.9,735.2l-.3.9-1.1,1.1-1.8.3-1.3,1.3-1.9,3.6-4.9-3.9-1-3.5,1.1-5.2L758,727l1.1.7.9.5,1,.8,1.7,1.1.8.8.9,1.3.7,1.5.8,1.5Z" transform="translate(0 0)"/>
+                <!-- ECO: Parque Luro -->
+                <g id="parqueluroreserva"><path class="cls-5 pinecos" d="M470.9,896.8h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M468.9,882.8c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Lihue Calel -->
+                <g id="lihuecalelreserva"><path class="cls-5 pinecos" d="M406.9,927.9h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M404.9,913.9c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2Z" transform="translate(0 0)"/></g>
+                <!-- RESERVA: Baradero -->
+                <g id="baraderoreserva"><path class="cls-5 pinecos" d="M710.94,691.24h0a1.52,1.52,0,0,1-2,0l-10-11.2a26.74,26.74,0,0,1-2.4-3.4,15.47,15.47,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,26.74,26.74,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M708.94,677.24c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,13,13,0,0,0,3.6,4.4,6.71,6.71,0,0,1-2.3-.4,9.68,9.68,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0V680h-2v-2.74Z" transform="translate(0 0)"/></g>
+                <!-- ECO: BA -->
+                <g id="baecoparque"><path class="cls-5 pinecos" d="M760.66,734.32h0a1.5,1.5,0,0,1-2,0l-10-11.2a24.51,24.51,0,0,1-2.4-3.4,15.45,15.45,0,0,1,.4-14.9,14.93,14.93,0,0,1,11.9-7.7H761a14.39,14.39,0,0,1,11.9,7.7,15.5,15.5,0,0,1,.4,14.9,26.33,26.33,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M758.66,720.32c-2.7.9-6,1.2-7.9,0a20,20,0,0,0,5.29-2.7,13.93,13.93,0,0,1-3.59-.1,16.17,16.17,0,0,0,4.4-3.4,6,6,0,0,1-2.9.4,18.79,18.79,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.29,12.29,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.13,15.13,0,0,0,3.5-4.4,12.68,12.68,0,0,0,3.6,4.4,6.4,6.4,0,0,1-2.3-.4,9.59,9.59,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,21.7,21.7,0,0,0,3.7,3.2,8,8,0,0,1-2.91-.4,21.27,21.27,0,0,0,4.4,3.45,7.64,7.64,0,0,1-3.71.1,21.72,21.72,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- ECO: Huellas de la Naturaleza -->
+                <g id="huellasdelanatu"><path class="cls-5 pinecos" d="M706.43,729.13h0a1.52,1.52,0,0,1-2,0l-10-11.2a25.7,25.7,0,0,1-2.38-3.38,15.45,15.45,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.4a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26.74,26.74,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M704.43,715.13c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.32,12.32,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,13,13,0,0,0,3.6,4.4,6.67,6.67,0,0,1-2.3-.4,9.59,9.59,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,22.15,22.15,0,0,0,3.7,3.2,8.15,8.15,0,0,1-2.9-.4,21.38,21.38,0,0,0,4.4,3.4,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.7Z" transform="translate(0 0)"/></g>
+                <!-- ECO: America -->
+                <g id="americaecoparque"><path class="cls-5 pinecos" d="M541.48,790.16h0a1.52,1.52,0,0,1-2,0l-10-11.2a27.78,27.78,0,0,1-2.4-3.4,15.5,15.5,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.39a14.32,14.32,0,0,1,11.9,7.7,15.45,15.45,0,0,1,.4,14.9,25.77,25.77,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M539.48,776.16c-2.7.9-6,1.2-7.9,0a20.55,20.55,0,0,0,5.3-2.7,15,15,0,0,1-3.6-.1,16.42,16.42,0,0,0,4.4-3.4,6.23,6.23,0,0,1-2.9.4,19.18,19.18,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0,12.16,12.16,0,0,0,3.3-2.8c-.8.1-1.6.3-2.3.4a15.06,15.06,0,0,0,3.5-4.4,13,13,0,0,0,3.6,4.4,6.71,6.71,0,0,1-2.3-.4,9.89,9.89,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0,23,23,0,0,0,3.7,3.2,8.41,8.41,0,0,1-2.9-.4,22.19,22.19,0,0,0,4.39,3.45,7.84,7.84,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2v-2.75Z" transform="translate(0 0)"/></g>
+                <!-- ECO: Kooch -->
+                <g id="koocheco"><path class="cls-5 pinecos" d="M605.2,973.8h0a1.52,1.52,0,0,1-2,0l-10-11.2a26,26,0,0,1-2.4-3.4,15.45,15.45,0,0,1,.4-14.9,14.92,14.92,0,0,1,11.9-7.7h2.39a14.34,14.34,0,0,1,11.9,7.7,15.47,15.47,0,0,1,.4,14.9,26,26,0,0,1-2.4,3.4Z" transform="translate(0 0)"/><path class="cls-6 pinecos" d="M603.2,959.8c-2.7.9-6,1.2-7.9,0a20.71,20.71,0,0,0,5.3-2.7,14.46,14.46,0,0,1-3.6-.1,16.17,16.17,0,0,0,4.4-3.4,6.25,6.25,0,0,1-2.9.4,18.84,18.84,0,0,0,3.7-3.2,20.85,20.85,0,0,1-2.5,0A12.32,12.32,0,0,0,603,948c-.8.1-1.6.3-2.3.4a15.22,15.22,0,0,0,3.5-4.4,12.91,12.91,0,0,0,3.6,4.4,6.48,6.48,0,0,1-2.3-.4,9.59,9.59,0,0,0,3.3,2.8,10.45,10.45,0,0,1-2.5,0A22.15,22.15,0,0,0,610,954a8.15,8.15,0,0,1-2.9-.4,21.21,21.21,0,0,0,4.39,3.45,7.72,7.72,0,0,1-3.7.1,22.45,22.45,0,0,0,5.3,2.7c-2,1.1-5.2.8-7.9,0v2.7h-2V959.8Z" transform="translate(0 0)"/></g>
+            </svg>
+        </div>
+    </div>  
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/ecoparques.js"></script>
+</body>
+</html>

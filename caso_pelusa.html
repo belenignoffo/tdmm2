@@ -1,0 +1,352 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Tailwind css -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Google icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Estilos personalizados -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/estilocarrusel.css">
+        <link rel="stylesheet" href="css/prueba.css">
+        <title>Trabajo práctico final</title>
+    </head>
+
+    <body class="grid grid-cols-12 h-screen fondocasos text-gray-100">
+        <!-- Columna lateral izquierda -->
+        <div class="sm:col-span-6 lg:col-span-4 barra_lateral z-10 individual-scroll_1">
+            <div class="w-full flex flex-col flex-nowrap gap-y-4">
+                <!-- Primera tarjeta: título -->
+                <div class="px-10 pb-8 pt-12  flex flex-col flex-nowrap gap-y-4 bg_cards">
+                    <p class="uppercase font-medium tracking-wide text-xs">En argentina</p>
+                    <div class="flex flex-nowrap gap-x-4 items-center">
+                        <p class="sm:text-5xl lg:text-7xl font-black" style="color: #B12222">+15</p>
+                        <div class="flex flex-col flex-nowrap">
+                            <p class="sm:text-xl lg:text-3xl font-black uppercase" style="color: #B12222">Casos</p>
+                            <p class="sm:text-sm lg:text-base font-normal">en la última década</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda tarjeta: ¿Qué es negligencia? -->
+                <div class="px-10 py-8   flex flex-col flex-nowrap gap-y-5 bg_cards">
+                    <h4 class="uppercase tracking-wide font-semibold text-base text-gray-300">¿Qué se considera un caso de negligencia?</span></h4>  
+                    <p class="font-normal text-justify sm:text-sm lg:text-sm" style="width: 98%">
+                        Hablamos de <span style="color: #B12222;" class="font-bold">negligencia</span> cuando el animal sufre situaciones desagradables a causa de las personas encargadas de preservar su bienestar.
+                    </p>            
+                </div>
+                <!-- Tercera tarjeta: distintos tipos de negligencia-->
+                <div class="px-10 py-8  flex flex-col flex-nowrap gap-y-5 bg_cards">
+                    <h4 class="uppercase tracking-wide font-semibold text-base text-gray-300">DIFERENTES TIPOS DE NEGLIGENCIA</span></h4>  
+                    <div class="flex flex-wrap justify-between mt-2">
+                        <div class="flex flex-col flex-nowrap gap-y-3 items-center w-3/12">
+                            <img src="img/casosicon_death.svg" class="w-11" alt="">
+                            <p class="font-normal text-sm">Defunciones</p>
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-3 items-center w-4/12">
+                            <img src="img/casosicon_abandono.svg" class="w-10" alt="">
+                            <p class="font-normal text-sm ">Abandono</p>
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-3 items-center w-3/12">
+                            <img src="img/casosicon_maltrato.svg" class="w-14" alt="">
+                            <p class="font-normal text-sm">Maltrato</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuarta tarjeta: casos  -->
+                <div class="px-10 py-8 flex flex-col flex-nowrap gap-y-10 bg_cards h-auto">
+                    <h4 class="uppercase tracking-wide font-semibold text-base text-gray-300">Casos ocurridos en Buenos Aires</h4>
+                    <!-- Caso 1: Pelusa  -->            
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes tarjetascasos tarjetaselected" id="tarjetacaso-1"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/elefante-pelusa.png" alt="Pelusa" />
+                        </div>
+                        <div class="w-6/12 self-center h-auto flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs text-gray-400 color-subtitulos-tarjetas">Zoo La Plata</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">Murió en el 2018 la elefante Pelusa</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="casos.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 2: Yaguareté juan -->
+                    <div class="flex flex-nowrap h-40 justify-between items-center border-b-2 border-gray-800 notas_relevantes tarjetascasos" id="tarjetacaso-2"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/zooyaguarete-laplata.png" alt="Yaguareté Juan" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Zoo La Plata</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">Murió en el 2020 el yaguareté Juan</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_juan.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 3: Leona Andy -->
+                    <div class="flex flex-nowrap justify-between items-center  border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/tigrebengala.png" alt="Leona Andy" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Zoo La Plata</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">Murió en el 2017 la leona Andy</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_andy.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 4: Shere Khan -->
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/tigrecaso.png" alt="Tigre Shere Khan" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Zoo La Plata</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">Tristeza por el tigre “Shere Khan” que murió en el 2018</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_sherekan.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 5: Gaspar -->
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/gaspar.png" alt="Rinoceronte Gaspar" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Ex-zoo BA</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">Murió Gaspar en el 2018, el último rinoceronte del ecoparque porteño</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_gaspar.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 6: Jirafa Shaki -->
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/jirafashaki.png" alt="Jirafa Shaki" />
+                        </div>
+                        <div class="w-6/12 self-center flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Ex-zoo BA</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">2018 murió la jirafa “Shaki”</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_shaki.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 7: Ruth -->
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/ruth.png" alt="Rinoceronte Ruth" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Ex-zoo BA</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">Murió en el 2018 la rinoceronte Ruth</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_ruth.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 8: Winner -->
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/winner.png" alt="Oso Winner" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Ex-zoo BA</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">2012 murió “Winner” el último oso polar del zoo </h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_winner.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 9: Lobos Marinos -->
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/lobomarino.png" alt="Lobo marino" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Ex-zoo BA</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">En este 2021 murieron dos lobos marinos</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_lobos.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 10: Dhalia -->
+                    <div class="flex flex-nowrap justify-between items-center border-b-2 border-gray-800 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/dhalia.png" alt="Elefante Dhalia" />
+                        </div>
+                        <div class="w-6/12 self-center pb-2 flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Ex-zoo BA</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">Murió a balazos en 1943, Dahlia la elefante </h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_dhalia.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Caso 11: Sharima -->
+                    <div class="flex flex-nowrap justify-between items-center pb-6 notas_relevantes"> <!-- Contenedor general de la nota -->
+                        <div class="w-3/12"> <!-- Imagen -->
+                            <img src="img/elefante-sharima.png" alt="Lobo marino" />
+                        </div>
+                        <div class="w-6/12 self-center flex flex-col flex-nowrap gap-y-3"> <!-- Contenedor texto -->
+                            <div class="flex flex-nowrap gap-x-1 items-center"> <!-- Contenedor ubicación -->
+                                <img src="img/zoo-map.svg" alt="Pin zoo" class="w-5"/> <!-- Pin ubicación -->
+                                <a href="" class="uppercase tracking-wide font-semibold text-xs color-subtitulos-tarjetas">Zoo Luján</a> <!-- Provincia -->
+                            </div>
+                            <h5 class="font-semibold">En este 2021 falleció Sharima, la elefanta de luján</h5> <!-- Título -->
+                        </div>
+                        <div  class="w-1/12 self-center text-right" > <!-- Icon flecha -->
+                            <a href="caso_sharima.html">
+                                <span
+                                class="material-icons text-base rounded-full  justify-self-center p-5" style="font-size: 20px;">
+                                arrow_forward_ios </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!-- Fin de la columna -->
+            </div>
+          </div>
+        <div class="sm:col-span-7 lg:col-span-8 fondocasos">
+            <div class="w-8 h-24">
+                <div class="fixed right-10 bottom-10 z-10 botonvolver" id="">
+                    <a href="casos.html" class="rounded-full">
+                        <img src="img/boton-mapaarg.png" alt="" class="w-14 shadow-md">
+                    </a>
+                </div>
+            </div>
+            <img src="img/mapabsas.png" alt="" class="absolute opacity-40 w-4/6 -top-48" >
+            <img src="img/pelusa-imagentitulo.png" alt="" class="opacity-50 absolute -top-36">
+            <h1 class="relative ml-16 text-5xl font-black text-white tracking-wide" >Falleció la elefante Pelusa</h1>
+            <div class="relative mt-24 flex flex-col justify-content-center items-center" >
+                <div class="w-7/12">
+                    <img src="img/caso-pelusa.svg" alt="">
+                </div>          
+            </div>
+            <div class="relative text-white mt-28 ml-16 container">
+                <h3 class="text-xl font-bold">Conocé a Pelusa</h3>
+                <div class="contianer pt-10">
+                    <figure class="icon-cards mt-3">
+                        <div class="icon-cards__content">
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"><img src="https://images.clarin.com/2019/05/30/pelusa-la-elefanta-de-52___tQhTRotFw_1256x620__1.jpg" alt="Imagen de Pelusa" style="max-width: 380px; max-height: 250px; object-fit: cover;"></span></div>
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"><img src="https://cdn1.eldia.com/062019/1559625927581.jpg?&cw=630" alt="Imagen de Pelusa" style="max-width: 380px; max-height: 250px; object-fit: cover;"></span></div>
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"><img src="https://www.clarin.com/img/2017/11/06/SJaZodRA-_600x338.jpg" alt="Imagen de Pelusa"  style="max-width: 380px; max-height: 250px; object-fit: cover;"></span></div>
+                        </div>
+                    </figure>
+                </div>
+            </div> 
+            <!-- Última sección: otros casos-->
+            <div class="text-white mt-28 ml-16 class-container flex flex-col flex-nowrap gap-y-10 pb-12 ">
+                <h3 class="text-xl font-bold w-full ">Otros casos en Buenos Aires</h3>
+                <div class="flex flex-wrap w-11/12"> <!-- Contenedor de los casos -->
+                    <div class="w-4/12 flex flex-col flex-nowrap items-center" >
+                    <img src="img/img-caso_tenenciailegal.png" alt="" style="width: 40%; border-radius: 50%; outline: 8px solid #CD415C;">
+                        <div class="flex flex-nowrap items-center gap-x-1 text-gray-400 mt-4">
+                            <img src="img/zoo-map.svg" alt="" class="w-5 mb-1">
+                            <p class="uppercase text-xs font-bold tracking-wide">Zoo batán</p>
+                        </div>
+                    <h4 class="w-10/12 text-center font-bold mt-2">Denuncian tenencia ilegal de animales</h4>
+                    <a href="https://vetmarketportal.com.ar/nota/1534/inspeccionan-el-zoologico-de-batan-en-busca-de-fauna-ilegal/" target="_blank" class="mt-2 text-xs underline linknota">Ver más</a>
+                    </div>
+                    <div class="w-4/12 flex flex-col flex-nowrap items-center" >
+                        <img src="img/img-caso_muereruth.png" alt="" style="width: 40%; border-radius: 50%; outline: 8px solid #CD415C;">
+                        <div class="flex flex-nowrap items-center gap-x-1 text-gray-400 mt-4">
+                            <img src="img/zoo-map.svg" alt="" class="w-5 mb-1">
+                            <p class="uppercase text-xs font-bold tracking-wide">Ex-Zoo BA</p>
+                        </div>
+                        <h4 class="w-10/12 text-center font-bold mt-2">Murió en el 2018 la rinoceronte Ruth</h4>
+                        <a href="https://www.infobae.com/sociedad/2018/07/15/murio-ruth-la-rinoceronte-del-ecoparque-porteno/" target="_blank" class="mt-2 text-xs underline linknota">Ver más</a>
+                    </div>
+                    <div class="w-4/12 flex flex-col flex-nowrap items-center">
+                        <img src="img/img-caso_mueregaspar.png" alt="" style="width: 40%; border-radius: 50%; outline: 8px solid #CD415C;">
+                        <div class="flex flex-nowrap items-center gap-x-1 text-gray-400 mt-4">
+                            <img src="img/zoo-map.svg" alt="" class="w-5 mb-1">
+                             <p class="uppercase text-xs font-bold tracking-wide">Ex zoo BA</p>
+                        </div>
+                         <h4 class="w-10/12 text-center font-bold mt-2">Murió Gaspar en el 2019, el último rinoceronte del ecoparque porteño</h4>
+                         <a href="https://www.clarin.com/ciudades/murio-rinoceronte-gaspar-ultimo-ejemplar-especie-quedaba-ex-zoo-porteno_0_sCLU9Z0O.html" target="_blank" class="mt-2 text-xs underline linknota">Ver más</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <script src="js/casos.js"></script>
+    </body>
+    </html>

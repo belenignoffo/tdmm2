@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilocarrusel.css">
+    <link rel="stylesheet" href="css/prueba.css">
+    <title>Trabajo práctico final</title>
+</head>
+<body class="grid grid-cols-12 h-screen text-gray-100">
+    <!-- Col izq pantalla ppal -->
+    <div class="sm:col-span-6 lg:col-span-4 barra_lateral z-10 individual-scroll_1">
+        <div class=" w-full flex flex-col flex-nowrap gap-y-4">
+            <!-- Primera tarjeta: título -->
+            <div class="px-10 pb-8 pt-12 tracking-wilde text-gray-50 flex flex-col flex-nowrap gap-y-4 bg_cards">
+                <p class="uppercase font-medium tracking-wide text-xs">En argentina</p>
+                <div class="flex flex-nowrap gap-x-4 items-center">
+                    <p class="sm:text-5xl lg:text-7xl font-black" style="color: #E2B71F">22</p>
+                    <div class="flex flex-col flex-nowrap">
+                        <p class="sm:text-xl lg:text-3xl font-black uppercase" style="color: #E2B71F">Zoológicos</p>
+                        <p class="sm:text-base lg:text-base font-normal">abiertos actualmente</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda tarjeta: Imagen zoos -->
+            <div class="px-10 pt-8 text-gray-50 flex flex-col flex-nowrap gap-y-5 bg_cards relative">
+                <img src="img/zoo-cartelsvg.svg" alt="" class="w-w-full m-auto">
+            </div>
+            <!-- Tercera tarjeta: Ventajas -->
+            <div class="px-10 py-8 text-gray-50 flex flex-col flex-nowrap gap-y-5 bg_cards">
+                <h4 class="uppercase tracking-wide font-semibold text-base ">Ventajas</span></h4>  
+                <div class="flex flex-wrap justify-between mt-2">
+                    <div class="flex flex-col flex-nowrap gap-y-3 items-center w-3/12">
+                        <img src="img/zooicon-education.svg" class="w-10" alt="">
+                        <p class="font-normal text-sm">Educación</p>
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-3 items-center w-4/12">
+                        <img src="img/zooicon-conservacion.svg" class="w-10" alt="">
+                        <p class="font-normal text-sm ">Conservación</p>
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-3 items-center w-3/12">
+                        <img src="img/zooicon-entretenimiento.svg" class="w-12" alt="">
+                        <p class="font-normal text-sm">Entretenimiento</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cuarta tarjeta: Desventajas -->
+            <div class="px-10 py-8 font-medium tracking-wilde text-gray-50 flex flex-col flex-nowrap gap-y-5 bg_cards">
+                <h4 class="uppercase tracking-wide font-semibold text-base ">Desventajas</span></h4>
+                <div class="flex flex-wrap justify-between mt-2">
+                    <div class="flex flex-col flex-nowrap gap-y-3 items-center w-3/12">
+                        <img src="img/zooicon-trophy.svg" class="w-10" alt="">
+                        <p class="font-normal text-center text-sm">Animales como objeto de consumo</p>
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-3 items-center w-4/12">
+                        <img src="img/zooicon-libertad.svg" class="w-11" alt="">
+                        <p class="font-normal text-center text-sm">Privación de la libertad</p>
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-3 items-center w-3/12">
+                        <img src="img/zooicon-sadbear.svg" class="w-12" alt="">
+                        <p class="font-normal text-center text-sm">Maltrato y violencia animal</p>
+                    </div>
+                </div>  
+            </div>
+            <!-- Quinta tarjeta: Zoológicos BA -->
+            <div class="px-10 py-8 flex flex-col flex-nowrap gap-y-5 bg_cards h-auto">
+                <h4 class="uppercase tracking-wide font-semibold text-base text-gray-400">Zoológicos en Buenos Aires</h4>
+                <!-- Zoo 1 -->
+                <a href="zoologicos.html">
+                    <div class="flex flex-nowrap mt-6  border-b-2 border-gray-800 justify-around notas_relevantes items-center tarjetaszoos tarjetaselected"> <!-- Agregar ID, buscar lista de nodos js -->
+                        <div class="w-4/12">
+                            <img src="img/jirafa-zoo-lujan.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Zoológico de Luján</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/monkey_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+150 animales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >15 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/visitantes_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >15 mil visitantes anuales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+6 casos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Zoo 2 -->
+                <a href="zoo_batan.html">
+                    <div class="flex flex-nowrap mt-6  border-b-2 border-gray-800 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/zuricata-zoo-batan.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Zoológico Batán</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >10 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+1 caso</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Zoo 3 -->
+                <a href="zoo_laplata.html">
+                    <div class="flex flex-nowrap mt-6  border-b-2 border-gray-800 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/oso-zoo-laplata.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Zoológico de La Plata</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/monkey_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+250 animales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >17 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/visitantes_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >25 mil visitantes anuales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+8 casos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Zoo 4 -->
+                <a href="zoo_yku.html">
+                    <div class="flex flex-nowrap mt-6  border-b-2 border-gray-800 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/ave-zoo-ykuhuasi.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Zoológico Yku Huasi</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 justify-items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >2 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Zoo 5 -->
+                <a href="zoo_balcarce.html">
+                    <div class="flex flex-nowrap mt-6  border-b-2 border-gray-800 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/serpiente-zooilegal-balcarce.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Zoológico ilegal balcarce</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/monkey_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+300 animales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+1 caso</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Zoo 6 -->
+                <a href="zoo_labiznaga.html">
+                    <div class="flex flex-nowrap mt-6  border-b-2 border-gray-800 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/ave-minizoo-labiznaga.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Minizoo La Biznaga</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+1 caso</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Zoo 7 -->
+                <a href="zoo_ecas.html">
+                    <div class="flex flex-nowrap mt-6 justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/carpincho.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">ECAS</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >230 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+        <!-- Fin de la columna -->
+        </div>
+    </div>
+   
+    <!-- -------------------------------------------------------------->
+
+    <!-- Columna derecha --> 
+    <div class="sm:col-span-7 lg:col-span-8 container col-container fondozoos relative">
+
+        <!-- 01: LUJÁN -->
+        <div class="container">
+            <div class="fixed right-12 bottom-12 z-10 botonvolver" id="">
+                <div class="w-8 h-24" id="">
+                    <div class="fixed right-10 bottom-10 z-10 botonvolver" id="">
+                        <a href="zoologicos.html" class="rounded-full">
+                            <img src="img/boton-mapaarg.png" alt="" class="w-14 shadow-md">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-nowrap pb-0">
+                <div class="w-full mt-10 flex flex-nowrap content-center">
+                    <div class="w-2/12 h-full">
+                        <img src="img/hojas-titulo.png" alt="">
+                        <!-- DECORACIÓN DEL TÍTULO -->
+                    </div>
+                    <div class="w-7/12 flex items-center">
+                        <h1 class="text-5xl  font-black tracking-tight">Zoológico de Luján</h1>
+                        <!-- TÍTULO / NOMBRE ECOPARQUE -->
+                    </div>
+                    <div class="w-3/12 pt-10">
+                        <img src="img/zoo_cerrado.svg" alt="">
+                    </div>
+                </div>
+                <!-- Linea de tiempo -->
+                <div class="w-full mt-10">
+                    <div class="container-scrollZoo" id="pruebascroll">
+                        <div class="scroll-horizontal">
+                            <img src="img/linealujan.svg" alt="" class="pb-24">                                
+                            <!-- ADJUNTAR IMAGEN DE LA LÍNEA CORRESPONDIENTE -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Primera sección -->
+                <div class="w-full relative" style="background-color: #3A3128;">
+                    <div class="container mt-10 mb-32">
+                        <p class="ml-16 mr-16 w-full mb-4 uppercase font-semibold text-gray-100">Diferentes habitats</p>
+                        <!-- No se cambia -->
+                        <figure class="icon-cards mt-3">
+                            <div class="icon-cards__content">
+                                <div class="icon-cards__item d-flex align-items-center justify-content-center">
+                                    <img src="img/lujan1.png" alt="">
+                                    <!-- AGREGAR/CAMBIAR IMAGEN DE HABITAT -->
+                                </div>
+                                <div class="icon-cards__item d-flex align-items-center justify-content-center">
+                                    <img src="img/lujan2.png" alt="">
+                                    <!-- AGREGAR/CAMBIAR IMAGEN DE HABITAT -->
+                                </div>
+                                <div class="icon-cards__item d-flex align-items-center justify-content-center">
+                                    <img src="img/lujan3.png" alt="">
+                                    <!-- AGREGAR/CAMBIAR IMAGEN DE HABITAT -->
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <!-- ESTO es la forma ondeada que divide una sección y la otra. En caso de querer cambiarla, estoy usando https://www.shapedivider.app/ -->
+                    <div class="custom-shape-divider-bottom-1638809177">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Segunda sección -->
+                <div class="w-full flex flex-col flex-nowrap" style="background-color: #C2A716;"> <!-- Container general del 2do bloque -->
+                    <div class="mt-10 mb-24 ml-16 mr-16 h-auto flex flex-wrap justify-between"> <!-- Contenedor del bloque de contenido -->
+                        <!-- Primera columna: Tipos de animales -->
+                        <div class="w-6/12 h-auto flex flex-col flex-nowrap gap-y-12"> <!-- Contenedor de toda la primera columna-->
+                            <p class="uppercase font-semibold text-gray-100 ">Tipos de animales</p>
+                            <div class="h-auto w-full flex flex-wrap gap-y-12 "> <!-- Contenedor de los gráficos -->
+                                <!-- Mamíferos -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-4"> 
+                                    <div class="w-2/12"> <!-- Contenedor icon -->
+                                        <img src="img/icon-mamiferos.svg" alt="">
+                                    </div>
+                                    <h6 class="10/12 font-semibold">Mamíferos</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfico -->
+                                        <img src="img/mamiferos-ecoba.svg" alt="" > <!-- ACÁ cambiar el gráfico de barras de mamíferos . Lo exporté como svg desde figma -->
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">18</p>
+                                </div>
+                                <!-- Terrestres -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-3">
+                                    <div class="w-2/12"> <!-- Contenedor icon -->
+                                        <img src="img/icon-terrestres.svg" alt="">
+                                    </div>
+                                    <h6 class="8/12 font-semibold">Terrestres</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfioc -->
+                                        <img src="img/terrestres-ecoba.svg" alt="" > <!-- ACÁ cambiar el gráfico de barras de terrestres . Lo exporté como svg desde figma -->
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">29</p>
+                                </div>
+                                <!-- Ovíparos -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-3">
+                                    <div class="w-2/12"> <!-- Contenedor icon -->
+                                        <img src="img/icon-oviparos.svg" alt="">
+                                    </div>
+                                    <h6 class="8/12 font-semibold">Ovíparos</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfico -->
+                                        <img src="img/oviparos-ecoba.svg" alt="" > <!-- ACÁ cambiar el gráfico de barras de ovíparos . Lo exporté como svg desde figma -->
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">16</p>
+                                </div>
+                                <!-- Acuáticos -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-3"> 
+                                    <div class="w-2/12"> <!-- Conteneodr icon -->
+                                        <img src="img/acuaticos.svg" alt="">
+                                    </div>
+                                    <h6 class="8/12 font-semibold">Acuáticos</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfico -->
+                                        <img src="img/acuaticos-ecoba.svg" alt="" >
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segunda columna: Visitantes anuales-->
+                        <div class="w-5/12  h-auto flex flex-col flex-nowrap gap-y-12">
+                            <p class="uppercase font-semibold text-gray-100 w-full tracking-wide">Visitantes anuales</p>
+                            <div class="flex flex-wrap items-center mt-5">
+                                <!-- <div class="w-6/12">
+                                    <img src="img/osocompleto-nohaydatos.svg" alt="" class="w-full">
+                                </div>
+                                <p class="w-6/12 font-semibold" style="color: #E1DBCD;"><span class="text-2xl">Oh oh</span>, <br> no hay datos</p>
+                            </div> -->
+            
+                            <!-- USAR ESTE CONTENEDOR en caso de que haya visitantes -->
+                            <div class="w-full flex flex-col flex-nowrap gap-y-8 ">
+                                <div class="w-8/12">
+                                    <img src="img/visitanteslujan.svg" alt="" class="">
+                                </div>
+                                <p class="w-11/12 font-medium" style="color: #E1DBCD;"><span class="text-m font-black">35.000 </span> visitantes anualmente, equivalen a casi <span class="text-m font-black">4 Luna Park </span> llenos.</p>
+                                <!-- Instertar imagen de los íconos de gran rex -->
+                                <!-- Insetar etiqueta <p> con la cantidad de visitantes anuales. El número tiene que ir encerrado entre la etiqueta <span> para darle otro estilo -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ESTO es la forma ondeada que divide una sección y la otra. En caso de querer cambiarla, estoy usando https://www.shapedivider.app/ -->                
+                </div>
+                <div class="relative w-full mt-10">
+                    <div class="custom-shape-divider-bottom-1638811086">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+                <!-- CASOS -->
+                <!-- Tercera sección -->
+                <div class="w-full flex flex-col flex-nowrap " style="background-color: #83700D;">
+                    <!-- Container general del 2do bloque -->
+                    <div class="mt-10 mb-24 ml-16 mr-16 h-auto flex flex-wrap justify-between">
+                        <!-- Contenedor del bloque de contenido -->
+                        <!-- Primera columna: Tipos de animales -->
+                        <div class="w-full h-auto flex flex-col flex-nowrap gap-y-12">
+                            <!-- Contenedor de toda la primera columna-->
+                            <p class="uppercase font-semibold text-gray-100 tracking-wide ">Casos registrados en el zoo</p>
+                            <div class="h-auto w-full flex flex-wrap gap-y-12 ">
+                                <!-- Contenedor de los gráficos -->
+                                <div class="flex flex-wrap w-11/12">
+                                    <!-- Contenedor de los casos -->
+                                    <div class="w-4/12 flex flex-col flex-nowrap items-center gap-y-4">
+                                        <img src="img/casosharima.png" alt="" style="width: 50%; border-radius: 50%; outline: 8px solid #fff;">
+                                        <!-- CAMBIAR IMAGEN -->
+                                        <h4 class="w-10/12 text-center font-bold mt-2 ">2021 Murió Sharima</h4>
+                                        <!-- CAMBIAR TÍTULO -->
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/prueba.js"></script>
+</body>
+</html>

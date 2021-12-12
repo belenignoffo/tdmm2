@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prueba.css">
+    <link rel="stylesheet" href="css/estilocarrusel.css">
+    <title>Trabajo práctico final</title>
+
+
+</head>
+<body class="grid grid-cols-12 h-screen text-gray-50">
+      <!-- Columna lateral izquierda -->
+    <div class="sm:col-span-6 lg:col-span-4 barra_lateral z-10 individual-scroll_1">
+        <div class="w-full flex flex-col flex-nowrap gap-y-4" style="z-index: 5;">
+            <!-- Primera tarjeta: título -->
+            <div class="px-10 pb-8 pt-12  flex flex-col flex-nowrap gap-y-4 bg_cards">
+                <p class="uppercase font-medium tracking-wide text-xs">En argentina</p>
+                <div class="flex flex-nowrap gap-x-4 items-center">
+                    <p class="sm:text-5xl lg:text-7xl font-black" style="color: #1D9B2A">25</p>
+                    <div class="flex flex-col flex-nowrap">
+                        <p class="sm:text-xl lg:text-3xl font-black uppercase" style="color: #1D9B2A">Ecoparques</p>
+                        <p class="sm:text-base lg:text-base font-normal">actualmente en el país</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda tarjeta: ¿Qué es un ecoparque? -->
+            <div class="px-10 py-8   flex flex-col flex-nowrap gap-y-5 bg_cards">
+                <h4 class="uppercase tracking-wide font-semibold text-base text-gray-400">¿Qué es un ecoparque?</span></h4>  
+                <p class="font-normal text-justify sm:text-sm lg:text-sm" style="width: 98%">
+                    Es un espacio para promover la educación ambiental a través de experiencias recreativas y educativas, fomentando el respeto al patrimonio natural y la rehabilitación de las especies.
+                </p>            
+            </div>
+            <!-- Tercera tarjeta: Ecoparques en BA  -->
+            <div class="px-10 py-8 flex flex-col flex-nowrap gap-y-10 bg_cards h-auto">
+                <h4 class="uppercase tracking-wide font-semibold text-base text-gray-400">Ecoparques en Buenos Aires</h4>
+                <!-- Eco 1 -->
+                <a href="eco_kooch.html">
+                    <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around notas_relevantes items-center ">
+                        <div class="w-4/12">
+                            <img src="img/zorro-eco-kooch.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Ecoparque Kooch</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >10 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+1 caso</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Eco 2 -->
+                <a href="eco_ba.html">
+                    <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800  justify-around notas_relevantes items-center">
+                        <div class="w-4/12">
+                            <img src="img/reptil-eco-ba.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Ecoparque de Buenos Aires</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/monkey_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+790 animales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >18 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/visitantes_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >20 mil visitantes anuales</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/casos_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >+6 casos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Eco 3 -->
+                <a href="eco_baradero.html">
+                    <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around notas_relevantes items-center ">
+                        <div class="w-4/12">
+                            <img src="img/aguila-reserva-baradero.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva natural baradero</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Eco 4 -->
+                <a href="ecoparques.html">
+                    <div class="flex flex-nowrap mt-6 justify-around notas_relevantes items-center  tarjetaszoos tarjetaselected">
+                        <div class="w-4/12">
+                            <img src="img/huron-huellasnaturaleza.png" alt="">
+                        </div>
+                        <div class="flex flex-col flex-nowrap gap-y-1 w-6/12 ">
+                            <p class="sm:text-xs uppercase xl:text-sm font-bold">Huellas de la Naturaleza</p>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/hextareas_zoo_descripcion.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm" >10 hectáreas</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                            <div class="flex flex-nowrap gap-x-3 items-center mt-3">
+                                <img src="img/sadbear-ohoh.svg" alt="" class="w-6 ">
+                                <p class="sm:text-xs xl:text-sm mt-2" >No hay datos</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Cuarta tarjeta: Ecoparques ARG-->
+            <div class="px-10 py-8 flex flex-col flex-nowrap gap-y-10 bg_cards h-auto">
+                <h4 class="uppercase tracking-wide font-semibold text-base text-gray-400">Ecoparques en Argentina</h4>
+                <!-- Eco 1 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco1.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Ecoparque de Mendoza</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Mendoza</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.mendoza.gov.ar/ecoparque/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 2 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco2.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque Lihue Calel</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">La Pampa</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.argentina.gob.ar/parquesnacionales/lihuecalel" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 3 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco3.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Luro</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">La Pampa</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.google.com/search?q=parque+luro+la+pampa&rlz=1C1ALOY_esAR958AR958&oq=luro+la+pampa&aqs=chrome.1.69i57j0i22i30l4.3803j0j4&sourceid=chrome&ie=UTF-8" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 4 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco4.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva de Flora y Fauna La Florida</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">San Luis</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://eltrapichesanluis.com.ar/reserva-floro-faunistica/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 5-->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco5.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Faunística Ullum</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">San Juan</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.diariodecuyo.com.ar/sanjuan/En-el-Faunistico-los-animales-celebran-su-dia-en-paz-ambiental-20200428-0097.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 6 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco6.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Fitozoológica Dr. Carlos Pellegrini</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Tucumán</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://www.pellegrinituc.com.ar/imagenes/Reserva2/reserva3.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 7 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco7.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva de Horco Molle</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Tucumán</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://www.reservahorcomolle.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 8 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco8.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Estación de Fauna Autóctona</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Salta</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://ambiente.salta.gov.ar/noticia/3/visita-a-la-estacion-de-fauna-autoctona-y-la-reserva-finca-las-costas.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 9 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco9.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Natural Aldea Luna</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Juju</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.aldealuna.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 10 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco10.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Guaycolec</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Formosa</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://www.formosahermosa.gob.ar/guaycolec/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 11 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco11.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Centro de Conservación Aguará</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Corrientes</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://turismo.corrientes.gob.ar/noticia/el-centro-de-conservacion-aguara-amplia-sus-propuestas-de-visitas" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 12 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco12.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque Ecológico El Puma</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Misiones</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://ecologia.misiones.gob.ar/parque-ecologico-el-puma/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 13 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco13.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Jardín de Los pájaros</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Misiones</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://misionesonline.net/2021/07/11/jardin-de-los-pajaros-de-obera/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 14 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco14.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Centro de rehabilitación guiraoga</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Misiones</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.guiraoga.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 15 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco15.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Fundación Tekovemymba</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Entre Ríos</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.unoentrerios.com.ar/la-provincia/viven-300-ejemplares-el-santuario-animales-colon-n2657269.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 16 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco16.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Centro de Rehabilitación mundo aparte</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Santa Fe</p> <!-- Provincia -->
+                        </div>
+                        <a href="http://mundoaparterosario.com.ar/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 17 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco17.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Privada Wildermuth</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Santa Fe</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://fundacionfw.org.ar/reserva/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 18 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco18.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque de la Biodiversidad</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://cordoba.gob.ar/tag/parque-de-la-biodiversidad/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 19 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco19.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva faunística Pumakawa</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://pumakawa.org/" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 20 -->
+                <div class="flex flex-nowrap mt-6 border-b-2 border-gray-800 justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco20.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Reserva Causachi </p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.na-sa.com.ar/es/prensa/la-reserva-causachi-sigue-creciendo" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+                <!-- Eco 21 -->
+                <div class="flex flex-nowrap mt-6 pb-6  justify-around pb-6 items-center">
+                    <div class="w-4/12">
+                        <img src="img/eco21.png" alt="">
+                    </div>
+                    <div class="flex flex-col flex-nowrap gap-y-5 w-6/12 ">
+                        <p class="sm:text-xs uppercase xl:text-sm font-bold">Parque ecológico urbano</p>
+                        <div class="flex flex-nowrap gap-x-2 items-center"> <!-- Contenedor ubicación -->
+                            <img src="img/eco-map.png" alt="Pin zoo" class="w-1/12 m-auto"/> <!-- Pin ubicación -->
+                            <p class="uppercase tracking-wide font-semibold w-11/12 color-subtitulos-tarjetas">Córdoba</p> <!-- Provincia -->
+                        </div>
+                        <a href="https://www.turismocordoba.com.ar/riocuarto/parque-ecologico-urbano.html" target="_blank" class="text-xs underline linknota">+ Info </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin de la columna -->
+    </div>
+    <div class="sm:col-span-7 lg:col-span-8 fondoecoparques relative ">
+        <div >
+            <div class="w-8 h-24" id="">
+                <div class="fixed right-10 bottom-10 z-10 botonvolver" id="">
+                    <a href="ecoparques.html" class="rounded-full">
+                        <img src="img/boton-mapaarg.png" alt="" class="w-14 shadow-md">
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col flex-nowrap pb-0">
+                <div class="w-full mt-10 flex flex-nowrap content-center">
+                    <div class="w-2/12 h-full">
+                        <img src="img/hojas-titulo.png" alt=""> <!-- DECORACIÓN DEL TÍTULO -->
+                    </div>
+                    <div class="w-9/12 flex items-center">
+                        <h1 class="text-5xl  font-black tracking-tight">Huellas de la Naturaleza</h1> <!-- TÍTULO / NOMBRE ECOPARQUE -->
+                    </div>
+                </div>
+                <!-- Linea de tiempo -->
+                <div class="w-full mt-10" >
+                    <div class="container-scroll" id="pruebascroll">
+                        <div class="scroll-horizontal">
+                            <img src="img/linea-huellas.svg" alt="" class="pb-24"> <!-- ADJUNTAR IMAGEN DE LA LÍNEA CORRESPONDIENTE -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Primera sección -->
+                <div class="w-full relative" style="background-color: #243225;">
+                    <div class="container mt-10 mb-24">
+                        <p class="ml-16 mr-16 w-full mb-4 uppercase font-semibold text-gray-100">Diferentes habitats</p> <!-- No se cambia -->
+                        <figure class="icon-cards mt-3">
+                            <div class="icon-cards__content">
+                              <div class="icon-cards__item d-flex align-items-center justify-content-center">
+                                <img src="img/arbol1-carrusel.png" alt=""> <!-- AGREGAR/CAMBIAR IMAGEN DE HABITAT -->
+                              </div>
+                              <div class="icon-cards__item d-flex align-items-center justify-content-center">
+                                <img src="img/arbol2-carrusel.png" alt=""> <!-- AGREGAR/CAMBIAR IMAGEN DE HABITAT -->
+                              </div>
+                              <div class="icon-cards__item d-flex align-items-center justify-content-center">
+                                <img src="img/arbol3-carrusel.png" alt=""> <!-- AGREGAR/CAMBIAR IMAGEN DE HABITAT -->
+                              </div>
+                            </div>
+                          </figure>
+                    </div>
+                    <!-- ESTO es la forma ondeada que divide una sección y la otra. En caso de querer cambiarla, estoy usando https://www.shapedivider.app/ -->
+                    <div class="custom-shape-divider-bottom-1638379671">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Segunda sección -->
+                <div class="w-full flex flex-col flex-nowrap" style="background-color: #2E8248;"> <!-- Container general del 2do bloque -->
+                    <div class="mt-10 mb-24 ml-16 mr-16 h-auto flex flex-wrap justify-between"> <!-- Contenedor del bloque de contenido -->
+                        <!-- Primera columna: Tipos de animales -->
+                        <div class="w-6/12 h-auto flex flex-col flex-nowrap gap-y-12"> <!-- Contenedor de toda la primera columna-->
+                            <p class="uppercase font-semibold text-gray-100 ">Tipos de animales</p>
+                            <div class="h-auto w-full flex flex-wrap gap-y-12 "> <!-- Contenedor de los gráficos -->
+                                <!-- Mamíferos -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-4"> 
+                                    <div class="w-2/12"> <!-- Contenedor icon -->
+                                        <img src="img/icon-mamiferos.svg" alt="">
+                                    </div>
+                                    <h6 class="10/12 font-semibold">Mamíferos</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfico -->
+                                        <img src="img/mamiferos-ecoko.svg" alt="" > <!-- ACÁ cambiar el gráfico de barras de mamíferos . Lo exporté como svg desde figma -->
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">06</p>
+                                </div>
+                                <!-- Terrestres -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-3">
+                                    <div class="w-2/12"> <!-- Contenedor icon -->
+                                        <img src="img/icon-terrestres.svg" alt="">
+                                    </div>
+                                    <h6 class="8/12 font-semibold">Terrestres</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfioc -->
+                                        <img src="img/terrestres-ecoko.svg" alt="" > <!-- ACÁ cambiar el gráfico de barras de terrestres . Lo exporté como svg desde figma -->
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">02</p>
+                                </div>
+                                <!-- Ovíparos -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-3">
+                                    <div class="w-2/12"> <!-- Contenedor icon -->
+                                        <img src="img/icon-oviparos.svg" alt="">
+                                    </div>
+                                    <h6 class="8/12 font-semibold">Ovíparos</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfico -->
+                                        <img src="img/oviparos-ecoeste.svg" alt="" > <!-- ACÁ cambiar el gráfico de barras de ovíparos . Lo exporté como svg desde figma -->
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">13</p>
+                                </div>
+                                <!-- Acuáticos -->
+                                <div class="w-6/12 h-auto flex flex-wrap items-end gap-x-3 gap-y-3"> 
+                                    <div class="w-2/12"> <!-- Conteneodr icon -->
+                                        <img src="img/acuaticos.svg" alt="">
+                                    </div>
+                                    <h6 class="8/12 font-semibold">Acuáticos</h6>
+                                    <div class="w-8/12"> <!-- Contenedor gráfico -->
+                                        <img src="img/acuaticos-ecoko.svg" alt="" >
+                                    </div>
+                                    <p class="font-black w-2/12 text-lg">02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segunda columna: Visitantes anuales-->
+                        <div class="w-5/12  h-auto flex flex-col flex-nowrap gap-y-12">
+                            <p class="uppercase font-semibold text-gray-100 w-full tracking-wide">Visitantes anuales</p>
+                            <div class="flex flex-wrap items-center mt-5">
+                                <div class="w-6/12">
+                                    <img src="img/osocompleto-nohaydatos.svg" alt="" class="w-full">
+                                </div>
+                                <p class="w-6/12 font-semibold" style="color: #E1DBCD;"><span class="text-2xl">Oh oh</span>, <br> no hay datos</p>
+                            </div>
+    
+                            <!-- USAR ESTE CONTENEDOR en caso de que haya visitantes -->
+                            <div class="w-full flex flex-col flex-nowrap gap-y-5">
+                                <!-- Instertar imagen de los íconos de gran rex -->
+                                <!-- Insetar etiqueta <p> con la cantidad de visitantes anuales. El número tiene que ir encerrado entre la etiqueta <span> para darle otro estilo -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ESTO es la forma ondeada que divide una sección y la otra. En caso de querer cambiarla, estoy usando https://www.shapedivider.app/ -->                
+                    <div class="relative w-full mt-10">
+                        <div class="custom-shape-divider-bottom-1638634630">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- CASOS -->
+                <!-- Tercera sección -->
+                <div class="w-full flex flex-col flex-nowrap " style="background-color: #395813;"> <!-- Container general del 2do bloque -->
+                    <div class="mt-10 mb-24 ml-16 mr-16 h-auto flex flex-wrap justify-between"> <!-- Contenedor del bloque de contenido -->
+                        <!-- Primera columna: Tipos de animales -->
+                        <div class="w-full h-auto flex flex-col flex-nowrap gap-y-12"> <!-- Contenedor de toda la primera columna-->
+                            <p class="uppercase font-semibold text-gray-100 tracking-wide ">Casos registrados en el ex-zoo</p>
+                            <div class="h-auto w-full flex flex-wrap gap-y-12 "> <!-- Contenedor de los gráficos -->
+                                <div class="flex flex-wrap w-11/12"> <!-- Contenedor de los casos -->
+                                    <div class="w-4/12 flex flex-col flex-nowrap items-center gap-y-4" >
+                                    <img src="img/hurra.png" alt="" style="width: 50%; "> <!-- CAMBIAR IMAGEN -->
+                                    <h4 class="w-10/12 text-center font-bold mt-2 ">¡Hurra! No hay ninguno</h4> <!-- CAMBIAR TÍTULO -->
+                                    </div>
+                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/ecoparques.js"></script>
+</body>
+</html>
